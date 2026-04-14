@@ -81,7 +81,7 @@
   - [3.1 To-Be Scenario Mapping](#31-to-be-scenario-mapping)
   - [3.2 User Stories](#32-user-stories)
   - [3.3 Impact Map](#33-impact-map)
-  - [3.4 Product Backlog (Avance 1)](#34-product-backlog-avance-1)
+  - [3.4 Product Backlog ](#34-product-backlog-avance-1)
 
 - [Capítulo IV: Product Architecture Design](#capítulo-iv-product-architecture-design)
   - [4.1 Design Concepts, ViewPoints & ER Diagrams](#41-design-concepts-viewpoints--er-diagrams)
@@ -155,8 +155,7 @@
 #### 3.1 To-Be Scenario Mapping
 #### 3.2 User Stories
 #### 3.3 Impact Map
-#### 3.4 Product Backlog (Avance 1)
-
+#### 3.4 Product Backlog
 ### Capítulo IV: Product Architecture Design
 
 #### 4.1 Design Concepts, ViewPoints & ER Diagrams
