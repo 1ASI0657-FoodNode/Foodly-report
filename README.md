@@ -131,7 +131,14 @@ A diferencia de los buscadores convencionales, Foodly optimiza la experiencia de
 
 * **Misión:** Optimizar la conexión entre la gastronomía local y los usuarios finales mediante soluciones de software de alta disponibilidad y precisión geoespacial que faciliten el descubrimiento de experiencias culinarias auténticas.
 * **Visión:** Convertirnos en la plataforma líder de búsqueda y localización para negocios emergentes (huariques) en Lima, democratizando el acceso a tecnologías de vanguardia, como la indexación hexagonal (H3), para revolucionar la forma en que los usuarios interactúan con su entorno gastronómico local.
+
 ##### 1.1.2 Perfiles de integrantes del equipo
+
+| Nombre: Cacho Seminario, Diego Alonso  | <img src="imgs/DiegoC.png" alt="DiegoC" title="Foto de Diego Cacho" /> |
+| :---- | :---- |
+| **Código:** U202223990 |  |
+| **Carrera:** Ingeniería de Software |  |
+| **Habilidades:** Soy estudiante de Ingeniería de Software cursando el 7mo ciclo de mi carrera en la UPC y tengo 21 años. Me considero una persona tranquila y diligente, intentó realizar mis tareas y trabajos lo antes posible para evitar contratiempos en un futuro, especialmente si son actividades que consumen mucho tiempo. Como miembro de equipo buscaré ayudar a mis compañeros cuando lo necesiten, realizando además mis entregas lo más temprano posible. Habilidades en C++, C\#, Python, Flutter, Unity 2D/3D, html/css/js. |  |
 
 #### 1.2 Solution Profile
 ##### 1.2.1 Nombre del producto
