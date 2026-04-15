@@ -235,6 +235,16 @@ Para comprender mejor las necesidades y comportamientos de los usuarios de Foodl
 
 ##### 2.3.2 User Task Matrix
 ##### 2.3.3 Empathy Maps
+A continuación se presentan los mapas de empatía para los dos perfiles principales de usuarios de Foodly: Mateo, el comensal explorador, y Doña Rosa, la especialista y dueña de un huarique tradicional. Estos mapas permiten comprender en profundidad sus necesidades, pensamientos, sentimientos y comportamientos, facilitando un diseño arquitectónico y de interfaz centrado en el usuario.
+
+* Segmento 1: Mateo (El Explorador)
+  
+![EmpathyMap_1](assets/images/EmpathyMateo.png)
+
+* Segmento 2: Doña Rosa (La Especialista)
+  
+![EmpathyMap_2](assets/images/EmpathyDonaRosa.png)
+
 ##### 2.3.4 As-is Scenario Mapping
 
 ### Capítulo III: Requirements Specification
