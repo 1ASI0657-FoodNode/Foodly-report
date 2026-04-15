@@ -261,6 +261,18 @@ De igual manera, se ha elaborado el As-Is Scenario Mapping para el segundo segme
 ### Capítulo III: Requirements Specification
 
 #### 3.1 To-Be Scenario Mapping
+* Segmento 1: Mateo (El Comensal Explorador)
+  
+Mediante este artefacto, se ha llevado a cabo la elaboración del To-Be Scenario Mapping para el primer segmento. Este escenario proyecta la experiencia ideal de los usuarios al utilizar Foodly durante su rutina diaria para descubrir huariques. Refleja cómo la aplicación resuelve sus dificultades actuales al permitirles filtrar cadenas comerciales, encontrar opciones auténticas en radios de caminata precisos y visualizar fotos reales de los platos, transformando la incertidumbre previa en un proceso de decisión rápido, confiable y altamente satisfactorio.
+
+![To-Be_1](assets/images/ToBeMateo.png)
+
+* Segmento 2: Doña Rosa (La Especialista)
+  
+De igual manera, se ha elaborado el To-Be Scenario Mapping para el segundo segmento, enfocado en los propietarios de huariques tradicionales. Este escenario ilustra el proceso optimizado mediante el cual estos emprendedores podrán promocionar sus locales comerciales usando Foodly. Detalla cómo la plataforma elimina las actuales barreras tecnológicas y económicas, permitiéndoles actualizar su menú diario de forma intuitiva para conectar directamente con nuevos clientes cercanos, transformando su previa sensación de invisibilidad en empoderamiento, reconocimiento y seguridad económica.
+
+![To-Be_2](assets/images/ToBeDonaRosa.png)
+
 #### 3.2 User Stories
 #### 3.3 Impact Map
 #### 3.4 Product Backlog
