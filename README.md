@@ -246,6 +246,17 @@ A continuación se presentan los mapas de empatía para los dos perfiles princip
 ![EmpathyMap_2](assets/images/EmpathyDonaRosa.png)
 
 ##### 2.3.4 As-is Scenario Mapping
+* Segmento 1: Mateo (El Comensal Explorador)
+  
+Mediante este artefacto, se ha llevado a cabo la elaboración del As-Is Scenario Mapping para el primer segmento. Este escenario refleja cómo los usuarios jóvenes y profesionales, interesados en descubrir huariques, realizan actualmente sus actividades durante su rutina diaria. Además, evidencia las dificultades que enfrentan al buscar opciones auténticas y cercanas, lidiando con aplicaciones saturadas de franquicias, radios de búsqueda imprecisos y falta de información visual, así como las percepciones de desconfianza y frustración que experimentan en cada etapa de su recorrido.
+
+![As-Is_1](assets/images/AsIsMateo.png)
+
+* Segmento 2: Doña Rosa (La Especialista)
+  
+De igual manera, se ha elaborado el As-Is Scenario Mapping para el segundo segmento, enfocado en los propietarios de huariques tradicionales. Este escenario ilustra cómo estos emprendedores gestionan actualmente la promoción de sus locales comerciales. Detalla las fuertes barreras tecnológicas y de tiempo que enfrentan al intentar ganar visibilidad digital frente a negocios más modernos, resaltando la frustración, la sensación de invisibilidad y las emociones que experimentan al intentar atraer a nuevos clientes que transitan a escasas cuadras de su negocio.
+
+![As-Is_2](assets/images/AsIsDonaRosa.png)
 
 ### Capítulo III: Requirements Specification
 
