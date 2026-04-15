@@ -222,6 +222,17 @@ Para diferenciar a Foodly de las grandes plataformas generales y posicionarse co
 
 #### 2.3 Needfinding
 ##### 2.3.1 User Personas
+
+Para comprender mejor las necesidades y comportamientos de los usuarios de Foodly, se han desarrollado dos perfiles representativos. Estos perfiles sintetizan los objetivos y retos de nuestros segmentos, permitiendo que las decisiones de arquitectura (como la indexación hexagonal H3) respondan a problemas reales de búsqueda y visibilidad en Lima.
+
+* Persona 1: El Comensal Explorador
+  
+![UserPersona_1](assets/images/Mateo.png)
+
+* Persona 2: El Dueño de Huarique
+  
+![UserPersona_2](assets/images/Doña Rosa.png)
+
 ##### 2.3.2 User Task Matrix
 ##### 2.3.3 Empathy Maps
 ##### 2.3.4 As-is Scenario Mapping
