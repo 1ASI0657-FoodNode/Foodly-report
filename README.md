@@ -231,7 +231,7 @@ Para comprender mejor las necesidades y comportamientos de los usuarios de Foodl
 
 * Persona 2: El Dueño de Huarique
   
-![UserPersona_2](assets/images/Doña Rosa.png)
+![UserPersona_2](assets/images/Doña_Rosa.png)
 
 ##### 2.3.2 User Task Matrix
 ##### 2.3.3 Empathy Maps
