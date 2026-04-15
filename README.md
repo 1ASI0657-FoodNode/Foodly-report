@@ -298,9 +298,32 @@ Para comprender mejor las necesidades y comportamientos de los usuarios de Foodl
 
 * Persona 2: El Dueño de Huarique
   
-![UserPersona_2](assets/images/Doña_Rosa.png)
+![UserPersona_2](assets/images/DonaRosa.png)
 
 ##### 2.3.2 User Task Matrix
+
+| Tareas | Mateo (Explorador) | | Doña Rosa (Dueña) | |
+| :--- | :---: | :---: | :---: | :---: |
+| | **Frecuencia** | **Importancia** | **Frecuencia** | **Importancia** |
+| Escanear entorno con radar hexagonal (H3) | Siempre | Muy alta | Raramente | Baja |
+| Consultar detalles y precios del huarique | Siempre | Muy alta | Aveces | Media |
+| Visualizar mapa de proximidad en tiempo real | Siempre | Alta | Raramente | Baja |
+| Registrar y actualizar datos del local | Nunca | Nunca | Casi siempre | Alta |
+| Gestionar galería de fotos (vía S3) | Aveces | Media | Casi siempre | Muy alta |
+| Guardar huariques favoritos | Casi siempre | Alta | Nunca | Nunca |
+
+Las tareas identificadas en la matriz para **Foodly** reflejan la naturaleza bidireccional de la plataforma. **Mateo**, como explorador urbano, mantiene una interacción intensiva con las funciones de visualización y búsqueda geoespacial (H3), las cuales considera críticas para decidir dónde comer en el momento. Por otro lado, **Doña Rosa** centra su actividad en la gestión de su presencia digital, priorizando la actualización de datos y la carga de imágenes en la galería para atraer clientes, tareas que realiza con regularidad y considera de vital importancia para su visibilidad.
+
+#### Coincidencias:
+* Ambos perfiles consideran que la calidad visual de la información (fotos de los platos) es un factor relevante, aunque interactúan con esta función desde perspectivas distintas (consumo vs. creación).
+* Existe una coincidencia en la baja frecuencia de uso de las funciones opuestas a su rol principal: Mateo nunca gestiona datos de locales y Doña Rosa casi nunca busca otros locales en el mapa.
+* La importancia de la precisión en la ubicación es un punto en común, ya que de esto depende tanto el éxito del descubrimiento para uno como la llegada de clientes para la otra.
+
+#### Diferencias:
+* Mateo es un usuario de alta frecuencia en el radar de proximidad y mapas, mientras que para Doña Rosa esta función es secundaria debido a que su ubicación es estática.
+* La actualización de información es la tarea principal de Doña Rosa, actividad que el segmento de comensales no realiza en absoluto.
+* El uso del sistema de persistencia (S3) para la galería multimedia tiene una importancia "Muy alta" para Doña Rosa como herramienta de venta, mientras que para Mateo es un apoyo visual de importancia "Media" para la validación rápida.
+  
 ##### 2.3.3 Empathy Maps
 A continuación se presentan los mapas de empatía para los dos perfiles principales de usuarios de Foodly: Mateo, el comensal explorador, y Doña Rosa, la especialista y dueña de un huarique tradicional. Estos mapas permiten comprender en profundidad sus necesidades, pensamientos, sentimientos y comportamientos, facilitando un diseño arquitectónico y de interfaz centrado en el usuario.
 
