@@ -41,10 +41,10 @@
 
 | Versión | Fecha | Autor | Descripción de modificación |
 | :--- | :--- | :--- | :--- |
-| |  |  |  |
-| |  |  |  |
-| |  |  |  |
-| |  |  |  |
+| TB1 | 15/04/2026 | Cacho Seminario Diego Alonso, Julca Minaya Sergio Gino, Urrutia Pena Jasmin Adriana, Vega Coronado Fabricio Samir y Villanueva Andrade Ysaac Ligorio. | CAPITULO I, CAPITULO II y CAPITULO III. |
+| TP |  |  |  |
+| TB2 |  |  |  |
+| TF |  |  |  |
 
 <hr class="page-break">
 
