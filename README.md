@@ -38,15 +38,70 @@
 <hr class="page-break">
 
 ### Registro de Versiones del Informe
+<section>
+    <h3>Registro de Versiones del Informe</h3>
+    <table border="1" style="width:100%; border-collapse: collapse; font-family: Arial, sans-serif; font-size: 14px;">
+        <thead>
+            <tr style="background-color: #f2f2f2; text-align: center;">
+                <th style="padding: 10px; width: 10%;">Versión</th>
+                <th style="padding: 10px; width: 15%;">Fecha</th>
+                <th style="padding: 10px; width: 25%;">Autor</th>
+                <th style="padding: 10px; width: 50%;">Descripción de modificación</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 8px; text-align: center;">1.1</td>
+                <td style="padding: 8px; text-align: center;">10/04/26</td>
+                <td style="padding: 8px;">Vega Coronado, Fabricio Samir</td>
+                <td style="padding: 8px;">Redacción de Startup Profile (Descripción y perfiles), Lean UX Problem Statement, Lean UX Assumptions, Segmentos objetivo y Product Backlog.</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; text-align: center;">1.2</td>
+                <td style="padding: 8px; text-align: center;">10/04/26</td>
+                <td style="padding: 8px;">Julca Minaya, Sergio Gino</td>
+                <td style="padding: 8px;">Elaboración de Solution Profile (Nombre del producto, Antecedentes y problemática), Lean UX Hypothesis y Lean UX Canvas.</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; text-align: center;">1.3</td>
+                <td style="padding: 8px; text-align: center;">11/04/26</td>
+                <td style="padding: 8px;">Urrutia Pena, Jasmin Adriana</td>
+                <td style="padding: 8px;">Investigación de Competidores, Diseño y registro de Entrevistas y definición de User Stories.</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; text-align: center;">1.4</td>
+                <td style="padding: 8px; text-align: center;">12/04/26</td>
+                <td style="padding: 8px;">Villanueva Andrade, Ysaac Ligorio</td>
+                <td style="padding: 8px;">Análisis de Needfinding: User Personas, User Task Matrix e Impact Map.</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; text-align: center;">1.5</td>
+                <td style="padding: 8px; text-align: center;">13/04/26</td>
+                <td style="padding: 8px;">Cacho Seminario, Diego Alonso</td>
+                <td style="padding: 8px;">Elaboración de Empathy Maps, As-is Scenario Mapping y To-Be Scenario Mapping.</td>
+            </tr>
+            <tr style="background-color: #fafafa;">
+                <td style="padding: 8px; text-align: center;">1.6</td>
+                <td style="padding: 8px; text-align: center;">11/04/26</td>
+                <td style="padding: 8px;">Julca Minaya, Sergio Gino</td>
+                <td style="padding: 8px;">Actualización de Lean UX Canvas tras validación, diseño de arquitectura inicial y descripción de problemática y objetivos de solución.</td>
+            </tr>
+            <tr style="background-color: #fafafa;">
+                <td style="padding: 8px; text-align: center;">1.7</td>
+                <td style="padding: 8px; text-align: center;">10/04/26</td>
+                <td style="padding: 8px;">Urrutia Pena, Jasmin Adriana</td>
+                <td style="padding: 8px;">Refinamiento de User Stories, análisis competitivo avanzado y actualización de registros de entrevistas.</td>
+            </tr>
+            <tr style="background-color: #fafafa;">
+                <td style="padding: 8px; text-align: center;">1.8</td>
+                <td style="padding: 8px; text-align: center;">10/04/26</td>
+                <td style="padding: 8px;">Villanueva Andrade, Ysaac Ligorio</td>
+                <td style="padding: 8px;">Desarrollo de User Task Matrix según feedback de usuarios.</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
 
-| Versión | Fecha | Autor | Descripción de modificación |
-| :--- | :--- | :--- | :--- |
-| TB1 | 15/04/2026 | Cacho Seminario Diego Alonso, Julca Minaya Sergio Gino, Urrutia Pena Jasmin Adriana, Vega Coronado Fabricio Samir y Villanueva Andrade Ysaac Ligorio. | CAPITULO I, CAPITULO II y CAPITULO III. |
-| TP |  |  |  |
-| TB2 |  |  |  |
-| TF |  |  |  |
-
-<hr class="page-break">
 
 ### Contenido
 
@@ -254,6 +309,7 @@ A diferencia de los buscadores convencionales, Foodly optimiza la experiencia de
       </tr>
   </tbody>
 </table>
+
 #### 1.2 Solution Profile
 ##### 1.2.1 Nombre del producto
 **Foodly** es una aplicación móvil y web que conecta a los comensales con los huariques más cercanos en Lima, utilizando una arquitectura de alta disponibilidad basada en la indexación hexagonal (H3) para optimizar la búsqueda y localización de estos negocios gastronómicos locales. 
@@ -773,68 +829,8 @@ De igual manera, se ha elaborado el To-Be Scenario Mapping para el segundo segme
 #### 3.3 Impact Map
 
 ![Impact map Foodly](assets/images/ImpactmapFoodly.png)
+
 #### 3.4 Product Backlog
-### Capítulo IV: Product Architecture Design
-
-#### 4.1 Design Concepts, ViewPoints & ER Diagrams
-##### 4.1.1 Principles Statements
-##### 4.1.2 Approaches Statements, Architectural Styles & Patterns
-##### 4.1.3 Context Diagram
-##### 4.1.4 Approach Driven ViewPoints Diagrams
-##### 4.1.5 Relational/Non Relational Database Diagram
-##### 4.1.6 Design Patterns
-##### 4.1.7 Tactics
-
-#### 4.2 Architectural Drivers
-##### 4.2.1 Design Purpose
-##### 4.2.2 Primary Functionality
-##### 4.2.3 Quality Attribute Scenarios
-##### 4.2.4 Constraints
-##### 4.2.5 Architectural Concerns
-
-#### 4.3 ADD Iterations
-##### 4.3.X Iteration N
-###### 4.3.X.1 Architectural Design Backlog N
-###### 4.3.X.2 Establish Iteration Goal
-###### 4.3.X.3 Refine System Elements
-###### 4.3.X.4 Select Design Concepts
-###### 4.3.X.5 Define Architectural Elements
-###### 4.3.X.6 Sketch Views (C4 & UML)
-###### 4.3.X.7 Analysis & Review (Avance 2)
-
-### Capítulo V: Product Implementation, Validation & Deployment
-
-#### 5.1 Testing Suites & General Patterns
-##### 5.1.1 Backend Application Core Testing Suite
-##### 5.1.2 Pattern Based Backend Application(s)
-##### 5.1.3 Pattern Based Custom Software Library
-##### 5.1.4 Framework Pattern Driven Refactoring Report
-
-#### 5.2 Software Configuration Management
-##### 5.2.1 Software Development Environment Configuration
-##### 5.2.2 Source Code Management
-##### 5.2.3 Source Code Style Guide & Conventions
-##### 5.2.4 Software Deployment Configuration
-
-#### 5.3 Microservices Implementation
-
-##### 5.3.1 Sprint 1
-###### 5.3.1.1 Sprint Backlog 1
-###### 5.3.1.2 Development Evidence
-###### 5.3.1.3 Testing Evidence
-###### 5.3.1.4 Execution Evidence
-###### 5.3.1.5 Documentation Evidence
-###### 5.3.1.6 Deployment Evidence
-###### 5.3.1.7 Team Collaboration Insights
-###### 5.3.1.8 Kanban Board
-
-##### 5.3.2 Sprint 2
-##### 5.3.3 Sprint 3
-##### 5.3.4 Sprint 4
-
-#### 5.4 Microservices Deployment
-##### 5.4.1 Cloud Architecture Diagram
-##### 5.4.2 Cloud Deployment
 
 ### Conclusiones
 
