@@ -134,15 +134,190 @@ A diferencia de los buscadores convencionales, Foodly optimiza la experiencia de
 
 ##### 1.1.2 Perfiles de integrantes del equipo
 
-| Nombre: Cacho Seminario, Diego Alonso  | <img src="imgs/DiegoC.png" alt="DiegoC" title="Foto de Diego Cacho" /> |
-| :---- | :---- |
-| **Código:** U202223990 |  |
-| **Carrera:** Ingeniería de Software |  |
-| **Habilidades:** Soy estudiante de Ingeniería de Software cursando el 7mo ciclo de mi carrera en la UPC y tengo 21 años. Me considero una persona tranquila y diligente, intentó realizar mis tareas y trabajos lo antes posible para evitar contratiempos en un futuro, especialmente si son actividades que consumen mucho tiempo. Como miembro de equipo buscaré ayudar a mis compañeros cuando lo necesiten, realizando además mis entregas lo más temprano posible. Habilidades en C++, C\#, Python, Flutter, Unity 2D/3D, html/css/js. |  |
-
+<table border="1" style="width:100%; border-collapse: collapse; font-family: Arial, sans-serif;">
+  <tbody>
+    <tr>
+      <td style="padding: 10px; width: 70%;">
+        <strong>Nombre:</strong> Cacho Seminario, Diego Alonso
+      </td>
+      <td style="padding: 10px; width: 30%; text-align: center;" rowspan="4">
+        <img src="imgs/DiegoC.png" alt="DiegoC" title="Foto de Diego Cacho" style="width: 150px; height: auto; border-radius: 8px;" />
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 10px;">
+        <strong>Código:</strong> U202223990
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 10px;">
+        <strong>Carrera:</strong> Ingeniería de Software
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: justify;">
+        <strong>Habilidades:</strong> Soy estudiante de Ingeniería de Software cursando el 7mo ciclo de mi carrera en la UPC y tengo 21 años. Me considero una persona tranquila y diligente, intentó realizar mis tareas y trabajos lo antes posible para evitar contratiempos en un futuro, especialmente si son actividades que consumen mucho tiempo. Como miembro de equipo buscaré ayudar a mis compañeros cuando lo necesiten, realizando además mis entregas lo más temprano posible. Habilidades en C++, C#, Python, Flutter, Unity 2D/3D, html/css/js.
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; width: 70%;">
+        <strong>Nombre:</strong> Julca Minaya, Sergio Gino
+      </td>
+      <td style="padding: 10px; width: 30%; text-align: center;" rowspan="4">
+        <img src="imgs/SergioJ.png" alt="SergioJ" title="Foto de Sergio J" style="width: 150px; height: auto; border-radius: 8px;" />
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 10px;">
+        <strong>Código:</strong> U202223991
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 10px;">
+        <strong>Carrera:</strong> Ingeniería de Software
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: justify;">
+        <strong>Habilidades:</strong>
+        Mi nombre es Sergio Gino Julca Minaya, soy estudiante de Ingeniería de software. Tengo experiencia desarrollando proyectos de automatización con diferentes frameworks y tecnologías. Del mismo modo, me considero una persona competitiva, responsable y comprometida. Estoy interesado en conocer todas las áreas posibles desde desarrollo de software hasta el desarrollo de IA. Mi objetivo en el equipo es contribuir activamente.
+      </td>
+    </tr>
+     <tr>
+      <td style="padding: 10px; width: 70%;">
+        <strong>Nombre:</strong> Urrutia Peña, Jasmin Adriana
+      </td>
+      <td style="padding: 10px; width: 30%; text-align: center;" rowspan="4">
+        <img src="assets/chapter-1/perfiles-integrantes/foto_julca_primax.png" alt="JasminU" title="Foto de Jasmin U" style="width: 150px; height: auto; border-radius: 8px;" />
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 10px;">
+        <strong>Código:</strong> U202310008
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 10px;">
+        <strong>Carrera:</strong> Ingeniería de Software
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: justify;">
+        <strong>Habilidades:</strong> Soy estudiante de ingenieria de software. Tengo experiencia en desarrollo de proyectos Frontend y Backend con Angular y Spring boot, asimismo considero que cada paso en la universidad contribuye en mi avance como desarollo profesional. Estoy interesado en continuar mi aprendizaje, por lo que estoy dispuesto a participar en la adecuada realizacion de proyectos.
+      </td>
+    </tr>
+      <tr>
+        <td style="padding: 10px; width: 70%;">
+          <strong>Nombre:</strong> Vega Coronado, Fabricio Samir
+        </td>
+        <td style="padding: 10px; width: 30%; text-align: center;" rowspan="4">
+          <img src="imgs/FabricioV.png" alt="FabricioV" title="Foto de Fabricio V" style="width: 150px; height: auto; border-radius: 8px;" />
+        </td>
+      </tr>
+      <tr>
+        <td style="padding: 10px;">
+          <strong>Código:</strong> U202317000
+        </td>
+      </tr>
+      <tr>
+        <td style="padding: 10px;">
+          <strong>Carrera:</strong> Ingeniería de Software
+        </td>
+      </tr>
+      <tr>
+        <td style="padding: 10px; text-align: justify;">
+          <strong>Habilidades:</strong> Soy estudiante del 7° ciclo con 21 años. Tengo experiencia con diferentes lenguajes de programación y desarrollo de aplicaciones web en diversos frameworks ambos en frontend y backend. Soy una persona responsable y puntual, interesado en tecnologias emergentes y sus aplicaciones, cualidades que aplico al trabajar de manera colaborativa con los integrantes de nuestro equipo.
+        </td>
+      </tr>
+      <tr>
+        <td style="padding: 10px; width: 70%;">
+          <strong>Nombre:</strong> Villanueva Andrade, Ysaac Ligorio
+        </td>
+        <td style="padding: 10px; width: 30%; text-align: center;" rowspan="4">
+          <img src="imgs/YsaacV.png" alt="YsaacV" title="Foto de Ysaac V" style="width: 150px; height: auto; border-radius: 8px;" />
+        </td>
+      </tr>
+      <tr>
+        <td style="padding: 10px;">
+          <strong>Código:</strong> U20231c168
+        </td>
+      </tr>
+      <tr>
+        <td style="padding: 10px;">
+          <strong>Carrera:</strong> Ingeniería de Software
+        </td>
+      </tr>
+      <tr>
+        <td style="padding: 10px; text-align: justify;">
+          <strong>Habilidades:</strong> Tengo 20 años y me encuentro cursando el séptimo ciclo de la carrera de ingeniería de software. Desde los primeros ciclos me ha apasionado la programación, siendo los lenguajes que mejor manejo java, javascript, C++ y C#, y me he centrado en aprender lo más posible en cuanto a optimización de procesos y nuevas tecnologías. Me interesa aprender sobre elementos IoT para poder integrarlos en nuevos proyectos.
+        </td>
+      </tr>
+  </tbody>
+</table>
 #### 1.2 Solution Profile
 ##### 1.2.1 Nombre del producto
+**Foodly** es una aplicación móvil y web que conecta a los comensales con los huariques más cercanos en Lima, utilizando una arquitectura de alta disponibilidad basada en la indexación hexagonal (H3) para optimizar la búsqueda y localización de estos negocios gastronómicos locales. 
+
+De esta manera Foodly se posiciona como una herramienta de curaduría culinaria que prioriza la autenticidad, el precio justo y la cercanía real, ofreciendo a los usuarios una experiencia de descubrimiento única y eficiente, mientras que empodera a los dueños de huariques con visibilidad digital sin las barreras de las grandes plataformas comerciales.
+
+De modo, Foodly se diferencia de otras aplicaciones de comida al enfocarse exclusivamente en los huariques, utilizando tecnología de vanguardia para resolver la problemática de visibilidad y acceso a estos negocios, y ofreciendo una experiencia de usuario centrada en la autenticidad y la cercanía real, lo que la convierte en una solución innovadora y valiosa para el mercado gastronómico local de Lima.
 ##### 1.2.2 Antecedentes y problemática
+
+En esta sección se aplica la técnica 5 'W's y 2 'H's para delimitar el problema de negocio y el contexto global del descubrimiento de locales gastronómicos tradicionales.
+
+<strong>Antecedentes:</strong>
+A pesar de la digitalización masiva del sector gastronómico, los "huariques" (pequeños establecimientos de comida tradicional y auténtica) carecen de visibilidad en las plataformas convencionales, las cuales priorizan cadenas con alto presupuesto de marketing. Según informes del sector en el Perú (como reportes de gremios gastronómicos), la falta de digitalización en estos pequeños negocios limita su alcance a clientes locales, perdiendo la oportunidad de conectar con nuevos "Exploradores Gastronómicos" que buscan experiencias auténticas.
+
+<strong>Problemática:</strong>
+<table>
+  <tr>
+    <th>Factor</th>
+    <th>Descripción</th>
+  </tr>
+  <tr>
+    <td><strong>Who</strong></td>
+    <td>
+      Según la Cámara de Comercio de Lima (CCL, 2024), los consumidores peruanos, especialmente los denominados “exploradores gastronómicos”, buscan experiencias culinarias auténticas; sin embargo, su acceso a los huariques es limitado debido a la escasa presencia digital de estos negocios.
+    </td>
+  </tr>
+  <tr>
+    <td><strong>What</strong></td>
+    <td>
+      De acuerdo con el Ministerio de la Producción del Perú (PRODUCE, 2023), las micro y pequeñas empresas del sector gastronómico presentan bajos niveles de digitalización, lo que dificulta su visibilidad en plataformas tecnológicas y limita su competitividad.
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Where</strong></td>
+    <td>
+      El Instituto Nacional de Estadística e Informática (INEI, 2024) señala que Lima Metropolitana concentra la mayor cantidad de microempresas gastronómicas, muchas de ellas ubicadas en zonas urbanas con alta densidad poblacional pero escasa representación en mapas digitales.
+    </td>
+  </tr>
+  <tr>
+    <td><strong>When</strong></td>
+    <td>
+      Según un estudio de Ipsos Perú (2024), la decisión sobre dónde comer suele tomarse en el mismo día, lo que incrementa la necesidad de herramientas digitales que faciliten el descubrimiento rápido de opciones cercanas.
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Why</strong></td>
+    <td>
+      El Banco Interamericano de Desarrollo (BID, 2022) destaca que las comisiones elevadas y las barreras tecnológicas de las plataformas digitales tradicionales dificultan la adopción de estas herramientas por parte de pequeños negocios gastronómicos.
+    </td>
+  </tr>
+  <tr>
+    <td><strong>How</strong></td>
+    <td>
+      Uber Technologies Inc. (2020), a través de su documentación técnica del sistema H3, demuestra que la indexación geoespacial hexagonal permite mejorar la precisión en la localización y búsqueda por proximidad en aplicaciones basadas en mapas.
+    </td>
+  </tr>
+  <tr>
+    <td><strong>How Much</strong></td>
+    <td>
+      Según la Organización para la Cooperación y el Desarrollo Económicos (OCDE, 2023), la baja adopción de tecnologías digitales puede reducir significativamente el crecimiento y la captación de clientes en las microempresas, afectando sus ingresos potenciales.
+    </td>
+  </tr>
+</table>
+
 
 ##### 1.2.3 Lean UX Process
 ###### 1.2.3.1 Lean UX Problem Statement
@@ -180,7 +355,109 @@ Lograr que un usuario encuentre un huarique relevante en menos de 10 segundos y 
 - Galería de imágenes de alta velocidad que carga evidencias reales de los platos y el local sin latencia, facilitando la validación visual del usuario.
 - Funcionalidad de búsqueda avanzada que prioriza locales con alta calificación de sazón y precios accesibles dentro del entorno geoespacial del usuario.
 ###### 1.2.3.3 Lean UX Hypothesis
+
+1. <strong>Geolocalizaciíon Hexagonal con servicio externo</strong>
+    > <strong>Creemos</strong> que implementar un sistema de geolocalización hexagonal (H3) permitirá a los usuarios encontrar huariques en un radio de 500 metros con mayor precisión. <strong>Sabremos</strong> que tenemos éxito cuando el 70% de las búsquedas terminen en una visualización del perfil del local.
+    
+
+2. <strong>Cercanía con el cliente</strong>
+    > <strong>Creemos</strong> que los usuarios valorarán más la autenticidad y cercanía de los huariques que las opciones comerciales. <strong>Sabremos</strong> que tenemos éxito cuando más del 50% de los usuarios den "Like" a un huarique cercano o visualizaciones constantes de comentarios.
+
+3. <strong>Interfaz interactiva de descubrimiento</strong>
+     > **Creemos que** un onboarding guiado y una interfaz móvil-first permitirán alcanzar 500 usuarios activos en los primeros 6 meses. **Sabremos** que hemos tenido éxito cuando veamos los siguientes comentarios del mercado: usuarios comentan que fue“muy fácil empezar y hacer mi primer pedido y/o 500 cuentas inician sesión más de 3 veces en sus primeros 7 días.
+
 ###### 1.2.3.4 Lean UX Canvas
+<table border="1" style="width:100%; border-collapse: collapse; font-family: Arial, sans-serif;">
+  <thead>
+    <tr style="background-color: #f2f2f2;">
+      <th style="padding: 10px; width: 33%;">1. Business Problem</th>
+      <th style="padding: 10px; width: 33%;">2. Business Outcomes</th>
+      <th style="padding: 10px; width: 33%;">3. Users & Customers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 10px; vertical-align: top;">
+        <li>
+          <ul>
+            <li>Los "huariques" tradicionales carecen de visibilidad digital efectiva frente a grandes cadenas gastronómicas. </li>
+            <li>Los algoritmos de búsqueda actuales no son precisos para conectar a usuarios con negocios locales en radios cortos de cercanía.</li>
+          </ul>
+        </li>
+      </td>
+      <td style="padding: 10px; vertical-align: top;">
+        <ul>
+          <li>Incrementar en un 30% la afluencia de clientes nuevos a los huariques registrados.</li>
+          <li>Lograr una retención de usuarios del 50% mensual en la búsqueda de comida local.</li>
+          <li>Validación técnica del sistema de geolocalización hexagonal (H3).</li>
+        </ul>
+      </td>
+      <td style="padding: 10px; vertical-align: top;">
+        <ul>
+          <li><strong>Exploradores Gastronómicos:</strong> Jóvenes (18-40 años) que buscan comida auténtica, barata y cercana.</li>
+          <li><strong>Dueños de Huariques:</strong> Emprendedores locales con poca experiencia tecnológica que necesitan promocionar su negocio.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr style="background-color: #f2f2f2;">
+      <th style="padding: 10px;">4. User Benefits</th>
+      <th style="padding: 10px;">5. Solutions</th>
+      <th style="padding: 10px;">6. Hypotheses</th>
+    </tr>
+    <tr>
+      <td style="padding: 10px; vertical-align: top;">
+        <ul>
+          <li>Descubrimiento inmediato de opciones gastronómicas únicas.</li>
+          <li>Ahorro de tiempo mediante navegación precisa por hexágonos (H3).</li>
+          <li>Reseñas constantes e información actualizada sobre los huariques.</li>
+        </ul>
+      </td>
+      <td style="padding: 10px; vertical-align: top;">
+        Aplicación móvil (Android) y Web Full Stack bajo arquitectura de microservicios. 
+        Uso de <strong>Uber H3</strong> para indexación espacial y comunicación asíncrona mediante un Broker de mensajería.
+      </td>
+      <td style="padding: 10px; vertical-align: top;">
+        <ul>
+          <li>Implementar H3 reducirá el tiempo de búsqueda a menos de 10 segundos.</li>
+          <li>Los dueños de huariques estarán dispuestos a registrar su negocio si les garantizamos visibilidad local.</li>
+          <li>Los usuarios valorarán más la autenticidad y cercanía con las reseñas.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr style="background-color: #f2f2f2;">
+      <th style="padding: 10px;">7. What’s the most important thing we need to learn first?</th>
+      <th style="padding: 10px;" colspan = "2">8. What’s the least amount of work we need to do to learn the next most important thing?</th>
+    </tr>
+    <tr>
+      <td style="padding: 10px; vertical-align: top;" colspan="1">
+      <ul>
+        <li>
+          Si los dueños de los huariques están dispuestos a registrar su negocio en la plataforma.
+        </li>
+        <li>
+          Si el sistema de indexación hexagonal (H3) realmente mejora la precisión de búsqueda y reduce los tiempos de respuesta.
+        </li>
+        <li>
+          Si los usuarios encuentran valor en descubrir huariques cercanos mediante la aplicación. 
+        </li>
+      </ul>
+      </td>
+      <td style="padding: 10px; vertical-align: top;" colspan="2">
+      <ul>
+      <li>
+        Realizar entrevistas con dueños de huariques para validar su interés en registrar su negocio en la plataforma.
+      </li>
+      <li>
+        Realizar entrevistas a usuarios finales, jovenes entre 18 y 40 años, para validar su interés en usar una aplicación de este tipo y entender sus necesidades.
+      </li>
+      <li>
+        Desarrollar un MVP funcional que incluya el registro de un local y la visualización de su celda H3 correspondiente en un mapa interactivo para el usuario.
+      </li>
+      </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 #### 1.3 Segmentos Objetivo
 
@@ -461,6 +738,21 @@ De igual manera, se ha elaborado el To-Be Scenario Mapping para el segundo segme
 ### Video About-The-Team
 
 ### Referencias Bibliográficas
+### Referencias Bibliográficas
+
+- Banco Interamericano de Desarrollo (BID). (2022). *Transformación digital de las micro y pequeñas empresas en América Latina*. https://www.iadb.org/es/blog/ciencia-tecnologia-e-innovacion/el-poder-de-los-datos-impulsando-la-transformacion-digital-de-las-pymes-de-america-latina
+
+- Cámara de Comercio de Lima (CCL). (2024). *Reporte del sector gastronómico en Lima Metropolitana*. https://www.producempresarial.pe/wp-content/uploads/2025/02/234-Sector-restaurantes-y-afines-2024.pdf
+
+- Instituto Nacional de Estadística e Informática (INEI). (2024). *Estadísticas de las micro y pequeñas empresas en el Perú*. https://www.gob.pe/institucion/inei/noticias/1334404-lima-metropolitana-concentra-el-42-2-de-las-empresas-que-existen-en-el-pais
+
+- Ipsos Perú. (2024). *Hábitos y actitudes hacia el consumo gastronómico en el Perú*. https://www.ipsos.com/es-pe
+
+- Organización para la Cooperación y el Desarrollo Económicos (OCDE). (2023). *Digitalisation of SMEs in Latin America*. https://www.ipsos.com/es-pe/alimentacion-y-vida-saludable-en-lima
+
+- PRODUCE – Ministerio de la Producción del Perú. (2024). *Situación de las MYPE en el Perú*. https://www.producempresarial.pe/wp-content/uploads/2025/11/La-Mipyme-en-Cifras-2024_.pdf
+
+- Uber Technologies Inc. (2020). *H3: Hexagonal Hierarchical Geospatial Indexing System*. https://h3geo.org/docs/
 
 ### Anexos
 
