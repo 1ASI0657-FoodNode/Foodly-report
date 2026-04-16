@@ -828,7 +828,7 @@ De igual manera, se ha elaborado el To-Be Scenario Mapping para el segundo segme
 
 #### 3.3 Impact Map
 
-![Impact map Foodly](assets/images/ImpactmapFoodly.png)
+![Impact map Foodly](assets/ImpactmapFoodly.png)
 
 #### 3.4 Product Backlog
 
