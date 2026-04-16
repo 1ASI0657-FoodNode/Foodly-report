@@ -364,7 +364,6 @@ De igual manera, se ha elaborado el To-Be Scenario Mapping para el segundo segme
 ![To-Be_2](assets/images/ToBeDonaRosa.png)
 
 #### 3.2 User Stories
-### 3.4 Product Backlog - Foodly
 
 | Epic / User Story ID | Título | Descripción | Criterios de Aceptación (Escenarios) | Relacionado con (Epic ID) |
 | :--- | :--- | :--- | :--- | :--- |
@@ -390,6 +389,8 @@ De igual manera, se ha elaborado el To-Be Scenario Mapping para el segundo segme
 | **US20** | Escalabilidad de Búsqueda | Como administrador, quiero que el motor H3 soporte miles de consultas para evitar caídas. | **Escenario 1 – Carga pesada**<br>**Given** 1,000 usuarios buscando en la misma celda<br>**When** se ejecutan las queries geoespaciales<br>**Then** el tiempo de respuesta se mantiene por debajo de los 200ms.<br><br>**Escenario 2 – Fallo de servidor**<br>**Given** una caída en un nodo de base de datos<br>**When** un usuario intenta buscar<br>**Then** el sistema conmuta a un nodo de respaldo sin interrumpir el servicio. | EP05 |
 
 #### 3.3 Impact Map
+
+![Impact map Foodly](assets/images/ImpactmapFoodly.png)
 #### 3.4 Product Backlog
 ### Capítulo IV: Product Architecture Design
 
