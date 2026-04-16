@@ -548,7 +548,7 @@ En el mercado actual existen varias aplicaciones y plataformas de comida que per
       <th style="padding: 12px; border: 1px solid #ddd; width: 10%;">Categoría</th>
       <th style="padding: 12px; border: 1px solid #ddd; width: 15%;">Criterio</th>
       <th style="padding: 12px; border: 1px solid #ddd; width: 18.75%;">
-        <img src="assets/logo1f.png" alt="Logo Foodly" style="height: 40px; display: block; margin: 0 auto 5px;"><br>Su Startup (Foodly)
+        <img src="assets/logo1f.png" alt="Logo Foodly" style="height: 40px; display: block; margin: 0 auto 5px;"><br>Nuestra Startup (Foodly)
       </th>
       <th style="padding: 12px; border: 1px solid #ddd; width: 18.75%;">
         <img src="assets/logo2.png" alt="Logo Rappi" style="height: 40px; display: block; margin: 0 auto 5px;"><br>Competidor 1 (Rappi)
