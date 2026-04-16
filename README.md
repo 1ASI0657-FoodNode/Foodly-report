@@ -219,12 +219,12 @@ A diferencia de los buscadores convencionales, Foodly optimiza la experiencia de
         <strong>Nombre:</strong> Julca Minaya, Sergio Gino
       </td>
       <td style="padding: 10px; width: 30%; text-align: center;" rowspan="4">
-        <img src="imgs/SergioJ.png" alt="SergioJ" title="Foto de Sergio J" style="width: 150px; height: auto; border-radius: 8px;" />
+        <img src="assets/chapter-1/perfiles-integrantes/foto_julca.png" alt="SergioJ" title="Foto de Sergio J" style="width: 150px; height: auto; border-radius: 8px;" />
       </td>
     </tr>
     <tr>
       <td style="padding: 10px;">
-        <strong>Código:</strong> U202223991
+        <strong>Código:</strong> U202318274
       </td>
     </tr>
     <tr>
@@ -243,7 +243,7 @@ A diferencia de los buscadores convencionales, Foodly optimiza la experiencia de
         <strong>Nombre:</strong> Urrutia Peña, Jasmin Adriana
       </td>
       <td style="padding: 10px; width: 30%; text-align: center;" rowspan="4">
-        <img src="assets/chapter-1/perfiles-integrantes/foto_julca_primax.png" alt="JasminU" title="Foto de Jasmin U" style="width: 150px; height: auto; border-radius: 8px;" />
+        <img src="imgs/jasmin.png" alt="JasminU" title="Foto de Jasmin U" style="width: 150px; height: auto; border-radius: 8px;" />
       </td>
     </tr>
     <tr>
