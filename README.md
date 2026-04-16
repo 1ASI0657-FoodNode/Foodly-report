@@ -289,7 +289,7 @@ A diferencia de los buscadores convencionales, Foodly optimiza la experiencia de
           <strong>Nombre:</strong> Villanueva Andrade, Ysaac Ligorio
         </td>
         <td style="padding: 10px; width: 30%; text-align: center;" rowspan="4">
-          <img src="imgs/YsaacV.png" alt="YsaacV" title="Foto de Ysaac V" style="width: 150px; height: auto; border-radius: 8px;" />
+          <img src="assets/chapter-1/perfiles-integrantes/perfil-ysaac.png" alt="YsaacV" title="Foto de Ysaac V" style="width: 150px; height: auto; border-radius: 8px;" />
         </td>
       </tr>
       <tr>
@@ -740,15 +740,65 @@ Para comprender mejor las necesidades y comportamientos de los usuarios de Foodl
 
 ##### 2.3.2 User Task Matrix
 
-| Tareas | Mateo (Explorador) | | Doña Rosa (Dueña) | |
-| :--- | :---: | :---: | :---: | :---: |
-| | **Frecuencia** | **Importancia** | **Frecuencia** | **Importancia** |
-| Escanear entorno con radar hexagonal (H3) | Siempre | Muy alta | Raramente | Baja |
-| Consultar detalles y precios del huarique | Siempre | Muy alta | Aveces | Media |
-| Visualizar mapa de proximidad en tiempo real | Siempre | Alta | Raramente | Baja |
-| Registrar y actualizar datos del local | Nunca | Nunca | Casi siempre | Alta |
-| Gestionar galería de fotos (vía S3) | Aveces | Media | Casi siempre | Muy alta |
-| Guardar huariques favoritos | Casi siempre | Alta | Nunca | Nunca |
+<table border="1" style="width:100%; border-collapse: collapse; font-family: Arial, sans-serif; font-size: 14px;">
+    <thead>
+        <tr style="background-color: #f2f2f2; text-align: center;">
+            <th style="padding: 10px; width: 30%;" rowspan="2">Tareas</th>
+            <th style="padding: 10px; width: 35%;" colspan="2">Mateo (Explorador)</th>
+            <th style="padding: 10px; width: 35%;" colspan="2">Doña Rosa (Dueña)</th>
+        </tr>
+        <tr style="background-color: #f2f2f2; text-align: center;">
+            <th style="padding: 10px;">Frecuencia</th>
+            <th style="padding: 10px;">Importancia</th>
+            <th style="padding: 10px;">Frecuencia</th>
+            <th style="padding: 10px;">Importancia</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="padding: 8px; font-weight: bold;">Escanear entorno con radar hexagonal (H3)</td>
+            <td style="padding: 8px; text-align: center;">Siempre</td>
+            <td style="padding: 8px; text-align: center;">Muy alta</td>
+            <td style="padding: 8px; text-align: center;">Raramente</td>
+            <td style="padding: 8px; text-align: center;">Baja</td>
+        </tr>
+        <tr style="background-color: #fafafa;">
+            <td style="padding: 8px; font-weight: bold;">Consultar detalles y precios del huarique</td>
+            <td style="padding: 8px; text-align: center;">Siempre</td>
+            <td style="padding: 8px; text-align: center;">Muy alta</td>
+            <td style="padding: 8px; text-align: center;">Aveces</td>
+            <td style="padding: 8px; text-align: center;">Media</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; font-weight: bold;">Visualizar mapa de proximidad en tiempo real</td>
+            <td style="padding: 8px; text-align: center;">Siempre</td>
+            <td style="padding: 8px; text-align: center;">Alta</td>
+            <td style="padding: 8px; text-align: center;">Raramente</td>
+            <td style="padding: 8px; text-align: center;">Baja</td>
+        </tr>
+        <tr style="background-color: #fafafa;">
+            <td style="padding: 8px; font-weight: bold;">Registrar y actualizar datos del local</td>
+            <td style="padding: 8px; text-align: center;">Nunca</td>
+            <td style="padding: 8px; text-align: center;">Nunca</td>
+            <td style="padding: 8px; text-align: center;">Casi siempre</td>
+            <td style="padding: 8px; text-align: center;">Alta</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; font-weight: bold;">Gestionar galería de fotos (vía S3)</td>
+            <td style="padding: 8px; text-align: center;">Aveces</td>
+            <td style="padding: 8px; text-align: center;">Media</td>
+            <td style="padding: 8px; text-align: center;">Casi siempre</td>
+            <td style="padding: 8px; text-align: center;">Muy alta</td>
+        </tr>
+        <tr style="background-color: #fafafa;">
+            <td style="padding: 8px; font-weight: bold;">Guardar huariques favoritos</td>
+            <td style="padding: 8px; text-align: center;">Casi siempre</td>
+            <td style="padding: 8px; text-align: center;">Alta</td>
+            <td style="padding: 8px; text-align: center;">Nunca</td>
+            <td style="padding: 8px; text-align: center;">Nunca</td>
+        </tr>
+    </tbody>
+</table>
 
 Las tareas identificadas en la matriz para **Foodly** reflejan la naturaleza bidireccional de la plataforma. **Mateo**, como explorador urbano, mantiene una interacción intensiva con las funciones de visualización y búsqueda geoespacial (H3), las cuales considera críticas para decidir dónde comer en el momento. Por otro lado, **Doña Rosa** centra su actividad en la gestión de su presencia digital, priorizando la actualización de datos y la carga de imágenes en la galería para atraer clientes, tareas que realiza con regularidad y considera de vital importancia para su visibilidad.
 
