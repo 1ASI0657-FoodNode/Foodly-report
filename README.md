@@ -937,6 +937,10 @@ A continuación se detalla el Product Backlog del proyecto **Foodly**. En esta s
 | 20 | US14 | Modo Oscuro Map | Como explorador, quiero un modo nocturno para buscar comida de noche cómodamente. | 1 |
 
 Igualmente podrá visuarlo mediante el link proporcionado, en la cual se implementó Trello: [![Trello](https://img.shields.io/badge/Trello-Product_Backlog-blue?logo=trello)](https://trello.com/invite/b/69e05bf6fb8fc8131e8ddfc5/ATTI252375d69763c40dc6c2deeea8406ef0B5483768/product-backlog-foodly)
+
+Además se esta compartiendo una captura del product backlog de Foodly:
+![alt text](assets/ProductBacklog.jpeg)
+
 ### Conclusiones
 
 ### Conclusiones y recomendaciones
