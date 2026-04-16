@@ -482,8 +482,113 @@ Para el desarrollo de Foodly, hemos identificado dos segmentos principales en Li
 
 En el mercado actual existen varias aplicaciones y plataformas de comida que permiten a los usuarios buscar restaurantes y lugares para comer, como Rappi, PedidosYa y Google Maps. Sin embargo, estas apps utilizan algoritmos de logística basados en radios circulares tradicionales que generan ineficiencias en ciudades complejas como Lima, dando prioridad a grandes cadenas y dejando poco espacio para huariques o negocios locales que no pueden costear sus altas comisiones.
 
-![Análisis Competitivo](assets/images/competidores1.jpeg)
-![Análisis FODA](assets/images/competidores2.jpeg)
+<table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; font-size: 14px; border: 1px solid #ddd;">
+  <thead>
+    <tr style="background-color: #f2f2f2;">
+      <th colspan="2" style="padding: 12px; border: 1px solid #ddd; text-align: left; background-color: #e8e8e8;">¿Por qué llevar a cabo este análisis?</th>
+      <th colspan="4" style="padding: 12px; border: 1px solid #ddd; text-align: left;">El objetivo es identificar las brechas tecnológicas en el mercado de FoodTech en Lima y validar cómo la indexación hexagonal (H3) de Foodly ofrece una ventaja competitiva frente a los algoritmos de radio circular de las grandes plataformas.</th>
+    </tr>
+    <tr style="background-color: #4CAF50; color: white; text-align: center;">
+      <th style="padding: 12px; border: 1px solid #ddd; width: 10%;">Categoría</th>
+      <th style="padding: 12px; border: 1px solid #ddd; width: 15%;">Criterio</th>
+      <th style="padding: 12px; border: 1px solid #ddd; width: 18.75%;">
+        <img src="logo1f.png" alt="Logo Foodly" style="height: 40px; display: block; margin: 0 auto 5px;"><br>Su Startup (Foodly)
+      </th>
+      <th style="padding: 12px; border: 1px solid #ddd; width: 18.75%;">
+        <img src="logo2.png" alt="Logo Rappi" style="height: 40px; display: block; margin: 0 auto 5px;"><br>Competidor 1 (Rappi)
+      </th>
+      <th style="padding: 12px; border: 1px solid #ddd; width: 18.75%;">
+        <img src="logo3.png" alt="Logo PedidosYa" style="height: 40px; display: block; margin: 0 auto 5px;"><br>Competidor 2 (PedidosYa)
+      </th>
+      <th style="padding: 12px; border: 1px solid #ddd; width: 18.75%;">
+        <img src="logo4.png" alt="Logo Google Maps" style="height: 40px; display: block; margin: 0 auto 5px;"><br>Competidor 3 (Google Maps)
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2" style="padding: 10px; border: 1px solid #ddd; font-weight: bold; background-color: #fafafa; text-align: center;">Perfil</td>
+      <td style="padding: 10px; border: 1px solid #ddd; background-color: #fafafa; font-weight: bold;">Overview</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Solución logística especializada en huariques con optimización H3.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Super-app latinoamericana con gran cuota de mercado.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Plataforma de delivery masiva con fuerte presencia distrital.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Buscador global con reseñas y geolocalización básica.</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid #ddd; background-color: #fafafa; font-weight: bold;">Ventaja Competitiva</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Eficiencia geoespacial extrema, acceso a joyas culinarias ocultas y baja latencia.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Ecosistema financiero integrado y amplia red de repartidores.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Logística establecida y promociones agresivas constantes.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Inmediatez de datos y base de datos de negocios infinita.</td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="padding: 10px; border: 1px solid #ddd; font-weight: bold; background-color: #fafafa; text-align: center;">Perfil de Marketing</td>
+      <td style="padding: 10px; border: 1px solid #ddd; background-color: #fafafa; font-weight: bold;">Mercado Objetivo</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Comensales que buscan autenticidad y dueños de pequeños huariques.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Usuarios urbanos masivos y grandes franquicias.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Consumidores de conveniencia de diversos estratos.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Público general que requiere información de ubicación.</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid #ddd; background-color: #fafafa; font-weight: bold;">Estrategias</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Marketing de nicho basado en "curaduría" y autenticidad local.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Campañas masivas digitales y fidelización mediante RappiCard.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Descuentos agresivos por volumen y pautas en redes sociales.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Posicionamiento orgánico mediante SEO y Google Ads.</td>
+    </tr>
+    <tr>
+      <td rowspan="3" style="padding: 10px; border: 1px solid #ddd; font-weight: bold; background-color: #fafafa; text-align: center;">Perfil de Producto</td>
+      <td style="padding: 10px; border: 1px solid #ddd; background-color: #fafafa; font-weight: bold;">Productos & Servicios</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Software de alta disponibilidad y radar de proximidad geoespacial.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Delivery de comida, súper, farmacia y servicios financieros.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Delivery de comida, farmacias y servicios de courier.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Mapas, perfiles de negocio, reseñas y navegación GPS.</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid #ddd; background-color: #fafafa; font-weight: bold;">Precios & Costos</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Comisiones reducidas mediante optimización de costos operativos.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Comisiones altas (25-30%) más cargos por servicio.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Comisiones variables según demanda y costos de envío.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Gratuito para usuarios; monetización vía publicidad.</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid #ddd; background-color: #fafafa; font-weight: bold;">Canales (Web/Móvil)</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Aplicación móvil (Android/iOS) centrada en el radar H3.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Aplicación móvil y plataforma web de escritorio.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Aplicación móvil y sitio web de pedidos online.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">App móvil, sitio web e integración nativa.</td>
+    </tr>
+    <tr>
+      <td rowspan="4" style="padding: 10px; border: 1px solid #ddd; font-weight: bold; background-color: #fafafa; text-align: center;">Análisis SWOT</td>
+      <td style="padding: 10px; border: 1px solid #ddd; background-color: #e8f5e9; font-weight: bold;">Fortalezas</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Precisión H3, nicho especializado y baja latencia.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Marca consolidada y flota masiva.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Logística robusta en distritos clave.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Base de datos global e integración con Google.</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid #ddd; background-color: #ffebee; font-weight: bold;">Debilidades</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Marca nueva y red de soporte inicial pequeña.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Algoritmos de radio circular ineficientes.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Dependencia de descuentos para retención.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Sin gestión de logística ni última milla.</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid #ddd; background-color: #e3f2fd; font-weight: bold;">Oportunidades</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Captar huariques que huyen de comisiones altas.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Expansión a dark kitchens y servicios B2B.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Crecimiento en conveniencia inmediata.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Pedidos directos desde la búsqueda.</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid #ddd; background-color: #fff3e0; font-weight: bold;">Amenazas</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Guerra de precios de grandes competidores.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Regulaciones laborales de plataformas.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Entrada de nuevos competidores de nicho.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Nuevos buscadores con IA geoespacial.</td>
+    </tr>
+  </tbody>
+</table>
 
 **Foodly** se diferencia al implementar una arquitectura de alta disponibilidad basada en **indexación hexagonal (H3)**, lo que permite optimizar la logística de última milla con una precisión superior. Mientras la competencia satura sus servidores con cálculos de distancia punto a punto en tiempo real, Foodly reduce la latencia de emparejamiento a menos de 1 segundo mediante celdas uniformes. Esto nos permite reducir los tiempos de entrega en un 20% y ofrecer costos de envío menores, democratizando el acceso a tecnología de vanguardia para los pequeños negocios gastronómicos de Lima.
 
