@@ -839,7 +839,6 @@ De igual manera, se ha elaborado el To-Be Scenario Mapping para el segundo segme
 ### Video About-The-Team
 
 ### Referencias Bibliográficas
-### Referencias Bibliográficas
 
 - Banco Interamericano de Desarrollo (BID). (2022). *Transformación digital de las micro y pequeñas empresas en América Latina*. https://www.iadb.org/es/blog/ciencia-tecnologia-e-innovacion/el-poder-de-los-datos-impulsando-la-transformacion-digital-de-las-pymes-de-america-latina
 
@@ -858,3 +857,5 @@ De igual manera, se ha elaborado el To-Be Scenario Mapping para el segundo segme
 ### Anexos
 
 ### Links
+Link Organizacion GitHub: https://github.com/1ASI0657-FoodNode
+Link Repository-Report: https://github.com/1ASI0657-FoodNode/Foodly-report
