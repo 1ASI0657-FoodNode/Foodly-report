@@ -942,8 +942,9 @@ Además se esta compartiendo una captura del product backlog de Foodly:
 ![alt text](assets/ProductBacklog.jpeg)
 
 ### Conclusiones
-
 ### Conclusiones y recomendaciones
+* TB1:
+Foodly atiende una necesidad concreta en el entorno gastronómico y urbano, ofreciendo una solución que permite a los comensales descubrir comida auténtica y a buen precio mientras optimizan su tiempo de búsqueda en un entorno real. A la vez, brinda a los dueños de huariques tradicionales acceso a una clientela joven, cercana y activa, que puede consumir sus menús diarios sin los altos costos de publicidad de las aplicaciones convencionales o agencias de marketing. La propuesta de valor de Foodly va más allá de conectar usuarios con restaurantes, ya que incorpora funcionalidades clave como filtros precisos de distancia, visibilidad mediante fotos reales, exclusión de cadenas comerciales y un sistema sencillo para publicar el menú del día. Esto no solo aumenta la visibilidad de los pequeños negocios, sino que también democratiza la experiencia gastronómica digital desde etapas tempranas, promoviendo relaciones de consumo local más justas, eficientes y centradas en la comunidad.
 
 ### Video About-The-Team
 
