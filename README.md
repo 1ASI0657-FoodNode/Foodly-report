@@ -266,7 +266,7 @@ A diferencia de los buscadores convencionales, Foodly optimiza la experiencia de
           <strong>Nombre:</strong> Vega Coronado, Fabricio Samir
         </td>
         <td style="padding: 10px; width: 30%; text-align: center;" rowspan="4">
-          <img src="imgs/FabricioV.png" alt="FabricioV" title="Foto de Fabricio V" style="width: 150px; height: auto; border-radius: 8px;" />
+          <img src="assets/chapter-1/perfiles-integrantes/fotoFabricio.jpeg" alt="FabricioV" title="Foto de Fabricio V" style="width: 150px; height: auto; border-radius: 8px;" />
         </td>
       </tr>
       <tr>
@@ -281,7 +281,7 @@ A diferencia de los buscadores convencionales, Foodly optimiza la experiencia de
       </tr>
       <tr>
         <td style="padding: 10px; text-align: justify;">
-          <strong>Habilidades:</strong> Soy estudiante del 7° ciclo con 21 años. Tengo experiencia con diferentes lenguajes de programación y desarrollo de aplicaciones web en diversos frameworks ambos en frontend y backend. Soy una persona responsable y puntual, interesado en tecnologias emergentes y sus aplicaciones, cualidades que aplico al trabajar de manera colaborativa con los integrantes de nuestro equipo.
+          <strong>Habilidades:</strong> Soy estudiante del 7° ciclo con 20 años. Tengo experiencia con diferentes lenguajes de programación y desarrollo de aplicaciones web en diversos frameworks ambos en frontend y backend. Soy una persona responsable y puntual, interesado en tecnologias emergentes y sus aplicaciones, cualidades que aplico al trabajar de manera colaborativa con los integrantes de nuestro equipo.
         </td>
       </tr>
       <tr>
@@ -517,19 +517,44 @@ Lograr que un usuario encuentre un huarique relevante en menos de 10 segundos y 
 
 #### 1.3 Segmentos Objetivo
 
-Para el desarrollo de Foodly, hemos identificado dos segmentos principales en Lima cuya interacción es el motor de la plataforma. El uso de la arquitectura H3 actúa como el puente de precisión entre ambos.
+Esta sección detalla los segmentos relacionados con el ámbito del problema de Foodly, incorporando características demográficas y datos estadísticos que brindan respaldo a su análisis. Con el objetivo de crear un producto que responda adecuadamente a las necesidades de nuestros usuarios y potencie la economía local a nivel nacional (Perú), FoodNode centrará su atención en los siguientes segmentos de la población peruana:
 
-1. Dueños de Huariques: Proveedores de Información Gastronómica
-* Perfil: Emprendedores y dueños de pequeños establecimientos gastronómicos en Lima que ofrecen comida de alta calidad y precios competitivos, pero que carecen de presencia en los algoritmos de búsqueda tradicionales.
-* Necesidad: Una herramienta técnica sencilla que les permita aparecer en el mapa de manera relevante para las personas que transitan por su zona.
-* Punto de Dolor: La invisibilidad digital frente a las grandes cadenas y la falta de plataformas que prioricen la cercanía física y la sazón sobre el presupuesto de marketing.
-* Acción en la App: Registran su local, gestionan su menú visual y mantienen su ubicación actualizada para ser detectados por el radar hexagonal.
+1. Comensales exploradores que buscan experiencias gastronómicas auténticas y locales
 
-2. Exploradores Gastronomicos: Buscadores de Autenticidad Gastronómica
-* Perfil: Estudiantes universitarios, trabajadores de oficina y jóvenes residentes en Lima que buscan lugares no convencionales para comer, priorizando la sazón, la rapidez de llegada y el precio justo.
-* Necesidad: Un motor de búsqueda que les revele joyas ocultas en su entorno inmediato sin tener que desplazarse grandes distancias.
-* Punto de Dolor: La saturación de opciones genéricas o muy concurridas en buscadores comunes y la dificultad de encontrar locales de calidad cuando se encuentran en zonas de Lima que no conocen bien.
-* Acción en la App: Utilizan el radar geoespacial para escanear su ubicación actual y filtrar los huariques disponibles dentro de sus celdas hexagonales circundantes.
+    Personas que residen o transitan por zonas urbanas en diversas regiones del Perú y desean descubrir opciones de comida de alta calidad, buen precio y sazón única que no figuran en las aplicaciones comerciales masivas.
+
+    - Edad: 18 a 35 años.
+    - Ocupación: Estudiantes universitarios, jóvenes profesionales, trabajadores dependientes e independientes.
+
+    - País: Perú.
+
+    - Dominio: Usuarios con nivel intermedio-avanzado en el uso de smartphones y aplicaciones de mapas.
+    - Beneficios buscados:
+      - Localización instantánea de huariques en su entorno geográfico actual mediante radar geoespacial.
+
+      - Acceso a información visual real y precios actualizados para reducir la incertidumbre.
+
+      - Filtrado de opciones para descubrir negocios con identidad regional sobre franquicias.
+
+2. Dueños de huariques o pequeños negocios gastronómicos con baja visibilidad digital
+
+    A Emprendedores y familias dueñas de establecimientos con recetas tradicionales y excelente calidad que, por falta de herramientas técnicas o presupuesto de marketing, no logran captar al público que transita cerca de su ubicación.
+
+    - Edad: 25 a 60 años.
+
+    - Ocupación: Emprendedores gastronómicos, propietarios de micro y pequeñas empresas (MYPE).
+
+    - País: Perú.
+
+    - Dominio: Nivel básico o intermedio en tecnología; familiarizados con herramientas de mensajería (WhatsApp) y redes sociales básicas (Facebook), pero sin experiencia en gestión de plataformas especializadas.
+
+    - Beneficios buscados:
+
+      - Visibilidad automática ante usuarios que se encuentran físicamente cerca mediante el sistema de celdas H3.
+
+      - Herramienta práctica para gestionar su vitrina digital (menú y fotos vía S3) de forma autónoma.
+
+      - Atracción de nuevos clientes locales sin depender de altos costos publicitarios.
 
 ### Capítulo II: Requirements & Analysis
 
@@ -884,8 +909,34 @@ En esta sección, se presenta el Impact Mapping diseñado para articular la estr
 
 ![Impact map Foodly](assets/ImpactmapFoodly.png)
 
-#### 3.4 Product Backlog
+### 3.4. Product Backlog
 
+A continuación se detalla el Product Backlog del proyecto **Foodly**. En esta sección se muestra una lista ordenada de nuestras historias de usuario, priorizadas de acuerdo con el consenso del equipo, el valor de negocio y la validación de los atributos de calidad de la arquitectura propuesta. Para estimar la complejidad de cada tarea, empleamos la secuencia de Fibonacci (1, 2, 3, 5, 8) como referencia para los Story Points.
+
+| # Orden | User Story ID | Título | Descripción | Story Points (1 / 2 / 3 / 5 / 8) |
+| :--- | :--- | :--- | :--- | :---: |
+| 1 | US01 | Visualización de Radar H3 | Como explorador, quiero ver huariques en un mapa hexagonal para identificar zonas con comida cerca. | 8 |
+| 2 | US02 | Registro de Huarique | Como dueño, quiero registrar mi local con pin en el mapa para ser visible en el radar. | 5 |
+| 3 | US20 | Escalabilidad de Búsqueda | Como administrador, quiero que el motor H3 soporte miles de consultas para evitar caídas. | 8 |
+| 4 | US04 | Galería de Platos | Como dueño, quiero subir fotos de mis platos para convencer visualmente a los clientes. | 5 |
+| 5 | US03 | Filtrado por Sazón | Como explorador, quiero filtrar locales por calificación para asegurar una buena experiencia. | 3 |
+| 6 | US07 | Búsqueda por Antojo | Como explorador, quiero buscar por tipo de comida para encontrar un antojo específico. | 5 |
+| 7 | US06 | Estado Abierto/Cerrado | Como dueño, quiero cambiar mi estado de servicio para no recibir gente si ya cerré. | 3 |
+| 8 | US05 | Navegación a Pie | Como explorador, quiero ver la ruta hacia el local para llegar rápidamente caminando. | 5 |
+| 9 | US12 | Reseña Verificada | Como explorador, quiero calificar locales para ayudar a la comunidad de Foodly. | 5 |
+| 10 | US09 | Notificación Proximity | Como explorador, quiero recibir alertas de locales "Top" cercanos para no perdérmelos. | 5 |
+| 11 | US10 | Filtro de Presupuesto | Como explorador, quiero filtrar por precio para comer según lo que tenga en el bolsillo. | 3 |
+| 12 | US08 | Favoritos | Como explorador, quiero guardar locales para volver después fácilmente. | 2 |
+| 13 | US13 | Contacto WhatsApp | Como explorador, quiero contactar al dueño para hacer preguntas o pedidos rápidos. | 2 |
+| 14 | US11 | Dashboard de Vistas | Como dueño, quiero ver estadísticas de mi local para saber cuánta gente me encuentra. | 5 |
+| 15 | US17 | Carga Offline | Como explorador, quiero ver locales guardados sin internet para no perderme en zonas sin señal. | 5 |
+| 16 | US16 | Validación de Higiene | Como dueño, quiero mostrar mis credenciales de sanidad para generar confianza. | 3 |
+| 17 | US19 | Gestión de Empleados | Como dueño, quiero registrar a mis ayudantes para que actualicen el menú por mí. | 5 |
+| 18 | US15 | Compartir Joyita | Como explorador, quiero enviar un huarique a un amigo para ir juntos. | 2 |
+| 19 | US18 | Reporte de Local Cerrado | Como explorador, quiero reportar si un local ya no existe para mantener el mapa actualizado. | 2 |
+| 20 | US14 | Modo Oscuro Map | Como explorador, quiero un modo nocturno para buscar comida de noche cómodamente. | 1 |
+
+Igualmente podrá visuarlo mediante el link proporcionado, en la cual se implementó Trello: [![Trello](https://img.shields.io/badge/Trello-Product_Backlog-blue?logo=trello)](https://trello.com/invite/b/69e05bf6fb8fc8131e8ddfc5/ATTI252375d69763c40dc6c2deeea8406ef0B5483768/product-backlog-foodly)
 ### Conclusiones
 
 ### Conclusiones y recomendaciones
