@@ -548,16 +548,16 @@ En el mercado actual existen varias aplicaciones y plataformas de comida que per
       <th style="padding: 12px; border: 1px solid #ddd; width: 10%;">Categoría</th>
       <th style="padding: 12px; border: 1px solid #ddd; width: 15%;">Criterio</th>
       <th style="padding: 12px; border: 1px solid #ddd; width: 18.75%;">
-        <img src="logo1f.png" alt="Logo Foodly" style="height: 40px; display: block; margin: 0 auto 5px;"><br>Su Startup (Foodly)
+        <img src="assets/logo1f.png" alt="Logo Foodly" style="height: 40px; display: block; margin: 0 auto 5px;"><br>Su Startup (Foodly)
       </th>
       <th style="padding: 12px; border: 1px solid #ddd; width: 18.75%;">
-        <img src="logo2.png" alt="Logo Rappi" style="height: 40px; display: block; margin: 0 auto 5px;"><br>Competidor 1 (Rappi)
+        <img src="assets/logo2.png" alt="Logo Rappi" style="height: 40px; display: block; margin: 0 auto 5px;"><br>Competidor 1 (Rappi)
       </th>
       <th style="padding: 12px; border: 1px solid #ddd; width: 18.75%;">
-        <img src="logo3.png" alt="Logo PedidosYa" style="height: 40px; display: block; margin: 0 auto 5px;"><br>Competidor 2 (PedidosYa)
+        <img src="assets/logo3.png" alt="Logo PedidosYa" style="height: 40px; display: block; margin: 0 auto 5px;"><br>Competidor 2 (PedidosYa)
       </th>
       <th style="padding: 12px; border: 1px solid #ddd; width: 18.75%;">
-        <img src="logo4.png" alt="Logo Google Maps" style="height: 40px; display: block; margin: 0 auto 5px;"><br>Competidor 3 (Google Maps)
+        <img src="assets/logo4.png" alt="Logo Google Maps" style="height: 40px; display: block; margin: 0 auto 5px;"><br>Competidor 3 (Google Maps)
       </th>
     </tr>
   </thead>
