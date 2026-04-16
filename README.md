@@ -803,6 +803,8 @@ De igual manera, se ha elaborado el To-Be Scenario Mapping para el segundo segme
 
 #### 3.2 User Stories
 
+En esta sección, el equipo detalla el conjunto de User Stories y Epics desarrollados para Foodly. Cada una de ellas define un requerimiento funcional desde la perspectiva del usuario e incluye sus respectivos Criterios de Aceptación detallados en el formato Given / When / Then. Esta estructura nos permite establecer escenarios claros y verificables, tanto positivos como negativos, que guiarán el desarrollo del software para asegurar la precisión geoespacial y la alta disponibilidad propuestas para la plataforma.<br>
+
 | Epic / User Story ID | Título | Descripción | Criterios de Aceptación (Escenarios) | Relacionado con (Epic ID) |
 | :--- | :--- | :--- | :--- | :--- |
 | **US01** | Visualización de Radar H3 | Como explorador, quiero ver huariques en un mapa hexagonal para identificar zonas con comida cerca. | **Escenario 1 – Radar con datos**<br>**Given** el usuario se encuentra en una zona con locales registrados<br>**When** abre el mapa principal<br>**Then** el sistema renderiza celdas H3 iluminadas con iconos de comida.<br><br>**Escenario 2 – Radar vacío**<br>**Given** el usuario está en una zona remota sin registros<br>**When** abre el mapa<br>**Then** muestra un mensaje: "No hay huariques aquí aún, ¡recomienda uno!". | EP01 |
@@ -827,6 +829,8 @@ De igual manera, se ha elaborado el To-Be Scenario Mapping para el segundo segme
 | **US20** | Escalabilidad de Búsqueda | Como administrador, quiero que el motor H3 soporte miles de consultas para evitar caídas. | **Escenario 1 – Carga pesada**<br>**Given** 1,000 usuarios buscando en la misma celda<br>**When** se ejecutan las queries geoespaciales<br>**Then** el tiempo de respuesta se mantiene por debajo de los 200ms.<br><br>**Escenario 2 – Fallo de servidor**<br>**Given** una caída en un nodo de base de datos<br>**When** un usuario intenta buscar<br>**Then** el sistema conmuta a un nodo de respaldo sin interrumpir el servicio. | EP05 |
 
 #### 3.3 Impact Map
+
+En esta sección, se presenta el Impact Mapping diseñado para articular la estrategia de negocio con el desarrollo tecnológico de Foodly. Esta herramienta visual conecta de manera lógica y SMART los Business Goals (Objetivos de Negocio) con los Deliverables (Entregables) y las User Stories, partiendo de los perfiles definidos en las fichas de User Persona. El mapa responde secuencialmente a las preguntas: ¿Por qué queremos lograrlo?, ¿Quiénes nos ayudarán?, ¿Cómo queremos que cambie su comportamiento? y, finalmente, ¿Qué características de software necesitamos construir para provocar ese impacto?<br>
 
 ![Impact map Foodly](assets/ImpactmapFoodly.png)
 
