@@ -243,7 +243,7 @@ A diferencia de los buscadores convencionales, Foodly optimiza la experiencia de
         <strong>Nombre:</strong> Urrutia Peña, Jasmin Adriana
       </td>
       <td style="padding: 10px; width: 30%; text-align: center;" rowspan="4">
-        <img src="imgs/jasmin.png" alt="JasminU" title="Foto de Jasmin U" style="width: 150px; height: auto; border-radius: 8px;" />
+        <img src="assets/chapter-1/perfiles-integrantes/jasminft.jpeg" alt="JasminU" title="Foto de Jasmin U" style="width: 150px; height: auto; border-radius: 8px;" />
       </td>
     </tr>
     <tr>
