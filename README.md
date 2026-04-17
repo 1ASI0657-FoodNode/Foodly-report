@@ -1,5 +1,5 @@
 <div style="text-align: center;">
-  <img src="./assets/images/logo_upc.png" alt="Logo UPC" width="80"/>
+  <img src="assets/images/cover/logo_upc.png" alt="Logo UPC" width="80"/>
 </div>
 
 <div style="text-align: center;">
@@ -196,7 +196,7 @@ A diferencia de los buscadores convencionales, Foodly optimiza la experiencia de
         <strong>Nombre:</strong> Cacho Seminario, Diego Alonso
       </td>
       <td style="padding: 10px; width: 30%; text-align: center;" rowspan="4">
-        <img src="assets/chapter-1/perfiles-integrantes/diego.jpeg" alt="DiegoC" title="Foto de Diego Cacho" style="width: 150px; height: auto; border-radius: 8px;" />
+        <img src="assets/images/chapter-1/perfiles-integrantes/diego.jpeg" alt="DiegoC" title="Foto de Diego Cacho" style="width: 150px; height: auto; border-radius: 8px;" />
       </td>
     </tr>
     <tr>
@@ -219,7 +219,7 @@ A diferencia de los buscadores convencionales, Foodly optimiza la experiencia de
         <strong>Nombre:</strong> Julca Minaya, Sergio Gino
       </td>
       <td style="padding: 10px; width: 30%; text-align: center;" rowspan="4">
-        <img src="assets/chapter-1/perfiles-integrantes/foto_julca.png" alt="SergioJ" title="Foto de Sergio J" style="width: 150px; height: auto; border-radius: 8px;" />
+        <img src="assets/images/chapter-1/perfiles-integrantes/foto_julca.png" alt="SergioJ" title="Foto de Sergio J" style="width: 150px; height: auto; border-radius: 8px;" />
       </td>
     </tr>
     <tr>
@@ -243,7 +243,7 @@ A diferencia de los buscadores convencionales, Foodly optimiza la experiencia de
         <strong>Nombre:</strong> Urrutia Peña, Jasmin Adriana
       </td>
       <td style="padding: 10px; width: 30%; text-align: center;" rowspan="4">
-        <img src="assets/chapter-1/perfiles-integrantes/jasminft.jpeg" alt="JasminU" title="Foto de Jasmin U" style="width: 150px; height: auto; border-radius: 8px;" />
+        <img src="assets/images/chapter-1/perfiles-integrantes/jasminft.jpeg" alt="JasminU" title="Foto de Jasmin U" style="width: 150px; height: auto; border-radius: 8px;" />
       </td>
     </tr>
     <tr>
@@ -266,7 +266,7 @@ A diferencia de los buscadores convencionales, Foodly optimiza la experiencia de
           <strong>Nombre:</strong> Vega Coronado, Fabricio Samir
         </td>
         <td style="padding: 10px; width: 30%; text-align: center;" rowspan="4">
-          <img src="assets/chapter-1/perfiles-integrantes/fotoFabricio.jpeg" alt="FabricioV" title="Foto de Fabricio V" style="width: 150px; height: auto; border-radius: 8px;" />
+          <img src="assets/images/chapter-1/perfiles-integrantes/fotoFabricio.jpeg" alt="FabricioV" title="Foto de Fabricio V" style="width: 150px; height: auto; border-radius: 8px;" />
         </td>
       </tr>
       <tr>
@@ -289,7 +289,7 @@ A diferencia de los buscadores convencionales, Foodly optimiza la experiencia de
           <strong>Nombre:</strong> Villanueva Andrade, Ysaac Ligorio
         </td>
         <td style="padding: 10px; width: 30%; text-align: center;" rowspan="4">
-          <img src="assets/chapter-1/perfiles-integrantes/perfil-ysaac.png" alt="YsaacV" title="Foto de Ysaac V" style="width: 150px; height: auto; border-radius: 8px;" />
+          <img src="assets/images/chapter-1/perfiles-integrantes/perfil-ysaac.png" alt="YsaacV" title="Foto de Ysaac V" style="width: 150px; height: auto; border-radius: 8px;" />
         </td>
       </tr>
       <tr>
@@ -573,16 +573,16 @@ En el mercado actual existen varias aplicaciones y plataformas de comida que per
       <th style="padding: 12px; border: 1px solid #ddd; width: 10%;">Categoría</th>
       <th style="padding: 12px; border: 1px solid #ddd; width: 15%;">Criterio</th>
       <th style="padding: 12px; border: 1px solid #ddd; width: 18.75%;">
-        <img src="assets/logo1f.png" alt="Logo Foodly" style="height: 40px; display: block; margin: 0 auto 5px;"><br>Nuestra Startup (Foodly)
+        <img src="assets/images/chapter-2/competidores/logo1f.png" alt="Logo Foodly" style="height: 40px; display: block; margin: 0 auto 5px;"><br>Nuestra Startup (Foodly)
       </th>
       <th style="padding: 12px; border: 1px solid #ddd; width: 18.75%;">
-        <img src="assets/logo2.png" alt="Logo Rappi" style="height: 40px; display: block; margin: 0 auto 5px;"><br>Competidor 1 (Rappi)
+        <img src="assets/images/chapter-2/competidores/logo2.png" alt="Logo Rappi" style="height: 40px; display: block; margin: 0 auto 5px;"><br>Competidor 1 (Rappi)
       </th>
       <th style="padding: 12px; border: 1px solid #ddd; width: 18.75%;">
-        <img src="assets/logo3.png" alt="Logo PedidosYa" style="height: 40px; display: block; margin: 0 auto 5px;"><br>Competidor 2 (PedidosYa)
+        <img src="assets/images/chapter-2/competidores/logo3.png" alt="Logo PedidosYa" style="height: 40px; display: block; margin: 0 auto 5px;"><br>Competidor 2 (PedidosYa)
       </th>
       <th style="padding: 12px; border: 1px solid #ddd; width: 18.75%;">
-        <img src="assets/logo4.png" alt="Logo Google Maps" style="height: 40px; display: block; margin: 0 auto 5px;"><br>Competidor 3 (Google Maps)
+        <img src="assets/images/chapter-2/competidores/logo4.png" alt="Logo Google Maps" style="height: 40px; display: block; margin: 0 auto 5px;"><br>Competidor 3 (Google Maps)
       </th>
     </tr>
   </thead>
@@ -718,36 +718,115 @@ Objetivo: Comprender sus necesidades y expectativas al usar la app web para admi
   - ¿Qué modelo de tarifas o membresías considerarías justo para usar esta plataforma?
   - ¿Qué resultados te gustaría ver después de usar esta aplicación web para promocionar tu huarique?
   
-- *Entrevistas*:
-  ### Segmento #1: Exploradores Gastronómicos (Usuarios de la app web)
-| Número de entrevista | Datos del entrevistado                                                                 | Evidencia de entrevista |
-|-----------------------|-----------------------------------------------------------------------------------------|--------------------------|
-| 1                     | **Nombre:**  Vitaly Baca  <br> **Edad:** 20  <br> **Distrito:** Lurin <br><br> **Resumen:** Vitaly Baca, estudiante de 20 años de Ingeniería de Software en la UPC, utiliza este tipo de aplicaciones casi todos los fines de semana, pues disfruta salir con su pareja o amigos a probar lugares nuevos. Descubre la mayoría de huariques en TikTok e Instagram siguiendo a foodies, y también explora en Google Maps. Lo primero que valora es el precio, ya que como estudiante tiene un presupuesto ajustado, seguido de fotos y comentarios confiables para no caer en un mal sitio. Entre las dificultades que ha enfrentado menciona que a veces llega a lugares que aparecen como abiertos pero están cerrados, además de que muchos huariques pequeños ni siquiera figuran en las apps. Se sentiría motivado a usar una app exclusiva de huariques siempre que tenga reseñas sinceras de usuarios similares a él. Considera imprescindibles los filtros por precio y tipo de comida, un mapa rápido e intuitivo y recomendaciones personalizadas. Sus principales preocupaciones serían que la app se llene de publicidad, tenga información poco confiable o incluya muy pocos lugares en su ciudad, perdiendo su valor. | ![Evidencia](assets/Entrevista1_Segmento1.jpeg) <br> [Ver entrevista](https://drive.google.com/file/d/1NSQkOkLNAq3A-IIhc4_lm2q3UwWDaylk/view?usp=sharing) 00:00 - 05:37|
+### Segmento #1: Exploradores Gastronómicos (Usuarios de la app web)
 
-
-| Número de entrevista | Datos del entrevistado                                                                 | Evidencia de entrevista |
-|-----------------------|-----------------------------------------------------------------------------------------|--------------------------|
-| 2                     | **Nombre:** Sebastian del Rio  <br> **Edad:** 20  <br> **Distrito:** Chorrillos <br><br> **Resumen:** Sebastián del Río, estudiante de 20 años de Ingeniería de Software en la UTP, no suele usar aplicaciones web con mucha frecuencia para buscar huariques, apenas una o dos veces al mes cuando quiere salir con amigos o probar algo distinto. Descubre la mayoría de lugares por recomendaciones en TikTok e Instagram, y ocasionalmente en Google Maps. Para él, lo más importante al elegir un lugar son las fotos y reseñas reales de otros usuarios, además del precio y la cercanía. Señala como principal dificultad que los huariques casi no aparecen en las aplicaciones, predominando los restaurantes conocidos, además de que muchas veces la información está incompleta o sin buenas fotos. Lo motivaría a usar una app que realmente muestre sitios auténticos y confiables, siempre que sea sencilla. Considera imprescindibles fotos reales, reseñas honestas, mapa con ubicación, filtros de precio y la opción de guardar favoritos. Su mayor preocupación sería que la información no sea confiable, que la app lo mande a lugares cerrados o de baja calidad, o que sea complicada y lenta. | ![Evidencia](assets/Entrevista2_Segmento1.jpeg) <br> [Ver entrevista](https://drive.google.com/file/d/1NSQkOkLNAq3A-IIhc4_lm2q3UwWDaylk/view?usp=sharing) 05:37 - 09:56|
-
-
-| Número de entrevista | Datos del entrevistado                                                                 | Evidencia de entrevista |
-|-----------------------|-----------------------------------------------------------------------------------------|--------------------------|
-| 3                     | **Nombre:** Luis Fernandez  <br> **Edad:** 20  <br> **Distrito:** Pueblo Libre <br><br> **Resumen:** Luis Fernández, estudiante de 20 años de Ingeniería de Sistemas en la UTP, busca lugares nuevos casi todas las semanas, sobre todo los fines de semana cuando sale con su pareja. Se guía por cuentas de foodies en Instagram y TikTok, guarda videos para después y también consulta reseñas en Google Maps o en grupos de Facebook. Para él, el precio es fundamental, pero también valora la experiencia completa: reseñas sobre la atención y la calidad de la comida, junto con fotos de los platos. Ha tenido problemas con horarios desactualizados en apps, llegando a lugares cerrados, y con la falta de visibilidad de huariques menos conocidos. Lo motivaría una app confiable que se enfoque en huariques y cuente con reseñas de personas locales. Considera imprescindibles los filtros por tipo de comida, precio y ubicación, un mapa interactivo y recomendaciones personalizadas. Sus preocupaciones son que la aplicación tenga publicidad excesiva, información falsa o que no incluya suficientes opciones locales. | ![Evidencia](assets/Entrevista3_Segmento1.jpeg) <br> [Ver entrevista](https://drive.google.com/file/d/1P5WpXLAtHH9lsgnF7tXXyMJiK7xsN05h/view?usp=sharing) 09:56 - 13:01|
+<table border="1" cellspacing="0" cellpadding="8">
+  <thead>
+    <tr>
+      <th>Número de entrevista</th>
+      <th>Datos del entrevistado</th>
+      <th>Evidencia de entrevista</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>
+        <strong>Nombre:</strong> Vitaly Baca <br>
+        <strong>Edad:</strong> 20 <br>
+        <strong>Distrito:</strong> Lurín <br><br>
+        <strong>Resumen:</strong> Vitaly Baca, estudiante de 20 años de Ingeniería de Software en la UPC, utiliza este tipo de aplicaciones casi todos los fines de semana, pues disfruta salir con su pareja o amigos a probar lugares nuevos. Descubre la mayoría de huariques en TikTok e Instagram siguiendo a foodies, y también explora en Google Maps. Lo primero que valora es el precio, ya que como estudiante tiene un presupuesto ajustado, seguido de fotos y comentarios confiables para no caer en un mal sitio. Entre las dificultades que ha enfrentado menciona que a veces llega a lugares que aparecen como abiertos pero están cerrados, además de que muchos huariques pequeños ni siquiera figuran en las apps. Se sentiría motivado a usar una app exclusiva de huariques siempre que tenga reseñas sinceras de usuarios similares a él. Considera imprescindibles los filtros por precio y tipo de comida, un mapa rápido e intuitivo y recomendaciones personalizadas. Sus principales preocupaciones serían que la app se llene de publicidad, tenga información poco confiable o incluya muy pocos lugares en su ciudad, perdiendo su valor.
+      </td>
+      <td>
+        <img src="assets/images/chapter-2/entrevistas/Entrevista1_Segmento1.jpeg" alt="Evidencia Vitaly" width="150"><br>
+        <a href="https://drive.google.com/file/d/1NSQkOkLNAq3A-IIhc4_lm2q3UwWDaylk/view?usp=sharing">Ver entrevista</a><br>
+        00:00 - 05:37
+      </td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>
+        <strong>Nombre:</strong> Sebastian del Rio <br>
+        <strong>Edad:</strong> 20 <br>
+        <strong>Distrito:</strong> Chorrillos <br><br>
+        <strong>Resumen:</strong> Sebastián del Río, estudiante de 20 años de Ingeniería de Software en la UTP, no suele usar aplicaciones web con mucha frecuencia para buscar huariques, apenas una o dos veces al mes cuando quiere salir con amigos o probar algo distinto. Descubre la mayoría de lugares por recomendaciones en TikTok e Instagram, y ocasionalmente en Google Maps. Para él, lo más importante al elegir un lugar son las fotos y reseñas reales de otros usuarios, además del precio y la cercanía. Señala como principal dificultad que los huariques casi no aparecen en las aplicaciones, predominando los restaurantes conocidos, además de que muchas veces la información está incompleta o sin buenas fotos. Lo motivaría a usar una app que realmente muestre sitios auténticos y confiables, siempre que sea sencilla. Considera imprescindibles fotos reales, reseñas honestas, mapa con ubicación, filtros de precio y la opción de guardar favoritos. Su mayor preocupación sería que la información no sea confiable, que la app lo mande a lugares cerrados o de baja calidad, o que sea complicada y lenta.
+      </td>
+      <td>
+        <img src="assets/images/chapter-2/entrevistas/Entrevista2_Segmento1.jpeg" alt="Evidencia Sebastian" width="150"><br>
+        <a href="https://drive.google.com/file/d/1NSQkOkLNAq3A-IIhc4_lm2q3UwWDaylk/view?usp=sharing">Ver entrevista</a><br>
+        05:37 - 09:56
+      </td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>
+        <strong>Nombre:</strong> Luis Fernandez <br>
+        <strong>Edad:</strong> 20 <br>
+        <strong>Distrito:</strong> Pueblo Libre <br><br>
+        <strong>Resumen:</strong> Luis Fernández, estudiante de 20 años de Ingeniería de Sistemas en la UTP, busca lugares nuevos casi todas las semanas, sobre todo los fines de semana cuando sale con su pareja. Se guía por cuentas de foodies en Instagram y TikTok, guarda videos para después y también consulta reseñas en Google Maps o en grupos de Facebook. Para él, el precio es fundamental, pero también valora la experiencia completa: reseñas sobre la atención y la calidad de la comida, junto con fotos de los platos. Ha tenido problemas con horarios desactualizados en apps, llegando a lugares cerrados, y con la falta de visibilidad de huariques menos conocidos. Lo motivaría una app confiable que se enfoque en huariques y cuente con reseñas de personas locales. Considera imprescindibles los filtros por tipo de comida, precio y ubicación, un mapa interactivo y recomendaciones personalizadas. Sus preocupaciones son que la aplicación tenga publicidad excesiva, información falsa o que no incluya suficientes opciones locales.
+        </td>
+      <td>
+        <img src="assets/images/chapter-2/entrevistas/Entrevista3_Segmento1.jpeg" alt="Evidencia Luis" width="150"><br>
+        <a href="https://drive.google.com/file/d/1P5WpXLAtHH9lsgnF7tXXyMJiK7xsN05h/view?usp=sharing">Ver entrevista</a><br>
+        09:56 - 13:01
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ### Segmento #2: Dueños y Administradores de Huariques (Usuarios que usan la app web para gestionar su huarique)
-| Número de entrevista | Datos del entrevistado                                                                 | Evidencia de entrevista |
-|-----------------------|-----------------------------------------------------------------------------------------|--------------------------|
-| 1                     | **Nombre:** Wildor Villalobos  <br> **Edad:** 28  <br> **Distrito:** Santiago de Surco <br><br> **Resumen:** Propietario de un huarique de pan con chicharrón. Usa Instagram y TikTok (más IG Reels); las publicaciones sirven para promociones, pero los reels “mueven” más. Dificultades: competencia y algoritmo, requiere pagar para alcanzar más gente. Quiere que la app le permita resaltar su negocio y ver métricas claras (cuánta gente lo encuentra, eficacia para traer clientes), con panel simple y gráficos directos. Estaría dispuesto a pagar S/ 20–50/mes si rinde igual o mejor que IG/TikTok. Objetivo: aumentar ventas. | ![Evidencia](assets/Entrevista_Wildor.jpg) <br> [Ver entrevista](https://drive.google.com/file/d/1P5WpXLAtHH9lsgnF7tXXyMJiK7xsN05h/view?usp=sharing) 00:00 - 03:15|
-
-
-| Número de entrevista | Datos del entrevistado                                                                 | Evidencia de entrevista |
-|-----------------------|-----------------------------------------------------------------------------------------|--------------------------|
-| 2                     | **Nombre:** Piero Tapia  <br> **Edad:** 26  <br> **Distrito:** Jesús María <br><br> **Resumen:** Dueño de una sandwichería. Hoy depende de la afluencia local por falta de presupuesto y poca experiencia en redes/pagos en línea; la afiliación a apps no le resulta intuitiva. Valora que la app sea fácil de aprender y usar, con bajas comisiones (que no encarezcan sus productos). Además de visibilidad, pide guía/soporte para aprender a usar la herramienta y mejorar el negocio. Propone planes por etapas (principiante/intermedio/avanzado). Éxito esperado: más personas consumiendo en el local (no solo vistas). | ![Evidencia](assets/Entrevista_Piero.jpg) <br> [Ver entrevista](https://drive.google.com/file/d/1P5WpXLAtHH9lsgnF7tXXyMJiK7xsN05h/view?usp=sharing) 03:15 - 08:14|
-
-
-| Número de entrevista | Datos del entrevistado                                                                 | Evidencia de entrevista |
-|-----------------------|-----------------------------------------------------------------------------------------|--------------------------|
-| 3                     | **Nombre:** Gabriela Vasquez  <br> **Edad:** 23  <br> **Distrito:** Pueblo libre <br><br> **Resumen:** Propietaria de una juguería artesanal. Por ahora depende principalmente de los clientes que pasan por la zona, ya que su presupuesto es limitado y no tiene mucha experiencia en el uso de redes sociales ni plataformas digitales de venta. Comenta que afiliarse a apps de delivery o pago le resulta algo confuso. Busca una aplicación que sea intuitiva, con bajos costos de comisión y que le permita promocionar sus productos sin complicaciones. Además, le gustaría contar con asesoría o tutoriales que la ayuden a aprender a usar la herramienta y a impulsar su negocio. Propone contar con niveles de uso progresivos para avanzar poco a poco. Espera como resultado aumentar el flujo de clientes en su juguería, más que solo generar presencia en internet. | ![Evidencia](assets/Entrevista_Gabriela.jpg) <br> [Ver entrevista](https://drive.google.com/file/d/15Qma_86tWBnnfWBWlx28-MLKOQJRCrI2/view?usp=drive_link) |
+<table border="1" cellspacing="0" cellpadding="8">
+  <thead>
+    <tr>
+      <th>Número de entrevista</th>
+      <th>Datos del entrevistado</th>
+      <th>Evidencia de entrevista</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>
+        <strong>Nombre:</strong> Wildor Villalobos <br>
+        <strong>Edad:</strong> 28 <br>
+        <strong>Distrito:</strong> Santiago de Surco <br><br>
+        <strong>Resumen:</strong> Propietario de un huarique de pan con chicharrón. Usa Instagram y TikTok (más IG Reels); las publicaciones sirven para promociones, pero los reels “mueven” más. Dificultades: competencia y algoritmo, requiere pagar para alcanzar más gente. Quiere que la app le permita resaltar su negocio y ver métricas claras (cuánta gente lo encuentra, eficacia para traer clientes), con panel simple y gráficos directos. Estaría dispuesto a pagar S/ 20–50/mes si rinde igual o mejor que IG/TikTok. Objetivo: aumentar ventas.
+      </td>
+      <td>
+        <img src="assets/images/chapter-2/entrevistas/Entrevista_Wildor.jpg" alt="Evidencia Wildor" width="150"><br>
+        <a href="https://drive.google.com/file/d/1P5WpXLAtHH9lsgnF7tXXyMJiK7xsN05h/view?usp=sharing">Ver entrevista</a><br>
+        00:00 - 03:15
+      </td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>
+        <strong>Nombre:</strong> Piero Tapia <br>
+        <strong>Edad:</strong> 26 <br>
+        <strong>Distrito:</strong> Jesús María <br><br>
+        <strong>Resumen:</strong> Dueño de una sandwichería. Hoy depende de la afluencia local por falta de presupuesto y poca experiencia en redes/pagos en línea; la afiliación a apps no le resulta intuitiva. Valora que la app sea fácil de aprender y usar, con bajas comisiones (que no encarezcan sus productos). Además de visibilidad, pide guía/soporte para aprender a usar la herramienta y mejorar el negocio. Propone planes por etapas (principiante/intermedio/avanzado). Éxito esperado: más personas consumiendo en el local (no solo vistas).
+      </td>
+      <td>
+        <img src="assets/images/chapter-2/entrevistas/Entrevista_Piero.jpg" alt="Evidencia Piero" width="150"><br>
+        <a href="https://drive.google.com/file/d/1P5WpXLAtHH9lsgnF7tXXyMJiK7xsN05h/view?usp=sharing">Ver entrevista</a><br>
+        03:15 - 08:14
+      </td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>
+        <strong>Nombre:</strong> Gabriela Vasquez <br>
+        <strong>Edad:</strong> 23 <br>
+        <strong>Distrito:</strong> Pueblo Libre <br><br>
+        <strong>Resumen:</strong> Propietaria de una juguería artesanal. Por ahora depende principalmente de los clientes que pasan por la zona, ya que su presupuesto es limitado y no tiene mucha experiencia en el uso de redes sociales ni plataformas digitales de venta. Comenta que afiliarse a apps de delivery o pago le resulta algo confuso. Busca una aplicación que sea intuitiva, con bajos costos de comisión y que le permita promocionar sus productos sin complicaciones. Además, le gustaría contar con asesoría o tutoriales que la ayuden a aprender a usar la herramienta y a impulsar su negocio. Propone contar con niveles de uso progresivos para avanzar poco a poco. Espera como resultado aumentar el flujo de clientes en su juguería, más que solo generar presencia en internet.
+      </td>
+      <td>
+        <img src="assets/images/chapter-2/entrevistas/Entrevista_Gabriela.jpg" alt="Evidencia Gabriela" width="150"><br>
+        <a href="https://drive.google.com/file/d/15Qma_86tWBnnfWBWlx28-MLKOQJRCrI2/view?usp=drive_link">Ver entrevista</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 
 #### 2.3 Needfinding
@@ -757,11 +836,11 @@ Para comprender mejor las necesidades y comportamientos de los usuarios de Foodl
 
 * Persona 1: El Comensal Explorador
   
-![UserPersona_1](assets/images/Mateo.png)
+![UserPersona_1](assets/images/chapter-2/user-personas/Mateo.png)
 
 * Persona 2: El Dueño de Huarique
   
-![UserPersona_2](assets/images/DonaRosa.png)
+![UserPersona_2](assets/images/chapter-2/user-personas/DonaRosa.png)
 
 ##### 2.3.2 User Task Matrix
 
@@ -842,24 +921,24 @@ A continuación se presentan los mapas de empatía para los dos perfiles princip
 
 * Segmento 1: Mateo (El Explorador)
   
-![EmpathyMap_1](assets/images/EmpathyMateo.png)
+![EmpathyMap_1](assets/images/chapter-2/empathy-map/EmpathyMateo.png)
 
 * Segmento 2: Doña Rosa (La Especialista)
   
-![EmpathyMap_2](assets/images/EmpathyDonaRosa.png)
+![EmpathyMap_2](assets/images/chapter-2/empathy-map/EmpathyDonaRosa.png)
 
 ##### 2.3.4 As-is Scenario Mapping
 * Segmento 1: Mateo (El Comensal Explorador)
   
 Mediante este artefacto, se ha llevado a cabo la elaboración del As-Is Scenario Mapping para el primer segmento. Este escenario refleja cómo los usuarios jóvenes y profesionales, interesados en descubrir huariques, realizan actualmente sus actividades durante su rutina diaria. Además, evidencia las dificultades que enfrentan al buscar opciones auténticas y cercanas, lidiando con aplicaciones saturadas de franquicias, radios de búsqueda imprecisos y falta de información visual, así como las percepciones de desconfianza y frustración que experimentan en cada etapa de su recorrido.
 
-![As-Is_1](assets/images/AsIsMateo.png)
+![As-Is_1](assets/images/chapter-2/as-is/AsIsMateo.png)
 
 * Segmento 2: Doña Rosa (La Especialista)
   
 De igual manera, se ha elaborado el As-Is Scenario Mapping para el segundo segmento, enfocado en los propietarios de huariques tradicionales. Este escenario ilustra cómo estos emprendedores gestionan actualmente la promoción de sus locales comerciales. Detalla las fuertes barreras tecnológicas y de tiempo que enfrentan al intentar ganar visibilidad digital frente a negocios más modernos, resaltando la frustración, la sensación de invisibilidad y las emociones que experimentan al intentar atraer a nuevos clientes que transitan a escasas cuadras de su negocio.
 
-![As-Is_2](assets/images/AsIsDonaRosa.png)
+![As-Is_2](assets/images/chapter-2/as-is/AsIsDonaRosa.png)
 
 ### Capítulo III: Requirements Specification
 
@@ -868,13 +947,13 @@ De igual manera, se ha elaborado el As-Is Scenario Mapping para el segundo segme
   
 Mediante este artefacto, se ha llevado a cabo la elaboración del To-Be Scenario Mapping para el primer segmento. Este escenario proyecta la experiencia ideal de los usuarios al utilizar Foodly durante su rutina diaria para descubrir huariques. Refleja cómo la aplicación resuelve sus dificultades actuales al permitirles filtrar cadenas comerciales, encontrar opciones auténticas en radios de caminata precisos y visualizar fotos reales de los platos, transformando la incertidumbre previa en un proceso de decisión rápido, confiable y altamente satisfactorio.
 
-![To-Be_1](assets/images/ToBeMateo.png)
+![To-Be_1](assets/images/chapter-2/to-be/ToBeMateo.png)
 
 * Segmento 2: Doña Rosa (La Especialista)
   
 De igual manera, se ha elaborado el To-Be Scenario Mapping para el segundo segmento, enfocado en los propietarios de huariques tradicionales. Este escenario ilustra el proceso optimizado mediante el cual estos emprendedores podrán promocionar sus locales comerciales usando Foodly. Detalla cómo la plataforma elimina las actuales barreras tecnológicas y económicas, permitiéndoles actualizar su menú diario de forma intuitiva para conectar directamente con nuevos clientes cercanos, transformando su previa sensación de invisibilidad en empoderamiento, reconocimiento y seguridad económica.
 
-![To-Be_2](assets/images/ToBeDonaRosa.png)
+![To-Be_2](assets/images/chapter-2/to-be/ToBeDonaRosa.png)
 
 #### 3.2 User Stories
 
@@ -907,7 +986,7 @@ En esta sección, el equipo detalla el conjunto de User Stories y Epics desarrol
 
 En esta sección, se presenta el Impact Mapping diseñado para articular la estrategia de negocio con el desarrollo tecnológico de Foodly. Esta herramienta visual conecta de manera lógica y SMART los Business Goals (Objetivos de Negocio) con los Deliverables (Entregables) y las User Stories, partiendo de los perfiles definidos en las fichas de User Persona. El mapa responde secuencialmente a las preguntas: ¿Por qué queremos lograrlo?, ¿Quiénes nos ayudarán?, ¿Cómo queremos que cambie su comportamiento? y, finalmente, ¿Qué características de software necesitamos construir para provocar ese impacto?<br>
 
-![Impact map Foodly](assets/ImpactmapFoodly.png)
+![Impact map Foodly](assets/images/chapter-3/impact-map/ImpactmapFoodly.png)
 
 ### 3.4. Product Backlog
 
@@ -939,7 +1018,7 @@ A continuación se detalla el Product Backlog del proyecto **Foodly**. En esta s
 Igualmente podrá visuarlo mediante el link proporcionado, en la cual se implementó Trello: [![Trello](https://img.shields.io/badge/Trello-Product_Backlog-blue?logo=trello)](https://trello.com/invite/b/69e05bf6fb8fc8131e8ddfc5/ATTI252375d69763c40dc6c2deeea8406ef0B5483768/product-backlog-foodly)
 
 Además se esta compartiendo una captura del product backlog de Foodly:
-![alt text](assets/ProductBacklog.jpeg)
+![alt text](assets/images/chapter-3/product-backlog/ProductBacklog.jpeg)
 
 ### Conclusiones
 ### Conclusiones y recomendaciones
