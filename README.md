@@ -1024,13 +1024,71 @@ Además se esta compartiendo una captura del product backlog de Foodly:
 
 #### 4.1 Design Concepts, ViewPoints & ER Diagrams
 ##### 4.1.1 Principles Statements
+#### 4.1.1 Principles Statements
+Se han definido pautas generales basadas en la visión de negocio de **FoodNode** para guiar las decisiones técnicas a largo plazo:
+
+* **Geolocalización centrada en Celdas (H3):** Toda lógica de proximidad debe basarse en el índice de celdas hexagonales en lugar de distancias euclidianas para garantizar tiempos de respuesta sub-segundo.
+    * Optimiza la precisión en la localización y búsqueda por proximidad en aplicaciones basadas en mapas.
+    * Permite que un usuario encuentre un huarique relevante en menos de 10 segundos y con precisión de celda actual.
+
+* **Comunicación Asíncrona sobre Sincrónica:** Se priorizará el uso de un Broker de mensajería para desacoplar procesos pesados, como la actualización de métricas del local o la carga de imágenes.
+    * Evita cuellos de botella en el procesamiento de información geoespacial al no bloquear el hilo principal.
+    * Mejora la escalabilidad al procesar tareas de fondo (como carga a S3) sin afectar el rendimiento del radar.
+
+* **Agnosticismo de la Interfaz:** La lógica del radar geoespacial debe ser independiente del cliente (App móvil o Web), permitiendo una experiencia consistente en ambos canales.
+    * Garantiza que la curaduría culinaria y la precisión de búsqueda sean idénticas en cualquier plataforma.
+    * Facilita el mantenimiento centralizado del algoritmo de búsqueda H3 y las reglas de negocio.
+
+* **Persistencia Políglota:** Cada microservicio debe utilizar el motor de base de datos que mejor se adapte a su dominio (ej. NoSQL para el radar, Relacional para gestión de usuarios).
+    * Permite manejar de forma eficiente la alta disponibilidad y la indexación espacial requerida para Foodly.
+    * Asegura la integridad de los datos de gestión de negocios y usuarios mediante esquemas relacionales donde sea necesario.
+
 ##### 4.1.2 Approaches Statements, Architectural Styles & Patterns
+* **Domain-Driven Design (DDD):** El sistema se divide en contextos delimitados (*Bounded Contexts*) para separar el motor de búsqueda (Geo-Radar) de la gestión administrativa de los huariques.
+    * Alinea la arquitectura técnica con los segmentos objetivo: exploradores y dueños de locales.
+    * Reduce la complejidad al aislar las reglas de negocio de geolocalización de las de gestión de perfiles e inventarios.
+
+* **Estilo Arquitectónico de Microservicios:** Se implementará una arquitectura descentralizada para permitir el crecimiento exponencial y el escalamiento independiente de los módulos críticos.
+    * Permite que la plataforma escale a otros distritos de Lima sin degradar el tiempo de respuesta.
+    * Asegura una arquitectura de alta disponibilidad fundamental para el sector gastronómico de Lima.
+
+* **Patrón API Gateway:** Actuará como punto de entrada único, encargándose de la agregación de datos y la seguridad, optimizando las peticiones desde dispositivos móviles.
+    * Simplifica la interacción cliente-servidor ocultando la complejidad interna de los microservicios.
+    * Proporciona una interfaz móvil-first eficiente para los exploradores gastronómicos.
+
+* **Event-Driven Architecture:** Se utilizarán eventos para notificar cambios de estado en tiempo real, como cuando un dueño de local cambia su estado a "Abierto" o "Cerrado".
+    * Actualiza instantáneamente el hexágono en el mapa de los usuarios según el estado real del local.
+    * Permite enviar notificaciones de proximidad (*Proximity Alerts*) de forma reactiva al movimiento del usuario.
 ##### 4.1.3 Context Diagram
 ##### 4.1.4 Approach driven ViewPoints Diagrams
 ##### 4.1.5 Relational/Non Relational Database Diagram
 ##### 4.1.6 Design Patterns
-##### 4.1.7 Tactics
+* **Factory Method:** Útil para la creación de entidades críticas como locales, registros de sensores o reseñas de usuarios.
+    * Centraliza la lógica de creación y validación inicial de los locales geolocalizados.
+    * Asegura que todos los locales se inicialicen con campos obligatorios para su indexación en el mapa.
 
+* **Circuit Breaker:** Patrón crítico que protege al sistema cuando un microservicio de búsqueda (H3) presenta fallos o alta latencia.
+    * Evita que los fallos se propaguen en cascada a todo el ecosistema de Foodly.
+    * Mejora la disponibilidad, permitiendo que funciones vitales sigan operativas si un módulo auxiliar falla temporalmente.
+
+* **Retry Pattern:** Aplicado a las llamadas salientes entre servicios para manejar fallos transitorios, como picos de latencia en la red.
+    * Aumenta la tolerancia a fallos transitorios mediante reintentos con una estrategia de *backoff* exponencial.
+    * Se implementa para asegurar que la comunicación entre microservicios sea robusta frente a inestabilidades temporales.
+
+* **Builder Configuration:** Se empleará para construir objetos complejos como el perfil del huarique, que contiene múltiples atributos opcionales.
+    * Facilita la creación legible de perfiles que incluyen fotos (vía S3), menús, horarios y coordenadas.
+##### 4.1.7 Tactics
+Estrategias específicas para asegurar que Foodly cumpla con sus Atributos de Calidad:
+
+* **Facade (API Gateway):**
+    * El API Gateway funcionará como fachada del ecosistema de microservicios para los clientes finales.
+    * Simplifica la interacción ocultando la complejidad de la arquitectura y el enrutamiento interno.
+    * Implementación de *rate limiting* y *throttling* para proteger los servicios de ráfagas inesperadas de búsqueda.
+
+* **Repository Implementation:**
+    * Facilita el testing y la posible migración de la tecnología de base de datos sin afectar el código de negocio.
+    * Control de concurrencia para entornos multihilo al acceder a recursos compartidos del mapa geoespacial.
+    * Monitoreo de uso para prevenir fugas de memoria en la capa de conectividad del motor H3.
 #### 4.2 Architectural Drivers
 ##### 4.1.8 Design Purpose
 ##### 4.1.9 Primary Functionality (Primary User Stories)
