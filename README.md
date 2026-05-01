@@ -1083,7 +1083,123 @@ A continuación, se presenta el diagrama de contexto (Nivel 1 del modelo C4), el
 
 Para soportar los atributos de calidad de alta disponibilidad y baja latencia exigidos por Foodly, el sistema implementa un enfoque de persistencia políglota, utilizando el modelo de base de datos más eficiente para cada tipo de información.
 
-![Database Diagram Foodly](assets/images/chapter-3/database_diagram.png)
+```mermaid
+erDiagram
+  Users            ||--o{ Reviews         : "writes"
+  Users            ||--o{ Favorites       : "bookmarks"
+  Huariques        ||--o{ Reviews         : "reviewed in"
+  Huariques        ||--o{ Favorites       : "bookmarked"
+  Categories       ||--o{ Huariques       : "classifies"
+  Huariques        ||--o{ Huarique_Photos : "has"
+  Membership_Plans ||--o{ Subscriptions   : "offered to"
+  Huariques        ||--o{ Subscriptions   : "subscribes"
+  Users            ||--o{ Subscriptions   : "created by"
+  Users            ||--o{ Audit_Logs      : "logs"
+
+  Users {
+      uuid user_id PK
+      string name
+      string email UK
+      enum role "admin, explorer, owner"
+      timestamp created_at
+      timestamp updated_at
+  }
+
+  Huariques {
+      uuid huarique_id PK
+      string name
+      text description
+      string address_line
+      string district
+      string city
+      float lat
+      float lng
+      string h3_index "Geospatial Index (H3)"
+      enum opening_status "OPEN, CLOSED, TEMPORARILY_CLOSED"
+      decimal average_rating
+      int category_id FK
+      timestamp created_at
+      timestamp updated_at
+  }
+
+  Categories {
+      int category_id PK
+      string name
+      string description
+      timestamp created_at
+  }
+
+  Reviews {
+      uuid review_id PK
+      uuid huarique_id FK
+      uuid user_id FK
+      int rating "1..5"
+      string comment
+      boolean is_verified "Visitante Real"
+      datetime review_date
+      timestamp created_at
+  }
+
+  Favorites {
+      uuid user_id PK,FK
+      uuid huarique_id PK,FK
+      timestamp created_at
+  }
+
+  Membership_Plans {
+      uuid plan_id PK
+      string name
+      text description
+      decimal monthly_price
+      timestamp created_at
+  }
+
+  Subscriptions {
+      uuid subscription_id PK
+      uuid huarique_id FK
+      uuid plan_id FK
+      uuid user_id FK "creator/owner"
+      date start_date
+      date end_date
+      enum status "ACTIVE, CANCELED, EXPIRED"
+      timestamp created_at
+      timestamp updated_at
+  }
+
+  Huarique_Photos {
+      uuid photo_id PK
+      uuid huarique_id FK
+      string url "S3 Bucket URL"
+      timestamp created_at
+  }
+
+  Audit_Logs {
+      int audit_id PK
+      uuid user_id FK
+      string entity_type
+      uuid entity_id
+      string action
+      json details
+      timestamp audit_date
+  }
+  Huariques ||--o| Menu_Live : "has dynamic menu (Logical)"
+
+  Menu_Live {
+      uuid _id PK "MongoDB ObjectId"
+      uuid huarique_id "Logical FK"
+      json items "Array of {name, price, photo, available}"
+      timestamp last_updated
+  }
+  Huariques }o--o{ Radar_Cache : "cached in (Logical)"
+
+  Radar_Cache {
+      string h3_cell_index PK "Redis Key"
+      json active_huariques "Array of Huarique Data"
+      string status "OPEN/CLOSED"
+      int ttl "Time To Live"
+  }
+
+```
 
 **1. Base de Datos Relacional (PostgreSQL / MySQL)**
 Maneja la información transaccional y la integridad referencial estricta del sistema.
