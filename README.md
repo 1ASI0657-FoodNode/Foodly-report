@@ -1024,7 +1024,7 @@ Además se esta compartiendo una captura del product backlog de Foodly:
 
 #### 4.1 Design Concepts, ViewPoints & ER Diagrams
 ##### 4.1.1 Principles Statements
-#### 4.1.1 Principles Statements
+
 Se han definido pautas generales basadas en la visión de negocio de **FoodNode** para guiar las decisiones técnicas a largo plazo:
 
 * **Geolocalización centrada en Celdas (H3):** Toda lógica de proximidad debe basarse en el índice de celdas hexagonales en lugar de distancias euclidianas para garantizar tiempos de respuesta sub-segundo.
