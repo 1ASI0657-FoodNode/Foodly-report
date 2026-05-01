@@ -153,8 +153,32 @@
     - [4.2.3 Quality Attribute Scenarios](#423-quality-attribute-scenarios)
     - [4.2.4 Constraints](#424-constraints)
     - [4.2.5 Architectural Concerns](#425-architectural-concerns)
-  - [4.3 ADD Iterations](#43-add-iterations)
-
+- [4.3 ADD Iterations](#43-add-iterations)
+  - [4.3.1 Iteration 1: Alta Disponibilidad](#431-iteration-1-alta-disponibilidad)
+    - [4.3.1.1 Architectural Design Backlog N° 1](#4311-architectural-design-backlog-n-1)
+    - [4.3.1.2 Establish Iteration Goal by Selecting Drivers](#4312-establish-iteration-goal-by-selecting-drivers)
+    - [4.3.1.3 Choose One or More Elements of the System to Refine](#4313-choose-one-or-more-elements-of-the-system-to-refine)
+    - [4.3.1.4 Choose One or More Design Concepts That Satisfy the Selected Drivers](#4314-choose-one-or-more-design-concepts-that-satisfy-the-selected-drivers)
+    - [4.3.1.5 Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces](#4315-instantiate-architectural-elements-allocate-responsibilities-and-define-interfaces)
+    - [4.3.1.6 Sketch Views (C4 & UML) and Record Design Decisions](#4316-sketch-views-c4--uml-and-record-design-decisions)
+    - [4.3.1.7 Analysis of Current Design and Review Iteration Goal (Kanban Board)](#4317-analysis-of-current-design-and-review-iteration-goal-kanban-board)
+  - [4.3.2 Iteration 2: Performance](#432-iteration-2-performance)
+    - [4.3.2.1 Architectural Design Backlog N° 2](#4321-architectural-design-backlog-n-2)
+    - [4.3.2.2 Establish Iteration Goal by Selecting Drivers](#4322-establish-iteration-goal-by-selecting-drivers)
+    - [4.3.2.3 Choose One or More Elements of the System to Refine](#4323-choose-one-or-more-elements-of-the-system-to-refine)
+    - [4.3.2.4 Choose One or More Design Concepts That Satisfy the Selected Drivers](#4324-choose-one-or-more-design-concepts-that-satisfy-the-selected-drivers)
+    - [4.3.2.5 Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces](#4325-instantiate-architectural-elements-allocate-responsibilities-and-define-interfaces)
+    - [4.3.2.6 Sketch Views (C4 & UML) and Record Design Decisions](#4326-sketch-views-c4--uml-and-record-design-decisions)
+    - [4.3.2.7 Analysis of Current Design and Review Iteration Goal (Kanban Board)](#4327-analysis-of-current-design-and-review-iteration-goal-kanban-board)
+  - [4.3.3 Iteration 3: Modificabilidad](#433-iteration-3-modificabilidad)
+    - [4.3.3.1 Architectural Design Backlog N° 3](#4331-architectural-design-backlog-n-3)
+    - [4.3.3.2 Establish Iteration Goal by Selecting Drivers](#4332-establish-iteration-goal-by-selecting-drivers)
+    - [4.3.3.3 Choose One or More Elements of the System to Refine](#4333-choose-one-or-more-elements-of-the-system-to-refine)
+    - [4.3.3.4 Choose One or More Design Concepts That Satisfy the Selected Drivers](#4334-choose-one-or-more-design-concepts-that-satisfy-the-selected-drivers)
+    - [4.3.3.5 Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces](#4335-instantiate-architectural-elements-allocate-responsibilities-and-define-interfaces)
+    - [4.3.3.6 Sketch Views (C4 & UML) and Record Design Decisions](#4336-sketch-views-c4--uml-and-record-design-decisions)
+    - [4.3.3.7 Analysis of Current Design and Review Iteration Goal (Kanban Board)](#4337-analysis-of-current-design-and-review-iteration-goal-kanban-board)
+      
 - [Capítulo V: Product Implementation, Validation & Deployment](#capítulo-v-product-implementation-validation--deployment)
   - [5.1 Testing Suites & General Patterns](#51-testing-suites--general-patterns)
   - [5.2 Software Configuration Management](#52-software-configuration-management)
@@ -1423,6 +1447,31 @@ En este proyecto, ADD se aplicó de manera iterativa para garantizar el cumplimi
 - Modificabilidad mediante el uso de una arquitectura basada en microservicios.
 
 Cada iteración se centró en refinar componentes críticos del sistema, integrando servicios externos como H3, Mapbox/OpenRouteService/GraphHopper, Cloudinary y bases de datos en Azure SQL y MongoDB Atlas.
+
+##### 4.3.1 Iteration 1: Alta Disponibilidad
+###### 4.3.1.1 Architectural Design Backlog N° 1
+###### 4.3.1.2 Establish Iteration Goal by Selecting Drivers
+###### 4.3.1.3 Choose One or More Elements of the System to Refine
+###### 4.3.1.4 Choose One or More Design Concepts That Satisfy the Selected Drivers
+###### 4.3.1.5 Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
+###### 4.3.1.6 Sketch Views (C4 & UML) and Record Design Decisions
+###### 4.3.1.7 Analysis of Current Design and Review Iteration Goal (Kanban Board)
+##### 4.3.2 Iteration 2: Performance
+###### 4.3.2.1 Architectural Design Backlog N° 2
+###### 4.3.2.2 Establish Iteration Goal by Selecting Drivers
+###### 4.3.2.3 Choose One or More Elements of the System to Refine
+###### 4.3.2.4 Choose One or More Design Concepts That Satisfy the Selected Drivers
+###### 4.3.2.5 Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
+###### 4.3.2.6 Sketch Views (C4 & UML) and Record Design Decisions
+###### 4.3.2.7 Analysis of Current Design and Review Iteration Goal (Kanban Board)
+##### 4.3.3 Iteration 3: Modificabilidad
+###### 4.3.3.1 Architectural Design Backlog N° 3
+###### 4.3.3.2 Establish Iteration Goal by Selecting Drivers
+###### 4.3.3.3 Choose One or More Elements of the System to Refine
+###### 4.3.3.4 Choose One or More Design Concepts That Satisfy the Selected Drivers
+###### 4.3.3.5 Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
+###### 4.3.3.6 Sketch Views (C4 & UML) and Record Design Decisions
+###### 4.3.3.7 Analysis of Current Design and Review Iteration Goal (Kanban Board)
 
 ##### 4.2.1 Iteration 1: Core Routing & Availability Design
 ###### 4.2.1.1 Architectural Design Backlog 1
