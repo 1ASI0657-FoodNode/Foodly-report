@@ -1075,7 +1075,6 @@ A continuación, se presenta el diagrama de contexto (Nivel 1 del modelo C4), el
 * **Sistemas Externos (External Systems):**
   * **H3 Geospatial Engine / Map API:** Proveedor externo que permite renderizar las celdas hexagonales y calcular la proximidad.
   * **Cloud Storage System (ej. AWS S3):** Almacenamiento externo para guardar y servir optimizadamente la galería de imágenes de los huariques y platos.
-  * **WhatsApp API:** Sistema de mensajería externo utilizado para redireccionar a los usuarios y permitir el contacto rápido con el dueño del local.
 
 ##### 4.1.4 Approach driven ViewPoints Diagrams
 
