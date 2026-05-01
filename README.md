@@ -1250,17 +1250,244 @@ El propósito principal del diseño arquitectónico es crear una plataforma conf
 ##### 4.1.12 Architectural Concerns
 
 #### 4.3 ADD Iterations
-##### 4.2.X Iteration N: <Iteration Name>
-###### 4.2.X.1 Architectural Design Backlog N
-###### 4.2.X.2 Establish Iteration Goal by Selecting Drivers
-###### 4.2.X.3 Choose One or More Elements of the System to Refine
-###### 4.2.X.4 Choose One or More Design Concepts That Satisfy the Selected Drivers
-###### 4.2.X.5 Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
-###### 4.2.X.6 Sketch Views (C4 & UML) and Record Design Decisions
-###### 4.2.X.7 Analysis of Current Design and Review Iteration Goal (Kanban Board) (Avance 2)
+
+El proceso de diseño arquitectónico del sistema se desarrolló utilizando el método ADD (Attribute-Driven Design), el cual permite definir y refinar la arquitectura en base a drivers arquitectónicos como atributos de calidad, funcionalidades principales y restricciones.
+
+En este proyecto, ADD se aplicó de manera iterativa para garantizar el cumplimiento de atributos clave como:
+
+- Alta disponibilidad ante picos de demanda.
+- Alto rendimiento en el cálculo de rutas y distancias en tiempo real.
+- Modificabilidad mediante el uso de una arquitectura basada en microservicios.
+
+Cada iteración se centró en refinar componentes críticos del sistema, integrando servicios externos como H3, Mapbox/OpenRouteService/GraphHopper, Cloudinary y bases de datos en Azure SQL y MongoDB Atlas.
+
+##### 4.2.1 Iteration 1: Core Routing & Availability Design
+###### 4.2.1.1 Architectural Design Backlog 1
+
+El Architectural Design Backlog reúne las principales decisiones y preocupaciones arquitectónicas identificadas a partir de los drivers del sistema. Estas prioridades se centran en garantizar la disponibilidad, el rendimiento en el cálculo de rutas y la escalabilidad de la solución, considerando el uso de servicios externos y una arquitectura basada en microservicios.
+
+<table>
+<tr>
+<th>ID</th>
+<th>Descripción</th>
+<th>Prioridad</th>
+<th>Estado</th>
+</tr>
+
+<tr>
+<td>ADB-01</td>
+<td>Definir arquitectura de microservicios para el sistema de rutas</td>
+<td>Alta</td>
+<td>Pendiente</td>
+</tr>
+
+<tr>
+<td>ADB-02</td>
+<td>Integración con servicios de enrutamiento (Mapbox/OpenRouteService/GraphHopper)</td>
+<td>Alta</td>
+<td>Pendiente</td>
+</tr>
+
+<tr>
+<td>ADB-03</td>
+<td>Implementar alta disponibilidad para soportar alta concurrencia</td>
+<td>Alta</td>
+<td>Pendiente</td>
+</tr>
+
+<tr>
+<td>ADB-04</td>
+<td>Definir almacenamiento híbrido (Azure SQL + MongoDB Atlas)</td>
+<td>Media</td>
+<td>Pendiente</td>
+</tr>
+
+<tr>
+<td>ADB-05</td>
+<td>Gestión de imágenes mediante Cloudinary</td>
+<td>Baja</td>
+<td>Pendiente</td>
+</tr>
+
+</table>
+
+###### 4.2.1.2 Establish Iteration Goal by Selecting Drivers
+
+Los drivers seleccionados reflejan los atributos de calidad críticos del sistema. La alta disponibilidad es esencial debido a la posibilidad de picos de demanda, mientras que el performance es clave para garantizar cálculos de rutas en tiempo real. La modificabilidad se logra mediante el uso de microservicios, permitiendo la evolución del sistema sin afectar otros componentes.
+
+<table>
+<tr>
+<th>Tipo</th>
+<th>Driver</th>
+<th>Descripción</th>
+</tr>
+
+<tr>
+<td>Calidad</td>
+<td>Alta disponibilidad</td>
+<td>El sistema debe mantenerse operativo ante alta demanda en horas pico.</td>
+</tr>
+
+<tr>
+<td>Calidad</td>
+<td>Performance</td>
+<td>El cálculo de rutas debe ejecutarse en tiempo real 24/7.</td>
+</tr>
+
+<tr>
+<td>Calidad</td>
+<td>Modificabilidad</td>
+<td>La arquitectura debe permitir cambios sin afectar todo el sistema.</td>
+</tr>
+
+<tr>
+<td>Funcional</td>
+<td>Cálculo de rutas</td>
+<td>Permitir a los usuarios obtener rutas óptimas.</td>
+</tr>
+
+<tr>
+<td>Restricción</td>
+<td>Uso de servicios externos</td>
+<td>Integración obligatoria con APIs de enrutamiento y servicios cloud.</td>
+</tr>
+
+</table>
+
+###### 4.2.1.3 Choose One or More Elements of the System to Refine
+
+En esta iteración se priorizó el refinamiento de componentes clave relacionados con el procesamiento de rutas y la gestión de solicitudes, debido a su impacto directo en los atributos de rendimiento y disponibilidad del sistema.
+
+<table>
+<tr>
+<th>Elemento</th>
+<th>Descripción</th>
+</tr>
+
+<tr>
+<td>Routing Service</td>
+<td>Encargado del cálculo de rutas utilizando APIs externas.</td>
+</tr>
+
+<tr>
+<td>API Gateway</td>
+<td>Gestiona las solicitudes de los clientes y distribuye a microservicios.</td>
+</tr>
+
+<tr>
+<td>Database Layer</td>
+<td>Almacenamiento en Azure SQL y MongoDB Atlas.</td>
+</tr>
+
+</table>
+
+###### 4.2.1.4 Choose One or More Design Concepts That Satisfy the Selected Drivers
+
+Los conceptos de diseño seleccionados responden directamente a los drivers identificados. El uso de microservicios permite mejorar la modificabilidad del sistema, mientras que la implementación de un API Gateway facilita la gestión centralizada de solicitudes, contribuyendo a la disponibilidad. Asimismo, el uso de mecanismos de caché optimiza el rendimiento en consultas frecuentes.
+
+<table>
+<tr>
+<th>Concepto</th>
+<th>Descripción</th>
+<th>Driver que satisface</th>
+</tr>
+
+<tr>
+<td>Microservicios</td>
+<td>Separación del sistema en servicios independientes</td>
+<td>Modificabilidad</td>
+</tr>
+
+<tr>
+<td>API Gateway</td>
+<td>Punto central de entrada al sistema</td>
+<td>Disponibilidad</td>
+</tr>
+
+<tr>
+<td>Uso de cache</td>
+<td>Almacenamiento temporal de rutas frecuentes</td>
+<td>Performance</td>
+</tr>
+
+<tr>
+<td>Integración con APIs externas</td>
+<td>Uso de Mapbox/OpenRouteService/GraphHopper</td>
+<td>Funcionalidad</td>
+</tr>
+
+</table>
+
+###### 4.2.1.5 Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
+
+La asignación de responsabilidades permite una clara separación de preocupaciones entre los componentes del sistema, facilitando el mantenimiento, la escalabilidad y la integración con servicios externos. Esto es consistente con una arquitectura basada en microservicios y orientada a servicios.
+
+<table>
+<tr>
+<th>Componente</th>
+<th>Responsabilidad</th>
+<th>Interfaz</th>
+</tr>
+
+<tr>
+<td>API Gateway</td>
+<td>Recibir y enrutar solicitudes</td>
+<td>REST API</td>
+</tr>
+
+<tr>
+<td>Routing Service</td>
+<td>Calcular rutas óptimas</td>
+<td>REST API / External APIs</td>
+</tr>
+
+<tr>
+<td>User Service</td>
+<td>Gestión de usuarios</td>
+<td>REST API</td>
+</tr>
+
+<tr>
+<td>Media Service</td>
+<td>Gestión de imágenes con Cloudinary</td>
+<td>Cloudinary API</td>
+</tr>
+
+<tr>
+<td>Database</td>
+<td>Persistencia de datos</td>
+<td>SQL / NoSQL</td>
+</tr>
+
+</table>
+
+###### 4.2.1.6 Sketch Views (C4 & UML) and Record Design Decisions
+
+###### 4.2.1.7 Analysis of Current Design and Review Iteration Goal (Kanban Board) (Avance 2)
+
+###### Kanban Board - ADD Iteration 1
+
+![Kanban Board - ADD Iteration](assets/images/chapter-3/kanban_board.png)
+
+**Link del tablero Kanban (Miro/Trello):**  
+https://trello.com/invite/b/69f501c05c2af93e4ff4893c/ATTIfcb179e7128dc5ba98dbc4b53ed07c7e7F9CD517/kanban-board
+
+**Leyenda:**
+
+- 🟢 **User Stories (US):** Funcionalidades principales del sistema.
+- 🟠 **Atributos de Calidad (AC):** Requisitos no funcionales como disponibilidad, rendimiento y modificabilidad.
+- 🔵 **Decisiones Arquitectónicas (ARC):** Soluciones de diseño adoptadas en la arquitectura.
+- 🟣 **Restricciones (CON):** Limitaciones tecnológicas y de entorno del sistema.
 
 
+El tablero Kanban presenta los elementos identificados durante la iteración, incluyendo funcionalidades clave, atributos de calidad, decisiones arquitectónicas y restricciones del sistema.
+Durante esta iteración se priorizaron aspectos críticos como el cálculo de rutas en tiempo real (US01) y la visualización de mapas (US02), alineados con los drivers de performance y alta disponibilidad.
 
+Asimismo, se definieron decisiones arquitectónicas clave como el uso de microservicios y la implementación de un API Gateway, lo cual contribuye a la escalabilidad y modificabilidad del sistema. Estas decisiones permiten desacoplar componentes y facilitar futuras extensiones del sistema.
+En cuanto a restricciones, se consideró el uso obligatorio de servicios externos como Mapbox/GraphHopper, así como la integración con Azure SQL y MongoDB Atlas, lo que condiciona tanto el diseño como la disponibilidad del sistema.
+
+El análisis evidencia que los drivers principales han sido correctamente considerados; sin embargo, aún se requiere profundizar en mecanismos de optimización como caching, balanceo de carga y tolerancia a fallos para mejorar el rendimiento y la resiliencia del sistema.
+Actualmente, la mayoría de elementos se encuentran en progreso, lo que indica que la arquitectura base está en proceso de consolidación y validación dentro de esta iteración.
 
 ### Conclusiones
 ### Conclusiones y recomendaciones
