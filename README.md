@@ -1240,14 +1240,150 @@ Estrategias específicas para asegurar que Foodly cumpla con sus Atributos de Ca
     * Monitoreo de uso para prevenir fugas de memoria en la capa de conectividad del motor H3.
 #### 4.2 Architectural Drivers
 
-##### 4.1.8 Design Purpose
+##### 4.2.1 Design Purpose
 
 El propósito principal del diseño arquitectónico es crear una plataforma confiable y de alta disponibilidad, que responda eficazmente a los desafíos de visibilidad y localización del sector gastronómico local tradicional. La arquitectura debe soportar la búsqueda geoespacial ultrarrápida mediante indexación hexagonal (H3), facilitar una gestión ágil del menú diario en tiempo real y proporcionar información visual y precisa tanto para los comensales exploradores como para los dueños de los negocios. Esto permitirá a los usuarios minimizar el tiempo perdido en búsquedas ineficientes, descubrir experiencias culinarias auténticas a precios justos y mejorar drásticamente la competitividad digital y captación de clientes para los microempresarios.
 
-##### 4.1.9 Primary Functionality (Primary User Stories)
-##### 4.1.10 Quality Attribute Scenarios
-##### 4.1.11 Constraints
-##### 4.1.12 Architectural Concerns
+##### 4.2.2 Primary Functionality (Primary User Stories)
+
+Las funcionalidades primarias de Foodly son aquellas que definen su propuesta de valor única y sobre las cuales recae la mayor exigencia técnica. A partir del Product Backlog, se han identificado las siguientes historias de usuario como críticas (Primary User Stories) para el diseño arquitectónico inicial:
+
+<table>
+  <thead>
+    <tr>
+      <th>ID US</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>US01 - Visualización de Radar H3</strong></td>
+      <td>Como explorador, quiero ver huariques en un mapa hexagonal para identificar zonas con comida cerca.</td>
+    </tr>
+    <tr>
+      <td><strong>US07 - Búsqueda por Antojo</strong></td>
+      <td>Como explorador, quiero buscar por tipo de comida para encontrar un antojo específico.</td>
+    </tr>
+    <tr>
+      <td><strong>US02 - Registro de Huarique</strong></td>
+      <td>Como dueño, quiero registrar mi local con pin en el mapa para ser visible en el radar.</td>
+    </tr>
+    <tr>
+      <td><strong>US04 - Galería de Platos</strong></td>
+      <td>Como dueño, quiero subir fotos de mis platos para convencer visualmente a los clientes.</td>
+    </tr>
+  </tbody>
+</table>
+
+##### 4.2.3 Quality Attribute Scenarios
+
+Para garantizar que la arquitectura soporte los requerimientos del negocio, se han formalizado escenarios de atributos de calidad utilizando el estándar ADD. Estos guiarán las iteraciones de diseño:
+
+ <table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Atributo de calidad</th>
+      <th>Escenario</th>
+      <th>US's asociada</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>QA-01</strong></td>
+      <td><strong>Alta Disponibilidad</strong></td>
+      <td>Ante ingresos masivos durante las horas pico de almuerzo (estímulo) o la caída abrupta de un nodo del servidor, el sistema de infraestructura en la nube balancea la carga automáticamente hacia instancias de respaldo (táctica). Esto garantiza que la plataforma siga operando con un <em>uptime</em> del 99.9%, permitiendo a los usuarios buscar y a los dueños mantener su estado sin interrupciones.</td>
+      <td>US06, US17, US20</td>
+    </tr>
+    <tr>
+      <td><strong>QA-02</strong></td>
+      <td><strong>Performance (Rendimiento)</strong></td>
+      <td>Cuando un "Comensal Explorador" realiza búsquedas geoespaciales 24/7, carga imágenes o traza rutas a pie (estímulo), el <em>Geo-Radar Engine</em> apoyado por el caché en memoria (Redis) procesa los datos (táctica). El sistema devuelve y renderiza los resultados precisos en la pantalla en menos de 200 milisegundos, evitando pantallas de carga prolongadas.</td>
+      <td>US01, US03, US04, US05, US07, US10</td>
+    </tr>
+    <tr>
+      <td><strong>QA-03</strong></td>
+      <td><strong>Modificabilidad</strong></td>
+      <td>Cuando el equipo de desarrollo necesita agregar, actualizar o escalar nuevas funcionalidades periféricas al sistema (estímulo), el uso del estilo arquitectónico de microservicios y el desacoplamiento lógico (táctica) permite compilar y desplegar estos cambios de forma aislada. Esto asegura que módulos como notificaciones, reseñas o gestión de empleados se modifiquen sin afectar el código central del radar H3.</td>
+      <td>US02, US08, US09, US11, US12, US13, US14, US15, US16, US18, US19</td>
+    </tr>
+  </tbody>
+</table>
+
+##### 4.2.4 Constraints
+
+El diseño de la arquitectura de Foodly debe ceñirse a las siguientes restricciones impuestas por el entorno tecnológico y los lineamientos del proyecto:
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Constraints</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>CON-01</strong></td>
+      <td>La solución debe contemplar una propuesta de aplicación móvil enfocada en la plataforma Android y vistas web administrativas, respaldadas por un backend con APIs RESTful.</td>
+    </tr>
+    <tr>
+      <td><strong>CON-02</strong></td>
+      <td>El sistema debe ser implementado obligatoriamente bajo una arquitectura empresarial de microservicios, descartando enfoques monolíticos desde su concepción.</td>
+    </tr>
+    <tr>
+      <td><strong>CON-03</strong></td>
+      <td>Uso obligatorio de persistencia políglota, empleando Azure SQL para registros relacionales centrales y MongoDB Atlas como motor NoSQL independiente para cada microservicio.</td>
+    </tr>
+    <tr>
+      <td><strong>CON-04</strong></td>
+      <td>Preferencia estricta por servicios externos con capas gratuitas (Free Tiers) o licencias Open Source, incluyendo la librería H3 de Uber, Cloudinary para imágenes y Mapbox/OpenRouteService para enrutamiento.</td>
+    </tr>
+    <tr>
+      <td><strong>CON-05</strong></td>
+      <td>Los microservicios deben ser contenerizados y desplegados en una plataforma de nube pública (AWS, Azure o Google Cloud) para asegurar su correcta evaluación.</td>
+    </tr>
+    <tr>
+      <td><strong>CON-06</strong></td>
+      <td>El control de versiones, la gestión de la configuración y la colaboración del equipo se realizarán exclusivamente mediante repositorios en la plataforma GitHub.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+##### 4.2.5 Architectural Concerns
+
+Se han identificado riesgos y preocupaciones técnicas que deben monitorearse durante las iteraciones de diseño y desarrollo:
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Architectural Concerns</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>ARC-01</strong></td>
+      <td>Adaptación del equipo a la integración de la librería geoespacial H3 y a la arquitectura de microservicios para evitar cuellos de botella en el desarrollo temprano.</td>
+    </tr>
+    <tr>
+      <td><strong>ARC-02</strong></td>
+      <td>Garantizar la consistencia de los datos distribuidos al manejar una persistencia políglota (Azure SQL central y MongoDB Atlas por servicio) sin afectar la confiabilidad del sistema.</td>
+    </tr>
+    <tr>
+      <td><strong>ARC-03</strong></td>
+      <td>Gestionar eficientemente las cuotas y límites de uso (Rate Limiting) de los servicios externos gratuitos (Cloudinary, Mapbox) para evitar bloqueos durante pruebas o sustentaciones.</td>
+    </tr>
+    <tr>
+      <td><strong>ARC-04</strong></td>
+      <td>Mantener una coherencia estricta en los contratos de comunicación (APIs RESTful) entre los desarrolladores del Frontend (Web Reponsive) y el Backend.</td>
+    </tr>
+    <tr>
+      <td><strong>ARC-05</strong></td>
+      <td>Prevenir errores de integración entre los diferentes microservicios mediante la aplicación temprana de pruebas unitarias y de comportamiento (BDD).</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 4.3 ADD Iterations
 
