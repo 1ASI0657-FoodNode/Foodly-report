@@ -959,6 +959,16 @@ De igual manera, se ha elaborado el To-Be Scenario Mapping para el segundo segme
 
 En esta sección, el equipo detalla el conjunto de User Stories y Epics desarrollados para Foodly. Cada una de ellas define un requerimiento funcional desde la perspectiva del usuario e incluye sus respectivos Criterios de Aceptación detallados en el formato Given / When / Then. Esta estructura nos permite establecer escenarios claros y verificables, tanto positivos como negativos, que guiarán el desarrollo del software para asegurar la precisión geoespacial y la alta disponibilidad propuestas para la plataforma.<br>
 
+| Epic ID | Título | Descripción |
+| :--- | :--- | :--- |
+| **EP01** | Visualización Geográfica Interactiva | Implementación del núcleo visual basado en el sistema de indexación H3 de Uber para representación hexagonal[cite: 1]. |
+| **EP02** | Gestión de Identidad y Negocio Digital | Herramientas para que los dueños de locales digitalicen su oferta y gestionen su presencia en el mapa[cite: 1]. |
+| **EP03** | Motor de Descubrimiento Inteligente | Algoritmos de filtrado y búsqueda optimizados para la toma de decisiones rápida del usuario[cite: 1]. |
+| **EP04** | Engagement y Experiencia Social | Funcionalidades para fomentar la fidelidad, reseñas verificadas y navegación en tiempo real[cite: 1]. |
+| **EP05** | Infraestructura y Escalabilidad | Atributos de administración, soporte offline y resiliencia del sistema bajo carga[cite: 1]. |
+
+---
+
 | Epic / User Story ID | Título | Descripción | Criterios de Aceptación (Escenarios) | Relacionado con (Epic ID) |
 | :--- | :--- | :--- | :--- | :--- |
 | **US01** | Visualización de Radar H3 | Como explorador, quiero ver huariques en un mapa hexagonal para identificar zonas con comida cerca. | **Escenario 1 – Radar con datos**<br>**Given** el usuario se encuentra en una zona con locales registrados<br>**When** abre el mapa principal<br>**Then** el sistema renderiza celdas H3 iluminadas con iconos de comida.<br><br>**Escenario 2 – Radar vacío**<br>**Given** el usuario está en una zona remota sin registros<br>**When** abre el mapa<br>**Then** muestra un mensaje: "No hay huariques aquí aún, ¡recomienda uno!". | EP01 |
@@ -981,12 +991,29 @@ En esta sección, el equipo detalla el conjunto de User Stories y Epics desarrol
 | **US18** | Reporte de Local Cerrado | Como explorador, quiero reportar si un local ya no existe para mantener el mapa actualizado. | **Escenario 1 – Reporte enviado**<br>**Given** el usuario llega al local y está vacío<br>**When** pulsa "Informar cierre"<br>**Then** el sistema envía una alerta al administrador para verificar.<br><br>**Escenario 2 – Reporte falso**<br>**Given** un usuario que reporta muchos locales abiertos<br>**When** el sistema detecta el patrón<br>**Then** ignora sus reportes temporalmente por fiabilidad. | EP05 |
 | **US19** | Gestión de Empleados | Como dueño, quiero registrar a mis ayudantes para que actualicen el menú por mí. | **Escenario 1 – Agregar staff**<br>**Given** el panel de administración del dueño<br>**When** ingresa el correo del empleado<br>**Then** el empleado recibe acceso limitado para editar el plato del día.<br><br>**Escenario 2 – Revocar acceso**<br>**Given** un empleado que ya no trabaja ahí<br>**When** el dueño lo elimina de la lista<br>**Then** el empleado pierde el acceso a la gestión del local inmediatamente. | EP02 |
 | **US20** | Escalabilidad de Búsqueda | Como administrador, quiero que el motor H3 soporte miles de consultas para evitar caídas. | **Escenario 1 – Carga pesada**<br>**Given** 1,000 usuarios buscando en la misma celda<br>**When** se ejecutan las queries geoespaciales<br>**Then** el tiempo de respuesta se mantiene por debajo de los 200ms.<br><br>**Escenario 2 – Fallo de servidor**<br>**Given** una caída en un nodo de base de datos<br>**When** un usuario intenta buscar<br>**Then** el sistema conmuta a un nodo de respaldo sin interrumpir el servicio. | EP05 |
+| **TS01** | Integración del Core H3 | Como arquitecto, deseo integrar la librería H3 de Uber para que el backend gestione correctamente los índices hexagonales[cite: 1]. | **Escenario 1 – Conversión de coordenadas:** Given una coordenada Lat/Long válida. When el servicio de indexación procesa el punto. Then genera un índice H3 válido. **Escenario 2 – Resolución inválida:** Given una solicitud de resolución no soportada. When el sistema intenta procesar. Then retorna un error de configuración. | EP01 |
+| **TS02** | Persistencia Geoespacial | Como desarrollador, deseo configurar una base de datos optimizada para índices H3 para reducir latencia[cite: 1]. | **Escenario 1 – Indexación de local:** Given un nuevo registro de huarique. When se persiste en la DB geoespacial. Then el índice H3 se almacena como clave de búsqueda primaria. **Escenario 2 – Consulta por celda:** Given consulta por ID de celda H3. When el motor busca registros. Then retorna todos los locales en < 100ms. | EP05 |
+| **TS03** | Microservicio de Media | Como arquitecto, deseo implementar almacenamiento en S3 para que la gestión de fotos sea asíncrona[cite: 1]. | **Escenario 1 – Subida asíncrona:** Given imagen enviada por el dueño. When el API recibe el archivo. Then delega la carga al bucket S3 sin bloquear el hilo principal. **Escenario 2 – Fallo de almacenamiento:** Given caída del servicio S3. When el sistema detecta el error. Then encola la tarea para reintento automático. | EP02 |
+| **TS04** | Caché de Proximidad | Como desarrollador, deseo implementar Redis para que los resultados de celdas H3 se sirvan sin consultar la base de datos[cite: 1]. | **Escenario 1 – Hit de caché:** Given celda H3 altamente consultada. When un usuario abre el radar. Then los datos se recuperan desde Redis en < 50ms. **Escenario 2 – Invalidación:** Given actualización de datos en un local. When el dueño guarda cambios. Then se purga la entrada correspondiente en el caché. | EP03 |
+| **TS05** | Service Workers Offline | Como desarrollador, deseo implementar Service Workers para que los favoritos persistan sin red[cite: 1]. | **Escenario 1 – Registro de worker:** Given app abierta. When el worker se activa. Then intercepta peticiones a la API de favoritos para guardarlas localmente. **Escenario 2 – Modo avión:** Given dispositivo sin internet. When usuario abre favoritos. Then el worker sirve los datos desde el storage local. | EP05 |
+
+---
+
+| ID | Atributo de Calidad | Especificación Técnica / Escenario | Relación con US/TS |
+| :--- | :--- | :--- | :--- |
+| **AC-01** | **Disponibilidad** | El sistema debe garantizar un **Uptime del 99.9%** mediante una arquitectura de alta disponibilidad que permita la conmutación a nodos de respaldo en menos de 30 segundos. | **US20, TS02** |
+| **AC-02** | **Interoperabilidad** | El sistema debe integrarse con la API de WhatsApp para facilitar el contacto directo (US13) y soportar la exportación de coordenadas en formatos compatibles con Google Maps. | **US13, US15** |
+| **AC-03** | **Modificabilidad** | La arquitectura de microservicios debe permitir la adición de nuevos filtros de búsqueda (ej. por métodos de pago) sin afectar el núcleo de indexación hexagonal. | **US03, US10** |
+| **AC-04** | **Performance** | El radar de proximidad y el cálculo de rutas deben responder en un tiempo **$T < 2$ segundos**, con latencias de query menores a 200ms bajo carga pesada. | **US01, US05, US20** |
+| **AC-05** | **Seguridad** | El sistema debe validar la identidad del dueño mediante JWT y confirmar la ubicación GPS (margen de 50m) para autorizar la publicación de reseñas reales. | **US12, TS03** |
+| **AC-06** | **Testeabilidad** | La lógica de indexación H3 y los filtros de sazón deben contar con una cobertura de pruebas unitarias mayor al 80% para facilitar el despliegue continuo. | **TS01, TS04** |
+| **AC-07** | **Usabilidad** | El sistema debe incluir un modo oscuro automático post 7 PM y permitir que un usuario encuentre un local relevante en menos de 10 segundos. | **US14, EP03** |
 
 #### 3.3 Impact Map
 
 En esta sección, se presenta el Impact Mapping diseñado para articular la estrategia de negocio con el desarrollo tecnológico de Foodly. Esta herramienta visual conecta de manera lógica y SMART los Business Goals (Objetivos de Negocio) con los Deliverables (Entregables) y las User Stories, partiendo de los perfiles definidos en las fichas de User Persona. El mapa responde secuencialmente a las preguntas: ¿Por qué queremos lograrlo?, ¿Quiénes nos ayudarán?, ¿Cómo queremos que cambie su comportamiento? y, finalmente, ¿Qué características de software necesitamos construir para provocar ese impacto?<br>
 
-![Impact map Foodly](assets/images/chapter-3/impact-map/ImpactmapFoodly.png)
+![Impact map Foodly](assets/images/chapter-3/impact-map/ImpactmapFoodly1.png)
 
 ### 3.4. Product Backlog
 
