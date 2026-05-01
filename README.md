@@ -999,15 +999,17 @@ En esta sección, el equipo detalla el conjunto de User Stories y Epics desarrol
 
 ---
 
-| ID | Atributo de Calidad | Especificación Técnica / Escenario | Relación con US/TS |
+## 3. Requerimientos No Funcionales (NFR)
+
+| ID | Título del Requerimiento | Especificación Técnica (Métrica/Restricción) | Relación con US/TS |
 | :--- | :--- | :--- | :--- |
-| **AC-01** | **Disponibilidad** | El sistema debe garantizar un **Uptime del 99.9%** mediante una arquitectura de alta disponibilidad que permita la conmutación a nodos de respaldo en menos de 30 segundos. | **US20, TS02** |
-| **AC-02** | **Interoperabilidad** | El sistema debe integrarse con la API de WhatsApp para facilitar el contacto directo (US13) y soportar la exportación de coordenadas en formatos compatibles con Google Maps. | **US13, US15** |
-| **AC-03** | **Modificabilidad** | La arquitectura de microservicios debe permitir la adición de nuevos filtros de búsqueda (ej. por métodos de pago) sin afectar el núcleo de indexación hexagonal. | **US03, US10** |
-| **AC-04** | **Performance** | El radar de proximidad y el cálculo de rutas deben responder en un tiempo **$T < 2$ segundos**, con latencias de query menores a 200ms bajo carga pesada. | **US01, US05, US20** |
-| **AC-05** | **Seguridad** | El sistema debe validar la identidad del dueño mediante JWT y confirmar la ubicación GPS (margen de 50m) para autorizar la publicación de reseñas reales. | **US12, TS03** |
-| **AC-06** | **Testeabilidad** | La lógica de indexación H3 y los filtros de sazón deben contar con una cobertura de pruebas unitarias mayor al 80% para facilitar el despliegue continuo. | **TS01, TS04** |
-| **AC-07** | **Usabilidad** | El sistema debe incluir un modo oscuro automático post 7 PM y permitir que un usuario encuentre un local relevante en menos de 10 segundos. | **US14, EP03** |
+| **NFR-01** | **Disponibilidad de Servicio** | El sistema debe operar con un uptime del **99.9%** anual, implementando redundancia de nodos para failover automático. | **US20, TS02** |
+| **NFR-02** | **Latencia de Búsqueda** | El radar H3 debe procesar y retornar los resultados de una celda hexagonal en un tiempo **$T < 200ms$** bajo condiciones normales de red. | **US01, TS04** |
+| **NFR-03** | **Precisión de Geolocalización** | El sistema debe rechazar cualquier intento de reseña si la diferencia entre las coordenadas del usuario y el local es mayor a **50 metros**[cite: 1]. | **US12, TS03** |
+| **NFR-04** | **Escalabilidad de Consultas** | El motor de indexación debe ser capaz de manejar hasta **1,000 peticiones concurrentes** por segundo sin incrementar la latencia por encima de los 500ms[cite: 1]. | **US20, TS02** |
+| **NFR-05** | **Optimización de Carga Visual** | Las imágenes de la galería deben pasar por un proceso de compresión asíncrono que reduzca su peso a un máximo de **500KB** por archivo[cite: 1]. | **US04, TS03** |
+| **NFR-06** | **Persistencia en Memoria** | El uso de Redis para el caché de proximidad debe garantizar un hit-rate mayor al **70%** para las celdas H3 de alta densidad[cite: 1]. | **TS04** |
+| **NFR-07** | **Sincronización Offline** | El Service Worker debe ser capaz de sincronizar y almacenar localmente hasta **50 huariques favoritos** para su consulta sin conexión[cite: 1]. | **US17, TS05** |
 
 #### 3.3 Impact Map
 
