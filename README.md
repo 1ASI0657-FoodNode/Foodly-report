@@ -1060,8 +1060,42 @@ Se han definido pautas generales basadas en la visión de negocio de **FoodNode*
     * Actualiza instantáneamente el hexágono en el mapa de los usuarios según el estado real del local.
     * Permite enviar notificaciones de proximidad (*Proximity Alerts*) de forma reactiva al movimiento del usuario.
 ##### 4.1.3 Context Diagram
+
+A continuación, se presenta el diagrama de contexto (Nivel 1 del modelo C4), el cual proporciona una vista macro de Foodly, mostrando al sistema central y sus interacciones directas con los usuarios finales y los sistemas de software externos.
+
+![Context Diagram Foodly](assets/images/chapter-3/context_diagram.png)
+
+**Descripción de los elementos del diagrama:**
+
+* **Sistema Central (Software System):**
+  * **Foodly Platform:** El sistema core que gestiona el descubrimiento de huariques y la publicación de menús.
+* **Personas (Actores):**
+  * **Comensal Explorador:** Usuario que utiliza la aplicación para escanear zonas con el radar H3, buscar comida auténtica y dejar reseñas.
+  * **Dueño de Huarique:** Usuario administrador que gestiona su local, sube fotos de sus platos y actualiza su estado (Abierto/Cerrado).
+* **Sistemas Externos (External Systems):**
+  * **H3 Geospatial Engine / Map API:** Proveedor externo que permite renderizar las celdas hexagonales y calcular la proximidad.
+  * **Cloud Storage System (ej. AWS S3):** Almacenamiento externo para guardar y servir optimizadamente la galería de imágenes de los huariques y platos.
+  * **WhatsApp API:** Sistema de mensajería externo utilizado para redireccionar a los usuarios y permitir el contacto rápido con el dueño del local.
+
 ##### 4.1.4 Approach driven ViewPoints Diagrams
+
 ##### 4.1.5 Relational/Non Relational Database Diagram
+
+Para soportar los atributos de calidad de alta disponibilidad y baja latencia exigidos por Foodly, el sistema implementa un enfoque de persistencia políglota, utilizando el modelo de base de datos más eficiente para cada tipo de información.
+
+![Database Diagram Foodly](assets/images/chapter-3/database_diagram.png)
+
+**1. Base de Datos Relacional (PostgreSQL / MySQL)**
+Maneja la información transaccional y la integridad referencial estricta del sistema.
+* **Tabla `Usuarios`:** Almacena los datos de autenticación (ID, Nombre, Email, Contraseña, Rol: Explorador/Dueño).
+* **Tabla `Huariques`:** Contiene los datos maestros del negocio (ID, Dueño_ID, Nombre, Descripción, Latitud, Longitud, H3_Index_Celda).
+* **Tabla `Resenas`:** Registra el feedback verificado (ID, Huarique_ID, Usuario_ID, Calificación, Comentario, Fecha).
+
+**2. Base de Datos No Relacional (MongoDB & Redis)**
+Maneja datos dinámicos, documentos flexibles y garantiza respuestas de baja latencia para búsquedas.
+* **Colección `Menu_Diario` (MongoDB):** Utilizado para la carta dinámica. Almacena documentos con el Huarique_ID y un array de objetos de platos (Nombre, Precio, Foto_URL, Disponibilidad).
+* **Caché en Memoria (Redis):** Almacena el radar temporal. Guarda pares clave-valor que mapean el ID de la celda H3 con la lista de huariques activos, garantizando búsquedas geoespaciales en milisegundos.
+
 ##### 4.1.6 Design Patterns
 * **Factory Method:** Útil para la creación de entidades críticas como locales, registros de sensores o reseñas de usuarios.
     * Centraliza la lógica de creación y validación inicial de los locales geolocalizados.
@@ -1090,7 +1124,11 @@ Estrategias específicas para asegurar que Foodly cumpla con sus Atributos de Ca
     * Control de concurrencia para entornos multihilo al acceder a recursos compartidos del mapa geoespacial.
     * Monitoreo de uso para prevenir fugas de memoria en la capa de conectividad del motor H3.
 #### 4.2 Architectural Drivers
+
 ##### 4.1.8 Design Purpose
+
+El propósito principal del diseño arquitectónico es crear una plataforma confiable y de alta disponibilidad, que responda eficazmente a los desafíos de visibilidad y localización del sector gastronómico local tradicional. La arquitectura debe soportar la búsqueda geoespacial ultrarrápida mediante indexación hexagonal (H3), facilitar una gestión ágil del menú diario en tiempo real y proporcionar información visual y precisa tanto para los comensales exploradores como para los dueños de los negocios. Esto permitirá a los usuarios minimizar el tiempo perdido en búsquedas ineficientes, descubrir experiencias culinarias auténticas a precios justos y mejorar drásticamente la competitividad digital y captación de clientes para los microempresarios.
+
 ##### 4.1.9 Primary Functionality (Primary User Stories)
 ##### 4.1.10 Quality Attribute Scenarios
 ##### 4.1.11 Constraints
