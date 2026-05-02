@@ -226,7 +226,7 @@
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 | :--- | :--- | :--- |
-| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.** | **Cacho Seminario, Diego Alonso**<br>**AV1:** Enfoque en el diseño de artefactos de UX (Empathy Maps, Scenario Mapping) para alinear la visión del usuario con el producto funcional.<br>**AV2:** Investigación y definición de los **Fundamentos de Arquitectura**, seleccionando **Principles Statements** y **Architectural Styles** (Microservicios y Hexagonal) que garantizan la resiliencia del sistema.<br><br>**Julca Minaya, Sergio Gino**<br>**AV1:** Aplicación de metodologías ágiles y Lean UX para la validación temprana de la propuesta de valor de FoodNode.<br>**AV2:** Implementación del **Atribute Driven Design (ADD 3.0)**, gestionando el ciclo de vida del diseño mediante iteraciones y el control de decisiones en un **Architectural Design Backlog**.<br><br>**Urrutia Peña, Jasmin Adriana**<br>**AV1:** Análisis competitivo de plataformas FoodTech para identificar brechas tecnológicas en el mercado local y proponer una solución diferenciada.<br>**AV2:** Definición de **Design Patterns** (GoF) y **Tactics** de arquitectura, estableciendo los mecanismos técnicos para satisfacer atributos críticos como la Performance y Disponibilidad.<br><br>**Vega Coronado, Fabricio Samir**<br>**AV1:** Modelado de negocio y segmentación de objetivos estratégicos para startups tecnológicas del sector gastronómico.<br>**AV2:** Identificación y formalización de los **Architectural Drivers**, priorizando los **Quality Attribute Scenarios** y **Constraints** técnicos que restringen y guían el diseño de Foodly.<br><br>**Villanueva Andrade, Ysaac Ligorio**<br>**AV1:** Diseño centrado en el usuario mediante Impact Mapping y matrices de tareas operativas para definir el alcance funcional.<br>**AV2:** Desarrollo de **Vistas y Perspectivas Técnicas** utilizando el modelo **C4 (Contexto, Contenedores)** y diagramas UML para comunicar la estructura del sistema de forma estandarizada. | **AV1:** Durante la AV1, el equipo logró entender los requisitos de los usuarios, pudo plasmar sus dolencias y necesidiades. Además se conoció el negocio y la problemática en si. <br><br> **AV2:** Durante la AV2, el equipo logró integrar conocimientos avanzados de arquitectura de software con metodologías de diseño modernas. La actualización constante sobre el sistema de indexación **H3 de Uber** y la investigación de mercado permitió fundamentar una solución robusta, escalable y técnicamente viable para el sector de los huariques.<br><br>Se logró estructurar la base técnica de Foodly (Capítulo IV), transformando los requerimientos de negocio en decisiones arquitectónicas justificadas. Cada integrante asumió la responsabilidad de un pilar del diseño (Drivers, Estilos, Vistas y Proceso), asegurando una documentación técnica de nivel profesional y coherente con los estándares de ingeniería. |
+| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.** | **Cacho Seminario, Diego Alonso**<br>**AV1:** Enfoque en el diseño de artefactos de UX (Empathy Maps, Scenario Mapping) para alinear la visión del usuario con el producto funcional.<br>**AV2:** Investigación y definición de los **Fundamentos de Arquitectura**, seleccionando **Principles Statements** y **Architectural Styles** (Microservicios y Hexagonal) que garantizan la resiliencia del sistema.<br><br>**Julca Minaya, Sergio Gino**<br>**AV1:** Aplicación de metodologías ágiles y Lean UX para la validación temprana de la propuesta de valor de FoodNode.<br>**AV2:** Implementación del **Atribute Driven Design (ADD 3.0)**, gestionando el ciclo de vida del diseño mediante iteraciones y el control de decisiones en un **Architectural Design Backlog**.<br><br>**Urrutia Peña, Jasmin Adriana**<br>**AV1:** Análisis competitivo de plataformas FoodTech para identificar brechas tecnológicas en el mercado local y proponer una solución diferenciada.<br>**AV2:** Definición de **Design Patterns** (GoF) y **Tactics** de arquitectura, estableciendo los mecanismos técnicos para satisfacer atributos críticos como la Performance y Disponibilidad.<br><br>**Vega Coronado, Fabricio Samir**<br>**AV1:** Modelado de negocio y segmentación de objetivos estratégicos para startups tecnológicas del sector gastronómico.<br>**AV2:** Identificación y formalización de los **Architectural Drivers**, priorizando los **Quality Attribute Scenarios** y **Constraints** técnicos que restringen y guían el diseño de Foodly.<br><br>**Villanueva Andrade, Ysaac Ligorio**<br>**AV1:** Diseño centrado en el usuario mediante Impact Mapping y matrices de tareas operativas para definir el alcance funcional.<br>**AV2:** Desarrollo de **Vistas y Perspectivas Técnicas** utilizando el modelo **C4 (Contexto, Contenedores)** y diagramas UML para comunicar la estructura del sistema de forma estandarizada. | **AV1:** Durante la AV1, el equipo logró entender los requisitos de los usuarios, pudo plasmar sus dolencias y necesidiades. Además se conoció el negocio y la problemática en si. <br><br> **AV2:** Durante la AV2, el equipo logró integrar conocimientos avanzados de arquitectura de software con metodologías de diseño modernas. La actualización constante sobre el sistema de indexación **H3 de Uber** y la investigación de mercado permitió fundamentar una solución robusta, escalable y técnicamente viable para el sector de los restaurantes.<br><br>Se logró estructurar la base técnica de Foodly (Capítulo IV), transformando los requerimientos de negocio en decisiones arquitectónicas justificadas. Cada integrante asumió la responsabilidad de un pilar del diseño (Drivers, Estilos, Vistas y Proceso), asegurando una documentación técnica de nivel profesional y coherente con los estándares de ingeniería. |
 | **Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.** | **Cacho Seminario, Diego Alonso**<br>**AV1:** Dominio de plataformas de colaboración técnica (GitHub) y diseño (UXPressia) para optimizar el flujo de trabajo distribuido.<br>**AV2:** Aprendizaje autónomo sobre **Tácticas de Arquitectura** para resolver conflictos entre disponibilidad y performance en sistemas distribuidos de alta demanda.<br><br>**Julca Minaya, Sergio Gino**<br>**AV1:** Uso de herramientas de modelado de negocio para la iteración constante del Lean UX Canvas y la validación de hipótesis.<br>**AV2:** Adopción de la metodología **ADD (SEI)**, reconociendo que el diseño de software es un proceso recursivo que requiere el aprendizaje de nuevos estándares y marcos de trabajo de la industria.<br><br>**Urrutia Peña, Jasmin Adriana**<br>**AV1:** Sistematización de investigación cualitativa mediante herramientas de documentación compartida para entender la evolución de las necesidades del usuario.<br>**AV2:** Estudio de **Patrones de Diseño** arquitectónicos para garantizar que la estructura de Foodly sea extensible, modular y fácil de mantener a largo plazo.<br><br>**Vega Coronado, Fabricio Samir**<br>**AV1:** Actualización en estándares de la industria FoodTech y modelos de negocio digitales para asegurar la competitividad de la startup.<br>**AV2:** Profundización en el análisis de **Atributos de Calidad**, comprendiendo que la seguridad y escalabilidad requieren un estudio técnico constante frente a nuevas amenazas y tecnologías emergentes.<br><br>**Villanueva Andrade, Ysaac Ligorio**<br>**AV1:** Aprendizaje de nuevas metodologías de análisis de requerimientos (Impact Mapping) para conectar objetivos de negocio con entregables técnicos.<br>**AV2:** Dominio de herramientas de **Modelado Arquitectónico (C4 Model)**, reconociendo que la representación visual de sistemas complejos es una habilidad crítica que demanda actualización técnica permanente. | **AV1:** El equipo reconoce que el desarrollo de Foodly no solo requiere código, sino el aprendizaje permanente de marcos de trabajo arquitectónicos y herramientas de comunicación técnica. Esta entrega demuestra que el aprendizaje autónomo de estándares internacionales (H3, C4 Model, ADD) es fundamental para el éxito en la ingeniería de software profesional.<br><br> **AV2:** El avance en la AV2 evidencia una curva de aprendizaje exitosa sobre conceptos complejos de arquitectura. La organización por roles permitió que cada integrante se especializara en un área técnica, fomentando un entorno de aprendizaje colaborativo y una arquitectura sólida y bien documentada. |
 
 
@@ -234,12 +234,12 @@
 
 #### 1.1 Startup Profile
 ##### 1.1.1 Descripción de la Startup
-Somos una startup de tecnología enfocada en soluciones FoodTech, dedicada a potenciar la visibilidad y el acceso al sector gastronómico local mediante software de alta disponibilidad. Nuestro objetivo con Foodly es cerrar la brecha entre los pequeños negocios gastronómicos ("huariques") y los comensales, utilizando una arquitectura escalable que permita el crecimiento exponencial de los emprendimientos locales en Lima.
+Somos una startup de tecnología enfocada en soluciones FoodTech, dedicada a potenciar la visibilidad y el acceso al sector gastronómico local mediante software de alta disponibilidad. Nuestro objetivo con Foodly es cerrar la brecha entre los pequeños negocios gastronómicos ("restaurantes") y los comensales, utilizando una arquitectura escalable que permita el crecimiento exponencial de los emprendimientos locales en Lima.
 
 A diferencia de los buscadores convencionales, Foodly optimiza la experiencia de descubrimiento mediante computación geoespacial. Utilizamos la indexación de mapas para conectar a los usuarios con las mejores propuestas culinarias en su entorno inmediato con una precisión superior, garantizando un sistema robusto, eficiente y centrado en la cercanía real.
 
 * **Misión:** Optimizar la conexión entre la gastronomía local y los usuarios finales mediante soluciones de software de alta disponibilidad y precisión geoespacial que faciliten el descubrimiento de experiencias culinarias auténticas.
-* **Visión:** Convertirnos en la plataforma líder de búsqueda y localización para negocios emergentes (huariques) en Lima, democratizando el acceso a tecnologías de vanguardia, como la indexación hexagonal (H3), para revolucionar la forma en que los usuarios interactúan con su entorno gastronómico local.
+* **Visión:** Convertirnos en la plataforma líder de búsqueda y localización para negocios emergentes (restaurantes) en Lima, democratizando el acceso a tecnologías de vanguardia, como la indexación hexagonal (H3), para revolucionar la forma en que los usuarios interactúan con su entorno gastronómico local.
 
 ##### 1.1.2 Perfiles de integrantes del equipo
 
@@ -366,17 +366,17 @@ A diferencia de los buscadores convencionales, Foodly optimiza la experiencia de
 
 #### 1.2 Solution Profile
 ##### 1.2.1 Nombre del producto
-**Foodly** es una aplicación móvil y web que conecta a los comensales con los huariques más cercanos en Lima, utilizando una arquitectura de alta disponibilidad basada en la indexación hexagonal (H3) para optimizar la búsqueda y localización de estos negocios gastronómicos locales. 
+**Foodly** es una aplicación móvil y web que conecta a los comensales con los restaurantes más cercanos en Lima, utilizando una arquitectura de alta disponibilidad basada en la indexación hexagonal (H3) para optimizar la búsqueda y localización de estos negocios gastronómicos locales. 
 
-De esta manera Foodly se posiciona como una herramienta de curaduría culinaria que prioriza la autenticidad, el precio justo y la cercanía real, ofreciendo a los usuarios una experiencia de descubrimiento única y eficiente, mientras que empodera a los dueños de huariques con visibilidad digital sin las barreras de las grandes plataformas comerciales.
+De esta manera Foodly se posiciona como una herramienta de curaduría culinaria que prioriza la autenticidad, el precio justo y la cercanía real, ofreciendo a los usuarios una experiencia de descubrimiento única y eficiente, mientras que empodera a los dueños de restaurantes con visibilidad digital sin las barreras de las grandes plataformas comerciales.
 
-De modo, Foodly se diferencia de otras aplicaciones de comida al enfocarse exclusivamente en los huariques, utilizando tecnología de vanguardia para resolver la problemática de visibilidad y acceso a estos negocios, y ofreciendo una experiencia de usuario centrada en la autenticidad y la cercanía real, lo que la convierte en una solución innovadora y valiosa para el mercado gastronómico local de Lima.
+De modo, Foodly se diferencia de otras aplicaciones de comida al enfocarse exclusivamente en los restaurantes, utilizando tecnología de vanguardia para resolver la problemática de visibilidad y acceso a estos negocios, y ofreciendo una experiencia de usuario centrada en la autenticidad y la cercanía real, lo que la convierte en una solución innovadora y valiosa para el mercado gastronómico local de Lima.
 ##### 1.2.2 Antecedentes y problemática
 
 En esta sección se aplica la técnica 5 'W's y 2 'H's para delimitar el problema de negocio y el contexto global del descubrimiento de locales gastronómicos tradicionales.
 
 <strong>Antecedentes:</strong>
-A pesar de la digitalización masiva del sector gastronómico, los "huariques" (pequeños establecimientos de comida tradicional y auténtica) carecen de visibilidad en las plataformas convencionales, las cuales priorizan cadenas con alto presupuesto de marketing. Según informes del sector en el Perú (como reportes de gremios gastronómicos), la falta de digitalización en estos pequeños negocios limita su alcance a clientes locales, perdiendo la oportunidad de conectar con nuevos "Exploradores Gastronómicos" que buscan experiencias auténticas.
+A pesar de la digitalización masiva del sector gastronómico, los "restaurantes" (pequeños establecimientos de comida tradicional y auténtica) carecen de visibilidad en las plataformas convencionales, las cuales priorizan cadenas con alto presupuesto de marketing. Según informes del sector en el Perú (como reportes de gremios gastronómicos), la falta de digitalización en estos pequeños negocios limita su alcance a clientes locales, perdiendo la oportunidad de conectar con nuevos "Exploradores Gastronómicos" que buscan experiencias auténticas.
 
 <strong>Problemática:</strong>
 <table>
@@ -387,7 +387,7 @@ A pesar de la digitalización masiva del sector gastronómico, los "huariques" (
   <tr>
     <td><strong>Who</strong></td>
     <td>
-      Según la Cámara de Comercio de Lima (CCL, 2024), los consumidores peruanos, especialmente los denominados “exploradores gastronómicos”, buscan experiencias culinarias auténticas; sin embargo, su acceso a los huariques es limitado debido a la escasa presencia digital de estos negocios.
+      Según la Cámara de Comercio de Lima (CCL, 2024), los consumidores peruanos, especialmente los denominados “exploradores gastronómicos”, buscan experiencias culinarias auténticas; sin embargo, su acceso a los restaurantes es limitado debido a la escasa presencia digital de estos negocios.
     </td>
   </tr>
   <tr>
@@ -432,46 +432,46 @@ A pesar de la digitalización masiva del sector gastronómico, los "huariques" (
 ##### 1.2.3 Lean UX Process
 ###### 1.2.3.1 Lean UX Problem Statement
 
-Los comensales en Lima a menudo se limitan a cadenas comerciales debido a la dificultad de localizar "huariques" de alta calidad que no cuentan con presencia en grandes plataformas de búsqueda.
+Los comensales en Lima a menudo se limitan a cadenas comerciales debido a la dificultad de localizar "restaurantes" de alta calidad que no cuentan con presencia en grandes plataformas de búsqueda.
 
 Los buscadores actuales usan radios circulares o listados por distritos, lo que genera resultados imprecisos y una carga de procesamiento innecesaria, ocultando negocios que están a pocas cuadras pero fuera del ranking comercial.
 
 El usuario termina en lugares concurridos y costosos, mientras que los pequeños negocios con excelente sazón pierden la oportunidad de captar clientes que se encuentran físicamente cerca.
 
-Implementar una arquitectura basada en indexación hexagonal (H3) que funcione como un radar de proximidad, conectando al usuario con el huarique más cercana.
+Implementar una arquitectura basada en indexación hexagonal (H3) que funcione como un radar de proximidad, conectando al usuario con el restaurante más cercana.
 
 Sabremos que hemos tenido éxito cuando logremos implementar un sistema de búsqueda e indexación basado en la librería H3
 
-Lograr que un usuario encuentre un huarique relevante en menos de 10 segundos y con una precisión de búsqueda basada en su celda hexagonal actual.
+Lograr que un usuario encuentre un restaurante relevante en menos de 10 segundos y con una precisión de búsqueda basada en su celda hexagonal actual.
 
 ###### 1.2.3.2 Lean UX Assumptions
 #### Business Assumptions
-- Creemos que los dueños de huariques se verán incentivados a registrar su información si les garantizamos visibilidad ante usuarios que se encuentran físicamente en su radio de influencia real.
+- Creemos que los dueños de restaurantes se verán incentivados a registrar su información si les garantizamos visibilidad ante usuarios que se encuentran físicamente en su radio de influencia real.
 - Asumimos que el uso de una arquitectura basada en microservicios y el sistema de indexación H3 permitirá que la plataforma escale a otros distritos de Lima sin degradar el tiempo de respuesta.
-- Creemos que nuestra principal ventaja competitiva es la especialización en lugares de alta calidad y baja concurrencia (huariques) mediante un motor de búsqueda local ultra-preciso.
+- Creemos que nuestra principal ventaja competitiva es la especialización en lugares de alta calidad y baja concurrencia (restaurantes) mediante un motor de búsqueda local ultra-preciso.
 #### User Assumptions
 - Los usuarios asumirán que la aplicación es una herramienta de curaduría confiable al mostrar resultados basados en cercanía física exacta y no en pautas publicitarias.
-- Creemos que los comensales valoran más la autenticidad y el precio justo de un huarique cercano que las opciones de franquicias masivas que aparecen en buscadores convencionales.
+- Creemos que los comensales valoran más la autenticidad y el precio justo de un restaurante cercano que las opciones de franquicias masivas que aparecen en buscadores convencionales.
 - Asumimos que los usuarios prefieren una interfaz de búsqueda visualmente rápida que les permita escanear su entorno geoespacial para tomar decisiones inmediatas sobre dónde comer.
 #### User Outcomes
-- Que el usuario localice el huarique ideal en menos de 10 segundos gracias al filtrado por celdas hexagonales de cercanía real.
+- Que el usuario localice el restaurante ideal en menos de 10 segundos gracias al filtrado por celdas hexagonales de cercanía real.
 - Sentido de satisfacción y exclusividad al descubrir negocios locales con excelente sazón que son invisibles en las plataformas tradicionales.
 - Optimización del tiempo de desplazamiento del usuario al recibir recomendaciones de locales que se encuentran a una distancia caminable o de corto trayecto.
-- Incremento en el flujo de clientes nuevos para los dueños de huariques sin necesidad de invertir en marketing digital complejo.
+- Incremento en el flujo de clientes nuevos para los dueños de restaurantes sin necesidad de invertir en marketing digital complejo.
 #### Features
-- Algoritmo de backend que indexa huariques en Lima usando la rejilla hexagonal H3 para proporcionar resultados de búsqueda instantáneos según la ubicación del usuario.
-- Interfaz visual interactiva que permite a los usuarios explorar la densidad de huariques en su celda actual y celdas vecinas.
+- Algoritmo de backend que indexa restaurantes en Lima usando la rejilla hexagonal H3 para proporcionar resultados de búsqueda instantáneos según la ubicación del usuario.
+- Interfaz visual interactiva que permite a los usuarios explorar la densidad de restaurantes en su celda actual y celdas vecinas.
 - Panel simplificado donde el dueño del negocio puede geolocalizar su establecimiento y gestionar la información que verán los usuarios.
 - Galería de imágenes de alta velocidad que carga evidencias reales de los platos y el local sin latencia, facilitando la validación visual del usuario.
 - Funcionalidad de búsqueda avanzada que prioriza locales con alta calificación de sazón y precios accesibles dentro del entorno geoespacial del usuario.
 ###### 1.2.3.3 Lean UX Hypothesis
 
 1. <strong>Geolocalizaciíon Hexagonal con servicio externo</strong>
-    > <strong>Creemos</strong> que implementar un sistema de geolocalización hexagonal (H3) permitirá a los usuarios encontrar huariques en un radio de 500 metros con mayor precisión. <strong>Sabremos</strong> que tenemos éxito cuando el 70% de las búsquedas terminen en una visualización del perfil del local.
+    > <strong>Creemos</strong> que implementar un sistema de geolocalización hexagonal (H3) permitirá a los usuarios encontrar restaurantes en un radio de 500 metros con mayor precisión. <strong>Sabremos</strong> que tenemos éxito cuando el 70% de las búsquedas terminen en una visualización del perfil del local.
     
 
 2. <strong>Cercanía con el cliente</strong>
-    > <strong>Creemos</strong> que los usuarios valorarán más la autenticidad y cercanía de los huariques que las opciones comerciales. <strong>Sabremos</strong> que tenemos éxito cuando más del 50% de los usuarios den "Like" a un huarique cercano o visualizaciones constantes de comentarios.
+    > <strong>Creemos</strong> que los usuarios valorarán más la autenticidad y cercanía de los restaurantes que las opciones comerciales. <strong>Sabremos</strong> que tenemos éxito cuando más del 50% de los usuarios den "Like" a un restaurante cercano o visualizaciones constantes de comentarios.
 
 3. <strong>Interfaz interactiva de descubrimiento</strong>
      > **Creemos que** un onboarding guiado y una interfaz móvil-first permitirán alcanzar 500 usuarios activos en los primeros 6 meses. **Sabremos** que hemos tenido éxito cuando veamos los siguientes comentarios del mercado: usuarios comentan que fue“muy fácil empezar y hacer mi primer pedido y/o 500 cuentas inician sesión más de 3 veces en sus primeros 7 días.
@@ -496,13 +496,13 @@ Esta sección detalla los segmentos relacionados con el ámbito del problema de 
 
     - Dominio: Usuarios con nivel intermedio-avanzado en el uso de smartphones y aplicaciones de mapas.
     - Beneficios buscados:
-      - Localización instantánea de huariques en su entorno geográfico actual mediante radar geoespacial.
+      - Localización instantánea de restaurantes en su entorno geográfico actual mediante radar geoespacial.
 
       - Acceso a información visual real y precios actualizados para reducir la incertidumbre.
 
       - Filtrado de opciones para descubrir negocios con identidad regional sobre franquicias.
 
-2. Dueños de huariques o pequeños negocios gastronómicos con baja visibilidad digital
+2. Dueños de restaurantes o pequeños negocios gastronómicos con baja visibilidad digital
 
     A Emprendedores y familias dueñas de establecimientos con recetas tradicionales y excelente calidad que, por falta de herramientas técnicas o presupuesto de marketing, no logran captar al público que transita cerca de su ubicación.
 
@@ -527,7 +527,7 @@ Esta sección detalla los segmentos relacionados con el ámbito del problema de 
 #### 2.1 Competidores
 ### 2.1.1. Análisis competitivo
 
-En el mercado actual existen varias aplicaciones y plataformas de comida que permiten a los usuarios buscar restaurantes y lugares para comer, como Rappi, PedidosYa y Google Maps. Sin embargo, estas apps utilizan algoritmos de logística basados en radios circulares tradicionales que generan ineficiencias en ciudades complejas como Lima, dando prioridad a grandes cadenas y dejando poco espacio para huariques o negocios locales que no pueden costear sus altas comisiones.
+En el mercado actual existen varias aplicaciones y plataformas de comida que permiten a los usuarios buscar restaurantes y lugares para comer, como Rappi, PedidosYa y Google Maps. Sin embargo, estas apps utilizan algoritmos de logística basados en radios circulares tradicionales que generan ineficiencias en ciudades complejas como Lima, dando prioridad a grandes cadenas y dejando poco espacio para restaurantes o negocios locales que no pueden costear sus altas comisiones.
 
 <table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; font-size: 14px; border: 1px solid #ddd;">
   <thead>
@@ -556,7 +556,7 @@ En el mercado actual existen varias aplicaciones y plataformas de comida que per
     <tr>
       <td rowspan="2" style="padding: 10px; border: 1px solid #ddd; font-weight: bold; background-color: #fafafa; text-align: center;">Perfil</td>
       <td style="padding: 10px; border: 1px solid #ddd; background-color: #fafafa; font-weight: bold;">Overview</td>
-      <td style="padding: 10px; border: 1px solid #ddd;">Solución logística especializada en huariques con optimización H3.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Solución logística especializada en restaurantes con optimización H3.</td>
       <td style="padding: 10px; border: 1px solid #ddd;">Super-app latinoamericana con gran cuota de mercado.</td>
       <td style="padding: 10px; border: 1px solid #ddd;">Plataforma de delivery masiva con fuerte presencia distrital.</td>
       <td style="padding: 10px; border: 1px solid #ddd;">Buscador global con reseñas y geolocalización básica.</td>
@@ -571,7 +571,7 @@ En el mercado actual existen varias aplicaciones y plataformas de comida que per
     <tr>
       <td rowspan="2" style="padding: 10px; border: 1px solid #ddd; font-weight: bold; background-color: #fafafa; text-align: center;">Perfil de Marketing</td>
       <td style="padding: 10px; border: 1px solid #ddd; background-color: #fafafa; font-weight: bold;">Mercado Objetivo</td>
-      <td style="padding: 10px; border: 1px solid #ddd;">Comensales que buscan autenticidad y dueños de pequeños huariques.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Comensales que buscan autenticidad y dueños de pequeños restaurantes.</td>
       <td style="padding: 10px; border: 1px solid #ddd;">Usuarios urbanos masivos y grandes franquicias.</td>
       <td style="padding: 10px; border: 1px solid #ddd;">Consumidores de conveniencia de diversos estratos.</td>
       <td style="padding: 10px; border: 1px solid #ddd;">Público general que requiere información de ubicación.</td>
@@ -622,7 +622,7 @@ En el mercado actual existen varias aplicaciones y plataformas de comida que per
     </tr>
     <tr>
       <td style="padding: 10px; border: 1px solid #ddd; background-color: #e3f2fd; font-weight: bold;">Oportunidades</td>
-      <td style="padding: 10px; border: 1px solid #ddd;">Captar huariques que huyen de comisiones altas.</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">Captar restaurantes que huyen de comisiones altas.</td>
       <td style="padding: 10px; border: 1px solid #ddd;">Expansión a dark kitchens y servicios B2B.</td>
       <td style="padding: 10px; border: 1px solid #ddd;">Crecimiento en conveniencia inmediata.</td>
       <td style="padding: 10px; border: 1px solid #ddd;">Pedidos directos desde la búsqueda.</td>
@@ -641,18 +641,18 @@ En el mercado actual existen varias aplicaciones y plataformas de comida que per
 
 ### 2.1.2. Estrategias y tácticas frente a competidores.  
 
-Para diferenciar a Foodly de las grandes plataformas generales y posicionarse con éxito en el nicho de huariques, se plantean las siguientes estrategias y tácticas:
+Para diferenciar a Foodly de las grandes plataformas generales y posicionarse con éxito en el nicho de restaurantes, se plantean las siguientes estrategias y tácticas:
 
 **Estrategias:**
 - **Superioridad Técnica Geoespacial:** Utilizar el sistema de rejilla H3 para garantizar rutas óptimas y una asignación de repartidores más eficiente que los radios convencionales de la competencia.
-- **Enfoque en Autenticidad Local:** Especializar la plataforma exclusivamente en "joyas ocultas" o huariques, ofreciendo una experiencia de curaduría que los competidores masivos no pueden replicar.
+- **Enfoque en Autenticidad Local:** Especializar la plataforma exclusivamente en "joyas ocultas" o restaurantes, ofreciendo una experiencia de curaduría que los competidores masivos no pueden replicar.
 - **Sostenibilidad para el Negocio Local:** Implementar un modelo de costos operativos reducidos gracias a la eficiencia algorítmica, permitiendo comisiones más bajas y justas para los pequeños empresarios.
 
 **Tácticas:**
 - **Despliegue por Clústeres Hexagonales:** Focalizar la captación de comercios en zonas urbanas específicas de alta densidad gastronómica (nodos), asegurando la eficiencia del sistema antes de expandir el radio de acción.
-- **Dashboard de Influencia Real:** Proveer a los dueños de huariques herramientas visuales basadas en mapas de calor hexagonales para que entiendan su área de cobertura y demanda real.
+- **Dashboard de Influencia Real:** Proveer a los dueños de restaurantes herramientas visuales basadas en mapas de calor hexagonales para que entiendan su área de cobertura y demanda real.
 - **Agrupación Inteligente de Pedidos (Batching):** Implementar algoritmos que permitan a un solo repartidor cubrir múltiples pedidos dentro de una misma celda H3 o adyacentes, reduciendo el costo final para el usuario.
-- **Optimización de UX para el Descubrimiento:** Crear una interfaz de alta velocidad que permita encontrar el "huarique ideal" en menos de 30 segundos mediante filtros basados en cercanía real y no solo en distancia lineal.
+- **Optimización de UX para el Descubrimiento:** Crear una interfaz de alta velocidad que permita encontrar el "restaurante ideal" en menos de 30 segundos mediante filtros basados en cercanía real y no solo en distancia lineal.
   
 #### 2.2 Entrevistas
 
@@ -664,25 +664,25 @@ Objetivo: Entender sus motivaciones, comportamientos y expectativas al usar una 
 
   Preguntas Segmento 1:
   - ¿Con qué frecuencia usas aplicaciones web para buscar lugares para comer fuera de lo común?
-  - ¿Cómo sueles descubrir huariques o lugares de comida poco conocidos en la web?
+  - ¿Cómo sueles descubrir restaurantes o lugares de comida poco conocidos en la web?
   - ¿Qué aspectos valoras más al elegir un lugar para comer usando una app web (precio, ubicación, reseñas, fotos, etc.)?
   - ¿Qué dificultades has tenido al usar apps web para buscar lugares de comida local?
-  - ¿Qué te motivaría a usar una app web dedicada exclusivamente a huariques?
+  - ¿Qué te motivaría a usar una app web dedicada exclusivamente a restaurantes?
   - ¿Qué funcionalidades en la app web considerarías imprescindibles para usarla con regularidad?
-  - ¿Qué preocupaciones o barreras tendrías al usar una app web para descubrir huariques?
+  - ¿Qué preocupaciones o barreras tendrías al usar una app web para descubrir restaurantes?
 
-Segmento 2: Dueños y Administradores de Huariques (Usuarios que usan la app web para gestionar su huarique).
+Segmento 2: Dueños y Administradores de restaurantes (Usuarios que usan la app web para gestionar su restaurante).
 
-Objetivo: Comprender sus necesidades y expectativas al usar la app web para administrar y promocionar sus huariques.
+Objetivo: Comprender sus necesidades y expectativas al usar la app web para administrar y promocionar sus restaurantes.
 
   Preguntas Segmento 2:
-  - ¿Actualmente usas alguna plataforma web o digital para promocionar tu huarique? ¿Cuál?
+  - ¿Actualmente usas alguna plataforma web o digital para promocionar tu restaurante? ¿Cuál?
   - ¿Qué retos has enfrentado al tratar de gestionar tu negocio a través de plataformas digitales?
   - ¿Qué tan cómodo te sientes usando aplicaciones web para actualizar la información de tu negocio?
-  - ¿Qué características te harían decidirte a usar una app web especializada para huariques?
+  - ¿Qué características te harían decidirte a usar una app web especializada para restaurantes?
   - ¿Qué tipo de soporte o facilidades esperarías al usar esta app web para gestionar tu perfil o negocio?
   - ¿Qué modelo de tarifas o membresías considerarías justo para usar esta plataforma?
-  - ¿Qué resultados te gustaría ver después de usar esta aplicación web para promocionar tu huarique?
+  - ¿Qué resultados te gustaría ver después de usar esta aplicación web para promocionar tu restaurante?
   
 ### Segmento #1: Exploradores Gastronómicos (Usuarios de la app web)
 
@@ -701,7 +701,7 @@ Objetivo: Comprender sus necesidades y expectativas al usar la app web para admi
         <strong>Nombre:</strong> Vitaly Baca <br>
         <strong>Edad:</strong> 20 <br>
         <strong>Distrito:</strong> Lurín <br><br>
-        <strong>Resumen:</strong> Vitaly Baca, estudiante de 20 años de Ingeniería de Software en la UPC, utiliza este tipo de aplicaciones casi todos los fines de semana, pues disfruta salir con su pareja o amigos a probar lugares nuevos. Descubre la mayoría de huariques en TikTok e Instagram siguiendo a foodies, y también explora en Google Maps. Lo primero que valora es el precio, ya que como estudiante tiene un presupuesto ajustado, seguido de fotos y comentarios confiables para no caer en un mal sitio. Entre las dificultades que ha enfrentado menciona que a veces llega a lugares que aparecen como abiertos pero están cerrados, además de que muchos huariques pequeños ni siquiera figuran en las apps. Se sentiría motivado a usar una app exclusiva de huariques siempre que tenga reseñas sinceras de usuarios similares a él. Considera imprescindibles los filtros por precio y tipo de comida, un mapa rápido e intuitivo y recomendaciones personalizadas. Sus principales preocupaciones serían que la app se llene de publicidad, tenga información poco confiable o incluya muy pocos lugares en su ciudad, perdiendo su valor.
+        <strong>Resumen:</strong> Vitaly Baca, estudiante de 20 años de Ingeniería de Software en la UPC, utiliza este tipo de aplicaciones casi todos los fines de semana, pues disfruta salir con su pareja o amigos a probar lugares nuevos. Descubre la mayoría de restaurantes en TikTok e Instagram siguiendo a foodies, y también explora en Google Maps. Lo primero que valora es el precio, ya que como estudiante tiene un presupuesto ajustado, seguido de fotos y comentarios confiables para no caer en un mal sitio. Entre las dificultades que ha enfrentado menciona que a veces llega a lugares que aparecen como abiertos pero están cerrados, además de que muchos restaurantes pequeños ni siquiera figuran en las apps. Se sentiría motivado a usar una app exclusiva de restaurantes siempre que tenga reseñas sinceras de usuarios similares a él. Considera imprescindibles los filtros por precio y tipo de comida, un mapa rápido e intuitivo y recomendaciones personalizadas. Sus principales preocupaciones serían que la app se llene de publicidad, tenga información poco confiable o incluya muy pocos lugares en su ciudad, perdiendo su valor.
       </td>
       <td>
         <img src="assets/images/chapter-2/entrevistas/Entrevista1_Segmento1.jpeg" alt="Evidencia Vitaly" width="150"><br>
@@ -715,7 +715,7 @@ Objetivo: Comprender sus necesidades y expectativas al usar la app web para admi
         <strong>Nombre:</strong> Sebastian del Rio <br>
         <strong>Edad:</strong> 20 <br>
         <strong>Distrito:</strong> Chorrillos <br><br>
-        <strong>Resumen:</strong> Sebastián del Río, estudiante de 20 años de Ingeniería de Software en la UTP, no suele usar aplicaciones web con mucha frecuencia para buscar huariques, apenas una o dos veces al mes cuando quiere salir con amigos o probar algo distinto. Descubre la mayoría de lugares por recomendaciones en TikTok e Instagram, y ocasionalmente en Google Maps. Para él, lo más importante al elegir un lugar son las fotos y reseñas reales de otros usuarios, además del precio y la cercanía. Señala como principal dificultad que los huariques casi no aparecen en las aplicaciones, predominando los restaurantes conocidos, además de que muchas veces la información está incompleta o sin buenas fotos. Lo motivaría a usar una app que realmente muestre sitios auténticos y confiables, siempre que sea sencilla. Considera imprescindibles fotos reales, reseñas honestas, mapa con ubicación, filtros de precio y la opción de guardar favoritos. Su mayor preocupación sería que la información no sea confiable, que la app lo mande a lugares cerrados o de baja calidad, o que sea complicada y lenta.
+        <strong>Resumen:</strong> Sebastián del Río, estudiante de 20 años de Ingeniería de Software en la UTP, no suele usar aplicaciones web con mucha frecuencia para buscar restaurantes, apenas una o dos veces al mes cuando quiere salir con amigos o probar algo distinto. Descubre la mayoría de lugares por recomendaciones en TikTok e Instagram, y ocasionalmente en Google Maps. Para él, lo más importante al elegir un lugar son las fotos y reseñas reales de otros usuarios, además del precio y la cercanía. Señala como principal dificultad que los restaurantes casi no aparecen en las aplicaciones, predominando los restaurantes conocidos, además de que muchas veces la información está incompleta o sin buenas fotos. Lo motivaría a usar una app que realmente muestre sitios auténticos y confiables, siempre que sea sencilla. Considera imprescindibles fotos reales, reseñas honestas, mapa con ubicación, filtros de precio y la opción de guardar favoritos. Su mayor preocupación sería que la información no sea confiable, que la app lo mande a lugares cerrados o de baja calidad, o que sea complicada y lenta.
       </td>
       <td>
         <img src="assets/images/chapter-2/entrevistas/Entrevista2_Segmento1.jpeg" alt="Evidencia Sebastian" width="150"><br>
@@ -729,7 +729,7 @@ Objetivo: Comprender sus necesidades y expectativas al usar la app web para admi
         <strong>Nombre:</strong> Luis Fernandez <br>
         <strong>Edad:</strong> 20 <br>
         <strong>Distrito:</strong> Pueblo Libre <br><br>
-        <strong>Resumen:</strong> Luis Fernández, estudiante de 20 años de Ingeniería de Sistemas en la UTP, busca lugares nuevos casi todas las semanas, sobre todo los fines de semana cuando sale con su pareja. Se guía por cuentas de foodies en Instagram y TikTok, guarda videos para después y también consulta reseñas en Google Maps o en grupos de Facebook. Para él, el precio es fundamental, pero también valora la experiencia completa: reseñas sobre la atención y la calidad de la comida, junto con fotos de los platos. Ha tenido problemas con horarios desactualizados en apps, llegando a lugares cerrados, y con la falta de visibilidad de huariques menos conocidos. Lo motivaría una app confiable que se enfoque en huariques y cuente con reseñas de personas locales. Considera imprescindibles los filtros por tipo de comida, precio y ubicación, un mapa interactivo y recomendaciones personalizadas. Sus preocupaciones son que la aplicación tenga publicidad excesiva, información falsa o que no incluya suficientes opciones locales.
+        <strong>Resumen:</strong> Luis Fernández, estudiante de 20 años de Ingeniería de Sistemas en la UTP, busca lugares nuevos casi todas las semanas, sobre todo los fines de semana cuando sale con su pareja. Se guía por cuentas de foodies en Instagram y TikTok, guarda videos para después y también consulta reseñas en Google Maps o en grupos de Facebook. Para él, el precio es fundamental, pero también valora la experiencia completa: reseñas sobre la atención y la calidad de la comida, junto con fotos de los platos. Ha tenido problemas con horarios desactualizados en apps, llegando a lugares cerrados, y con la falta de visibilidad de restaurantes menos conocidos. Lo motivaría una app confiable que se enfoque en restaurantes y cuente con reseñas de personas locales. Considera imprescindibles los filtros por tipo de comida, precio y ubicación, un mapa interactivo y recomendaciones personalizadas. Sus preocupaciones son que la aplicación tenga publicidad excesiva, información falsa o que no incluya suficientes opciones locales.
         </td>
       <td>
         <img src="assets/images/chapter-2/entrevistas/Entrevista3_Segmento1.jpeg" alt="Evidencia Luis" width="150"><br>
@@ -740,7 +740,7 @@ Objetivo: Comprender sus necesidades y expectativas al usar la app web para admi
   </tbody>
 </table>
 
-### Segmento #2: Dueños y Administradores de Huariques (Usuarios que usan la app web para gestionar su huarique)
+### Segmento #2: Dueños y Administradores de restaurantes (Usuarios que usan la app web para gestionar su restaurante)
 <table border="1" cellspacing="0" cellpadding="8">
   <thead>
     <tr>
@@ -756,7 +756,7 @@ Objetivo: Comprender sus necesidades y expectativas al usar la app web para admi
         <strong>Nombre:</strong> Wildor Villalobos <br>
         <strong>Edad:</strong> 28 <br>
         <strong>Distrito:</strong> Santiago de Surco <br><br>
-        <strong>Resumen:</strong> Propietario de un huarique de pan con chicharrón. Usa Instagram y TikTok (más IG Reels); las publicaciones sirven para promociones, pero los reels “mueven” más. Dificultades: competencia y algoritmo, requiere pagar para alcanzar más gente. Quiere que la app le permita resaltar su negocio y ver métricas claras (cuánta gente lo encuentra, eficacia para traer clientes), con panel simple y gráficos directos. Estaría dispuesto a pagar S/ 20–50/mes si rinde igual o mejor que IG/TikTok. Objetivo: aumentar ventas.
+        <strong>Resumen:</strong> Propietario de un restaurante de pan con chicharrón. Usa Instagram y TikTok (más IG Reels); las publicaciones sirven para promociones, pero los reels “mueven” más. Dificultades: competencia y algoritmo, requiere pagar para alcanzar más gente. Quiere que la app le permita resaltar su negocio y ver métricas claras (cuánta gente lo encuentra, eficacia para traer clientes), con panel simple y gráficos directos. Estaría dispuesto a pagar S/ 20–50/mes si rinde igual o mejor que IG/TikTok. Objetivo: aumentar ventas.
       </td>
       <td>
         <img src="assets/images/chapter-2/entrevistas/Entrevista_Wildor.jpg" alt="Evidencia Wildor" width="150"><br>
@@ -804,7 +804,7 @@ Para comprender mejor las necesidades y comportamientos de los usuarios de Foodl
   
 ![UserPersona_1](assets/images/chapter-2/user-personas/Mateo.png)
 
-* Persona 2: El Dueño de Huarique
+* Persona 2: El Dueño de restaurante
   
 ![UserPersona_2](assets/images/chapter-2/user-personas/DonaRosa.png)
 
@@ -833,7 +833,7 @@ Para comprender mejor las necesidades y comportamientos de los usuarios de Foodl
             <td style="padding: 8px; text-align: center;">Baja</td>
         </tr>
         <tr style="background-color: #fafafa;">
-            <td style="padding: 8px; font-weight: bold;">Consultar detalles y precios del huarique</td>
+            <td style="padding: 8px; font-weight: bold;">Consultar detalles y precios del restaurante</td>
             <td style="padding: 8px; text-align: center;">Siempre</td>
             <td style="padding: 8px; text-align: center;">Muy alta</td>
             <td style="padding: 8px; text-align: center;">Aveces</td>
@@ -861,7 +861,7 @@ Para comprender mejor las necesidades y comportamientos de los usuarios de Foodl
             <td style="padding: 8px; text-align: center;">Muy alta</td>
         </tr>
         <tr style="background-color: #fafafa;">
-            <td style="padding: 8px; font-weight: bold;">Guardar huariques favoritos</td>
+            <td style="padding: 8px; font-weight: bold;">Guardar restaurantes favoritos</td>
             <td style="padding: 8px; text-align: center;">Casi siempre</td>
             <td style="padding: 8px; text-align: center;">Alta</td>
             <td style="padding: 8px; text-align: center;">Nunca</td>
@@ -883,7 +883,7 @@ Las tareas identificadas en la matriz para **Foodly** reflejan la naturaleza bid
 * El uso del sistema de persistencia (S3) para la galería multimedia tiene una importancia "Muy alta" para Doña Rosa como herramienta de venta, mientras que para Mateo es un apoyo visual de importancia "Media" para la validación rápida.
   
 ##### 2.3.3 Empathy Maps
-A continuación se presentan los mapas de empatía para los dos perfiles principales de usuarios de Foodly: Mateo, el comensal explorador, y Doña Rosa, la especialista y dueña de un huarique tradicional. Estos mapas permiten comprender en profundidad sus necesidades, pensamientos, sentimientos y comportamientos, facilitando un diseño arquitectónico y de interfaz centrado en el usuario.
+A continuación se presentan los mapas de empatía para los dos perfiles principales de usuarios de Foodly: Mateo, el comensal explorador, y Doña Rosa, la especialista y dueña de un restaurante tradicional. Estos mapas permiten comprender en profundidad sus necesidades, pensamientos, sentimientos y comportamientos, facilitando un diseño arquitectónico y de interfaz centrado en el usuario.
 
 * Segmento 1: Mateo (El Explorador)
   
@@ -896,13 +896,13 @@ A continuación se presentan los mapas de empatía para los dos perfiles princip
 ##### 2.3.4 As-is Scenario Mapping
 * Segmento 1: Mateo (El Comensal Explorador)
   
-Mediante este artefacto, se ha llevado a cabo la elaboración del As-Is Scenario Mapping para el primer segmento. Este escenario refleja cómo los usuarios jóvenes y profesionales, interesados en descubrir huariques, realizan actualmente sus actividades durante su rutina diaria. Además, evidencia las dificultades que enfrentan al buscar opciones auténticas y cercanas, lidiando con aplicaciones saturadas de franquicias, radios de búsqueda imprecisos y falta de información visual, así como las percepciones de desconfianza y frustración que experimentan en cada etapa de su recorrido.
+Mediante este artefacto, se ha llevado a cabo la elaboración del As-Is Scenario Mapping para el primer segmento. Este escenario refleja cómo los usuarios jóvenes y profesionales, interesados en descubrir restaurantes, realizan actualmente sus actividades durante su rutina diaria. Además, evidencia las dificultades que enfrentan al buscar opciones auténticas y cercanas, lidiando con aplicaciones saturadas de franquicias, radios de búsqueda imprecisos y falta de información visual, así como las percepciones de desconfianza y frustración que experimentan en cada etapa de su recorrido.
 
 ![As-Is_1](assets/images/chapter-2/as-is/AsIsMateo.png)
 
 * Segmento 2: Doña Rosa (La Especialista)
   
-De igual manera, se ha elaborado el As-Is Scenario Mapping para el segundo segmento, enfocado en los propietarios de huariques tradicionales. Este escenario ilustra cómo estos emprendedores gestionan actualmente la promoción de sus locales comerciales. Detalla las fuertes barreras tecnológicas y de tiempo que enfrentan al intentar ganar visibilidad digital frente a negocios más modernos, resaltando la frustración, la sensación de invisibilidad y las emociones que experimentan al intentar atraer a nuevos clientes que transitan a escasas cuadras de su negocio.
+De igual manera, se ha elaborado el As-Is Scenario Mapping para el segundo segmento, enfocado en los propietarios de restaurantes tradicionales. Este escenario ilustra cómo estos emprendedores gestionan actualmente la promoción de sus locales comerciales. Detalla las fuertes barreras tecnológicas y de tiempo que enfrentan al intentar ganar visibilidad digital frente a negocios más modernos, resaltando la frustración, la sensación de invisibilidad y las emociones que experimentan al intentar atraer a nuevos clientes que transitan a escasas cuadras de su negocio.
 
 ![As-Is_2](assets/images/chapter-2/as-is/AsIsDonaRosa.png)
 
@@ -911,13 +911,13 @@ De igual manera, se ha elaborado el As-Is Scenario Mapping para el segundo segme
 #### 3.1 To-Be Scenario Mapping
 * Segmento 1: Mateo (El Comensal Explorador)
   
-Mediante este artefacto, se ha llevado a cabo la elaboración del To-Be Scenario Mapping para el primer segmento. Este escenario proyecta la experiencia ideal de los usuarios al utilizar Foodly durante su rutina diaria para descubrir huariques. Refleja cómo la aplicación resuelve sus dificultades actuales al permitirles filtrar cadenas comerciales, encontrar opciones auténticas en radios de caminata precisos y visualizar fotos reales de los platos, transformando la incertidumbre previa en un proceso de decisión rápido, confiable y altamente satisfactorio.
+Mediante este artefacto, se ha llevado a cabo la elaboración del To-Be Scenario Mapping para el primer segmento. Este escenario proyecta la experiencia ideal de los usuarios al utilizar Foodly durante su rutina diaria para descubrir restaurantes. Refleja cómo la aplicación resuelve sus dificultades actuales al permitirles filtrar cadenas comerciales, encontrar opciones auténticas en radios de caminata precisos y visualizar fotos reales de los platos, transformando la incertidumbre previa en un proceso de decisión rápido, confiable y altamente satisfactorio.
 
 ![To-Be_1](assets/images/chapter-2/to-be/ToBeMateo.png)
 
 * Segmento 2: Doña Rosa (La Especialista)
   
-De igual manera, se ha elaborado el To-Be Scenario Mapping para el segundo segmento, enfocado en los propietarios de huariques tradicionales. Este escenario ilustra el proceso optimizado mediante el cual estos emprendedores podrán promocionar sus locales comerciales usando Foodly. Detalla cómo la plataforma elimina las actuales barreras tecnológicas y económicas, permitiéndoles actualizar su menú diario de forma intuitiva para conectar directamente con nuevos clientes cercanos, transformando su previa sensación de invisibilidad en empoderamiento, reconocimiento y seguridad económica.
+De igual manera, se ha elaborado el To-Be Scenario Mapping para el segundo segmento, enfocado en los propietarios de restaurantes tradicionales. Este escenario ilustra el proceso optimizado mediante el cual estos emprendedores podrán promocionar sus locales comerciales usando Foodly. Detalla cómo la plataforma elimina las actuales barreras tecnológicas y económicas, permitiéndoles actualizar su menú diario de forma intuitiva para conectar directamente con nuevos clientes cercanos, transformando su previa sensación de invisibilidad en empoderamiento, reconocimiento y seguridad económica.
 
 ![To-Be_2](assets/images/chapter-2/to-be/ToBeDonaRosa.png)
 
@@ -937,28 +937,28 @@ En esta sección, el equipo detalla el conjunto de User Stories y Epics desarrol
 
 | Epic / User Story ID | Título | Descripción | Criterios de Aceptación (Escenarios) | Relacionado con (Epic ID) |
 | :--- | :--- | :--- | :--- | :--- |
-| **US01** | Visualización de Radar H3 | Como explorador, quiero ver huariques en un mapa hexagonal para identificar zonas con comida cerca. | **Escenario 1 – Radar con datos**<br>**Given** el usuario se encuentra en una zona con locales registrados<br>**When** abre el mapa principal<br>**Then** el sistema renderiza celdas H3 iluminadas con iconos de comida.<br><br>**Escenario 2 – Radar vacío**<br>**Given** el usuario está en una zona remota sin registros<br>**When** abre el mapa<br>**Then** muestra un mensaje: "No hay huariques aquí aún, ¡recomienda uno!". | EP01 |
-| **US02** | Registro de Huarique | Como dueño, quiero registrar mi local con pin en el mapa para ser visible en el radar. | **Escenario 1 – Registro exitoso**<br>**Given** el dueño ingresa coordenadas válidas en Lima<br>**When** guarda la ubicación del local<br>**Then** el sistema asigna el local a una celda H3 única.<br><br>**Escenario 2 – Ubicación fuera de rango**<br>**Given** el dueño marca un punto fuera de la ciudad de Lima<br>**When** intenta guardar<br>**Then** el sistema muestra error: "Ubicación fuera del área de servicio". | EP02 |
+| **US01** | Visualización de Radar H3 | Como explorador, quiero ver restaurantes en un mapa hexagonal para identificar zonas con comida cerca. | **Escenario 1 – Radar con datos**<br>**Given** el usuario se encuentra en una zona con locales registrados<br>**When** abre el mapa principal<br>**Then** el sistema renderiza celdas H3 iluminadas con iconos de comida.<br><br>**Escenario 2 – Radar vacío**<br>**Given** el usuario está en una zona remota sin registros<br>**When** abre el mapa<br>**Then** muestra un mensaje: "No hay restaurantes aquí aún, ¡recomienda uno!". | EP01 |
+| **US02** | Registro de restaurante | Como dueño, quiero registrar mi local con pin en el mapa para ser visible en el radar. | **Escenario 1 – Registro exitoso**<br>**Given** el dueño ingresa coordenadas válidas en Lima<br>**When** guarda la ubicación del local<br>**Then** el sistema asigna el local a una celda H3 única.<br><br>**Escenario 2 – Ubicación fuera de rango**<br>**Given** el dueño marca un punto fuera de la ciudad de Lima<br>**When** intenta guardar<br>**Then** el sistema muestra error: "Ubicación fuera del área de servicio". | EP02 |
 | **US03** | Filtrado por Sazón | Como explorador, quiero filtrar locales por calificación para asegurar una buena experiencia. | **Escenario 1 – Aplicación de filtro**<br>**Given** locales con diversas puntuaciones en la celda<br>**When** selecciono el filtro "4+ estrellas"<br>**Then** el mapa oculta los locales con baja calificación.<br><br>**Escenario 2 – Sin resultados por filtro**<br>**Given** solo locales con 3 estrellas en el radar<br>**When** aplico el filtro "5 estrellas"<br>**Then** el sistema muestra: "No hay locales tan top en esta celda, intenta ampliar el radio". | EP03 |
 | **US04** | Galería de Platos | Como dueño, quiero subir fotos de mis platos para convencer visualmente a los clientes. | **Escenario 1 – Carga correcta**<br>**Given** un archivo JPG de 2MB<br>**When** el dueño lo sube a la galería<br>**Then** la imagen se optimiza y se publica en el perfil.<br><br>**Escenario 2 – Formato inválido**<br>**Given** un archivo de formato PDF<br>**When** el dueño intenta subirlo<br>**Then** muestra mensaje: "Solo se permiten imágenes (PNG/JPG)". | EP02 |
 | **US05** | Navegación a Pie | Como explorador, quiero ver la ruta hacia el local para llegar rápidamente caminando. | **Escenario 1 – Cálculo de ruta**<br>**Given** el usuario selecciona un local a 300m<br>**When** pulsa el botón "Ir"<br>**Then** se traza una línea guía en el mapa con el tiempo estimado.<br><br>**Escenario 2 – GPS desactivado**<br>**Given** el permiso de ubicación denegado<br>**When** pulsa "Ir"<br>**Then** el sistema solicita activar el GPS para mostrar la ruta. | EP04 |
 | **US06** | Estado Abierto/Cerrado | Como dueño, quiero cambiar mi estado de servicio para no recibir gente si ya cerré. | **Escenario 1 – Cierre de local**<br>**Given** el local está como "Abierto"<br>**When** el dueño pulsa "Cerrar"<br>**Then** el hexágono cambia de color a gris en el mapa de los usuarios.<br><br>**Escenario 2 – Apertura programada**<br>**Given** el local está "Cerrado"<br>**When** llega la hora de apertura<br>**Then** el sistema envía un recordatorio al dueño para activar el radar. | EP02 |
 | **US07** | Búsqueda por Antojo | Como explorador, quiero buscar por tipo de comida para encontrar un antojo específico. | **Escenario 1 – Búsqueda directa**<br>**Given** el usuario escribe "Ceviche"<br>**When** presiona buscar<br>**Then** el sistema resalta los hexágonos con cevicherías.<br><br>**Escenario 2 – Sin coincidencias**<br>**Given** el usuario busca "Pizza con piña"<br>**When** no hay locales con ese tag<br>**Then** el sistema sugiere: "No encontramos pizza, ¿qué tal estos Lomo Saltados?". | EP03 |
 | **US08** | Favoritos | Como explorador, quiero guardar locales para volver después fácilmente. | **Escenario 1 – Guardado exitoso**<br>**Given** el perfil de un local abierto<br>**When** presiono el icono de corazón<br>**Then** el local se agrega a mi lista de "Joyas Guardadas".<br><br>**Escenario 2 – Local eliminado**<br>**Given** un local en mis favoritos que fue dado de baja<br>**When** abro mi lista<br>**Then** el sistema indica que el local ya no está disponible. | EP04 |
-| **US09** | Notificación Proximity | Como explorador, quiero recibir alertas de locales "Top" cercanos para no perdérmelos. | **Escenario 1 – Alerta en movimiento**<br>**Given** el usuario entra en una celda con un local de 5 estrellas<br>**When** la app está en segundo plano<br>**Then** envía notificación: "¡Hay un huarique increíble a 50 metros!".<br><br>**Escenario 2 – Fuera de horario**<br>**Given** el usuario pasa cerca a las 2 AM<br>**When** el local está cerrado<br>**Then** el sistema no envía ninguna notificación molesta. | EP04 |
+| **US09** | Notificación Proximity | Como explorador, quiero recibir alertas de locales "Top" cercanos para no perdérmelos. | **Escenario 1 – Alerta en movimiento**<br>**Given** el usuario entra en una celda con un local de 5 estrellas<br>**When** la app está en segundo plano<br>**Then** envía notificación: "¡Hay un restaurante increíble a 50 metros!".<br><br>**Escenario 2 – Fuera de horario**<br>**Given** el usuario pasa cerca a las 2 AM<br>**When** el local está cerrado<br>**Then** el sistema no envía ninguna notificación molesta. | EP04 |
 | **US10** | Filtro de Presupuesto | Como explorador, quiero filtrar por precio para comer según lo que tenga en el bolsillo. | **Escenario 1 – Filtro económico**<br>**Given** locales con rangos $, $$y$$$<br>**When** selecciono "$"<br>**Then** solo muestra locales con platos de menos de S/15.<br><br>**Escenario 2 – Cambio de rango**<br>**Given** el filtro "$" activo<br>**When** cambio a "$$"<br>**Then** la lista se actualiza instantáneamente con las nuevas opciones. | EP03 |
 | **US11** | Dashboard de Vistas | Como dueño, quiero ver estadísticas de mi local para saber cuánta gente me encuentra. | **Escenario 1 – Consulta de métricas**<br>**Given** actividad de usuarios en el día<br>**When** abro el dashboard<br>**Then** muestra el número total de clics en mi perfil.<br><br>**Escenario 2 – Perfil nuevo**<br>**Given** un local recién registrado hoy<br>**When** abro métricas<br>**Then** muestra: "Aún no tienes visitas, ¡completa tu perfil para destacar!". | EP05 |
 | **US12** | Reseña Verificada | Como explorador, quiero calificar locales para ayudar a la comunidad de Foodly. | **Escenario 1 – Reseña válida**<br>**Given** el usuario está físicamente en el local<br>**When** envía su calificación y comentario<br>**Then** la reseña se publica con el sello "Visitante Real".<br><br>**Escenario 2 – Reseña remota**<br>**Given** el usuario está a 5km del local<br>**When** intenta calificar<br>**Then** el sistema indica: "Debes estar en el local para dejar una reseña". | EP04 |
 | **US13** | Contacto WhatsApp | Como explorador, quiero contactar al dueño para hacer preguntas o pedidos rápidos. | **Escenario 1 – Abrir chat**<br>**Given** el botón de WhatsApp en el perfil<br>**When** el usuario lo pulsa<br>**Then** se abre la app de WhatsApp con un mensaje predeterminado.<br><br>**Escenario 2 – Sin número**<br>**Given** un dueño que no registró teléfono<br>**When** el usuario busca contacto<br>**Then** el botón aparece deshabilitado. | EP02 |
 | **US14** | Modo Oscuro Map | Como explorador, quiero un modo nocturno para buscar comida de noche cómodamente. | **Escenario 1 – Cambio de tema**<br>**Given** es después de las 7 PM<br>**When** abro la app<br>**Then** el mapa cambia automáticamente a colores oscuros de alta visibilidad.<br><br>**Escenario 2 – Switch manual**<br>**Given** el tema claro activo<br>**When** cambio en ajustes a "Oscuro"<br>**Then** toda la interfaz cambia sin necesidad de reiniciar la app. | EP04 |
-| **US15** | Compartir Joyita | Como explorador, quiero enviar un huarique a un amigo para ir juntos. | **Escenario 1 – Link enviado**<br>**Given** el usuario pulsa "Compartir"<br>**When** selecciona un contacto<br>**Then** envía un deep-link que abre el local directamente en el mapa.<br><br>**Escenario 2 – Receptor sin app**<br>**Given** un contacto que no tiene Foodly<br>**When** abre el link compartido<br>**Then** se le redirige a una versión web con la info del local. | EP04 |
+| **US15** | Compartir Joyita | Como explorador, quiero enviar un restaurante a un amigo para ir juntos. | **Escenario 1 – Link enviado**<br>**Given** el usuario pulsa "Compartir"<br>**When** selecciona un contacto<br>**Then** envía un deep-link que abre el local directamente en el mapa.<br><br>**Escenario 2 – Receptor sin app**<br>**Given** un contacto que no tiene Foodly<br>**When** abre el link compartido<br>**Then** se le redirige a una versión web con la info del local. | EP04 |
 | **US16** | Validación de Higiene | Como dueño, quiero mostrar mis credenciales de sanidad para generar confianza. | **Escenario 1 – Sello verificado**<br>**Given** el dueño sube su carnet sanitario<br>**When** el admin lo aprueba<br>**Then** aparece un check verde de "Local Seguro" en el radar.<br><br>**Escenario 2 – Documento vencido**<br>**Given** un certificado con fecha pasada<br>**When** el sistema lo detecta<br>**Then** notifica al dueño para actualizarlo o perderá el sello. | EP05 |
 | **US17** | Carga Offline | Como explorador, quiero ver locales guardados sin internet para no perderme en zonas sin señal. | **Escenario 1 – Consulta en caché**<br>**Given** el usuario pierde conexión 4G<br>**When** abre sus favoritos<br>**Then** el sistema muestra la información básica almacenada localmente.<br><br>**Escenario 2 – Datos no cargados**<br>**Given** un local que nunca visitó ni guardó<br>**When** intenta abrirlo sin red<br>**Then** muestra: "Se requiere conexión para ver este local". | EP05 |
 | **US18** | Reporte de Local Cerrado | Como explorador, quiero reportar si un local ya no existe para mantener el mapa actualizado. | **Escenario 1 – Reporte enviado**<br>**Given** el usuario llega al local y está vacío<br>**When** pulsa "Informar cierre"<br>**Then** el sistema envía una alerta al administrador para verificar.<br><br>**Escenario 2 – Reporte falso**<br>**Given** un usuario que reporta muchos locales abiertos<br>**When** el sistema detecta el patrón<br>**Then** ignora sus reportes temporalmente por fiabilidad. | EP05 |
 | **US19** | Gestión de Empleados | Como dueño, quiero registrar a mis ayudantes para que actualicen el menú por mí. | **Escenario 1 – Agregar staff**<br>**Given** el panel de administración del dueño<br>**When** ingresa el correo del empleado<br>**Then** el empleado recibe acceso limitado para editar el plato del día.<br><br>**Escenario 2 – Revocar acceso**<br>**Given** un empleado que ya no trabaja ahí<br>**When** el dueño lo elimina de la lista<br>**Then** el empleado pierde el acceso a la gestión del local inmediatamente. | EP02 |
 | **US20** | Escalabilidad de Búsqueda | Como administrador, quiero que el motor H3 soporte miles de consultas para evitar caídas. | **Escenario 1 – Carga pesada**<br>**Given** 1,000 usuarios buscando en la misma celda<br>**When** se ejecutan las queries geoespaciales<br>**Then** el tiempo de respuesta se mantiene por debajo de los 200ms.<br><br>**Escenario 2 – Fallo de servidor**<br>**Given** una caída en un nodo de base de datos<br>**When** un usuario intenta buscar<br>**Then** el sistema conmuta a un nodo de respaldo sin interrumpir el servicio. | EP05 |
 | **TS01** | Integración del Core H3 | Como arquitecto, deseo integrar la librería H3 de Uber para que el backend gestione correctamente los índices hexagonales[cite: 1]. | **Escenario 1 – Conversión de coordenadas:** Given una coordenada Lat/Long válida. When el servicio de indexación procesa el punto. Then genera un índice H3 válido. **Escenario 2 – Resolución inválida:** Given una solicitud de resolución no soportada. When el sistema intenta procesar. Then retorna un error de configuración. | EP01 |
-| **TS02** | Persistencia Geoespacial | Como desarrollador, deseo configurar una base de datos optimizada para índices H3 para reducir latencia[cite: 1]. | **Escenario 1 – Indexación de local:** Given un nuevo registro de huarique. When se persiste en la DB geoespacial. Then el índice H3 se almacena como clave de búsqueda primaria. **Escenario 2 – Consulta por celda:** Given consulta por ID de celda H3. When el motor busca registros. Then retorna todos los locales en < 100ms. | EP05 |
+| **TS02** | Persistencia Geoespacial | Como desarrollador, deseo configurar una base de datos optimizada para índices H3 para reducir latencia[cite: 1]. | **Escenario 1 – Indexación de local:** Given un nuevo registro de restaurante. When se persiste en la DB geoespacial. Then el índice H3 se almacena como clave de búsqueda primaria. **Escenario 2 – Consulta por celda:** Given consulta por ID de celda H3. When el motor busca registros. Then retorna todos los locales en < 100ms. | EP05 |
 | **TS03** | Microservicio de Media | Como arquitecto, deseo implementar almacenamiento en S3 para que la gestión de fotos sea asíncrona[cite: 1]. | **Escenario 1 – Subida asíncrona:** Given imagen enviada por el dueño. When el API recibe el archivo. Then delega la carga al bucket S3 sin bloquear el hilo principal. **Escenario 2 – Fallo de almacenamiento:** Given caída del servicio S3. When el sistema detecta el error. Then encola la tarea para reintento automático. | EP02 |
 | **TS04** | Caché de Proximidad | Como desarrollador, deseo implementar Redis para que los resultados de celdas H3 se sirvan sin consultar la base de datos[cite: 1]. | **Escenario 1 – Hit de caché:** Given celda H3 altamente consultada. When un usuario abre el radar. Then los datos se recuperan desde Redis en < 50ms. **Escenario 2 – Invalidación:** Given actualización de datos en un local. When el dueño guarda cambios. Then se purga la entrada correspondiente en el caché. | EP03 |
 | **TS05** | Service Workers Offline | Como desarrollador, deseo implementar Service Workers para que los favoritos persistan sin red[cite: 1]. | **Escenario 1 – Registro de worker:** Given app abierta. When el worker se activa. Then intercepta peticiones a la API de favoritos para guardarlas localmente. **Escenario 2 – Modo avión:** Given dispositivo sin internet. When usuario abre favoritos. Then el worker sirve los datos desde el storage local. | EP05 |
@@ -973,7 +973,7 @@ En esta sección, el equipo detalla el conjunto de User Stories y Epics desarrol
 | **NFR-04** | **Escalabilidad de Consultas** | El motor de indexación debe ser capaz de manejar hasta **1,000 peticiones concurrentes** por segundo sin incrementar la latencia por encima de los 500ms[cite: 1]. | **US20, TS02** |
 | **NFR-05** | **Optimización de Carga Visual** | Las imágenes de la galería deben pasar por un proceso de compresión asíncrono que reduzca su peso a un máximo de **500KB** por archivo[cite: 1]. | **US04, TS03** |
 | **NFR-06** | **Persistencia en Memoria** | El uso de Redis para el caché de proximidad debe garantizar un hit-rate mayor al **70%** para las celdas H3 de alta densidad[cite: 1]. | **TS04** |
-| **NFR-07** | **Sincronización Offline** | El Service Worker debe ser capaz de sincronizar y almacenar localmente hasta **50 huariques favoritos** para su consulta sin conexión[cite: 1]. | **US17, TS05** |
+| **NFR-07** | **Sincronización Offline** | El Service Worker debe ser capaz de sincronizar y almacenar localmente hasta **50 restaurantes favoritos** para su consulta sin conexión[cite: 1]. | **US17, TS05** |
 
 #### 3.3 Impact Map
 
@@ -987,8 +987,8 @@ A continuación se detalla el Product Backlog del proyecto **Foodly**. En esta s
 
 | # Orden | User Story ID | Título | Descripción | Story Points (1 / 2 / 3 / 5 / 8) |
 | :--- | :--- | :--- | :--- | :---: |
-| 1 | US01 | Visualización de Radar H3 | Como explorador, quiero ver huariques en un mapa hexagonal para identificar zonas con comida cerca. | 8 |
-| 2 | US02 | Registro de Huarique | Como dueño, quiero registrar mi local con pin en el mapa para ser visible en el radar. | 5 |
+| 1 | US01 | Visualización de Radar H3 | Como explorador, quiero ver restaurantes en un mapa hexagonal para identificar zonas con comida cerca. | 8 |
+| 2 | US02 | Registro de restaurante | Como dueño, quiero registrar mi local con pin en el mapa para ser visible en el radar. | 5 |
 | 3 | US20 | Escalabilidad de Búsqueda | Como administrador, quiero que el motor H3 soporte miles de consultas para evitar caídas. | 8 |
 | 4 | US04 | Galería de Platos | Como dueño, quiero subir fotos de mis platos para convencer visualmente a los clientes. | 5 |
 | 5 | US03 | Filtrado por Sazón | Como explorador, quiero filtrar locales por calificación para asegurar una buena experiencia. | 3 |
@@ -1004,7 +1004,7 @@ A continuación se detalla el Product Backlog del proyecto **Foodly**. En esta s
 | 15 | US17 | Carga Offline | Como explorador, quiero ver locales guardados sin internet para no perderme en zonas sin señal. | 5 |
 | 16 | US16 | Validación de Higiene | Como dueño, quiero mostrar mis credenciales de sanidad para generar confianza. | 3 |
 | 17 | US19 | Gestión de Empleados | Como dueño, quiero registrar a mis ayudantes para que actualicen el menú por mí. | 5 |
-| 18 | US15 | Compartir Joyita | Como explorador, quiero enviar un huarique a un amigo para ir juntos. | 2 |
+| 18 | US15 | Compartir Joyita | Como explorador, quiero enviar un restaurante a un amigo para ir juntos. | 2 |
 | 19 | US18 | Reporte de Local Cerrado | Como explorador, quiero reportar si un local ya no existe para mantener el mapa actualizado. | 2 |
 | 20 | US14 | Modo Oscuro Map | Como explorador, quiero un modo nocturno para buscar comida de noche cómodamente. | 1 |
 
@@ -1022,7 +1022,7 @@ Se han definido pautas generales basadas en la visión de negocio de **FoodNode*
 
 * **Geolocalización centrada en Celdas (H3):** Toda lógica de proximidad debe basarse en el índice de celdas hexagonales en lugar de distancias euclidianas para garantizar tiempos de respuesta sub-segundo.
     * Optimiza la precisión en la localización y búsqueda por proximidad en aplicaciones basadas en mapas.
-    * Permite que un usuario encuentre un huarique relevante en menos de 10 segundos y con precisión de celda actual.
+    * Permite que un usuario encuentre un restaurante relevante en menos de 10 segundos y con precisión de celda actual.
 
 * **Comunicación Asíncrona sobre Sincrónica:** Se priorizará el uso de un Broker de mensajería para desacoplar procesos pesados, como la actualización de métricas del local o la carga de imágenes.
     * Evita cuellos de botella en el procesamiento de información geoespacial al no bloquear el hilo principal.
@@ -1037,7 +1037,7 @@ Se han definido pautas generales basadas en la visión de negocio de **FoodNode*
     * Asegura la integridad de los datos de gestión de negocios y usuarios mediante esquemas relacionales donde sea necesario.
 
 ##### 4.1.2 Approaches Statements, Architectural Styles & Patterns
-* **Domain-Driven Design (DDD):** El sistema se divide en contextos delimitados (*Bounded Contexts*) para separar el motor de búsqueda (Geo-Radar) de la gestión administrativa de los huariques.
+* **Domain-Driven Design (DDD):** El sistema se divide en contextos delimitados (*Bounded Contexts*) para separar el motor de búsqueda (Geo-Radar) de la gestión administrativa de los restaurantes.
     * Alinea la arquitectura técnica con los segmentos objetivo: exploradores y dueños de locales.
     * Reduce la complejidad al aislar las reglas de negocio de geolocalización de las de gestión de perfiles e inventarios.
 
@@ -1061,13 +1061,13 @@ A continuación, se presenta el diagrama de contexto (Nivel 1 del modelo C4), el
 **Descripción de los elementos del diagrama:**
 
 * **Sistema Central (Software System):**
-  * **Foodly Platform:** El sistema core que gestiona el descubrimiento de huariques y la publicación de menús.
+  * **Foodly Platform:** El sistema core que gestiona el descubrimiento de restaurantes y la publicación de menús.
 * **Personas (Actores):**
   * **Comensal Explorador:** Usuario que utiliza la aplicación para escanear zonas con el radar H3, buscar comida auténtica y dejar reseñas.
-  * **Dueño de Huarique:** Usuario administrador que gestiona su local, sube fotos de sus platos y actualiza su estado (Abierto/Cerrado).
+  * **Dueño de restaurante:** Usuario administrador que gestiona su local, sube fotos de sus platos y actualiza su estado (Abierto/Cerrado).
 * **Sistemas Externos (External Systems):**
   * **H3 Geospatial Engine / Map API:** Proveedor externo que permite renderizar las celdas hexagonales y calcular la proximidad.
-  * **Cloud Storage System (ej. AWS S3):** Almacenamiento externo para guardar y servir optimizadamente la galería de imágenes de los huariques y platos.
+  * **Cloud Storage System (ej. AWS S3):** Almacenamiento externo para guardar y servir optimizadamente la galería de imágenes de los restaurantes y platos.
 
 ##### 4.1.4 Approach driven ViewPoints Diagrams
 Para la representación y documentación de la arquitectura de Foodly Platform, se adopta el Modelo C4 como el enfoque principal de puntos de vista (Viewpoints). Este enfoque permite comunicar el diseño del software tanto a los stakeholders técnicos como a los no técnicos a través de múltiples niveles de abstracción. Asimismo se presenta los diagrama de actividades:
@@ -1116,7 +1116,7 @@ Para la representación y documentación de la arquitectura de Foodly Platform, 
   
   - Cloudinary Adapter: Es el adaptador exclusivo para la gestión de imágenes. Transforma las solicitudes internas de Foodly al formato requerido por la API de Cloudinary para subir las fotos de los platos de Doña Rosa.
 
-  - MapBox Adapter: Es el adaptador geoespacial exclusivo. Se comunica por HTTP con la API de Mapbox para solicitar las direcciones exactas, distancias y tiempos de llegada entre el comensal y el huarique.
+  - MapBox Adapter: Es el adaptador geoespacial exclusivo. Se comunica por HTTP con la API de Mapbox para solicitar las direcciones exactas, distancias y tiempos de llegada entre el comensal y el restaurante.
 
   d. Business Management Microservice
 
@@ -1145,7 +1145,7 @@ Para la representación y documentación de la arquitectura de Foodly Platform, 
 
   <img src="assets/images/chapter-4/geo_radar_actitvity_diagram.png" alt="Radar Search Flow Activity Diagram" width="600">
 
-  - Descripción: Representa el flujo que se activa cuando Mateo busca huariques cercanos utilizando el radar hexagonal desde la aplicación web en Vue.js.
+  - Descripción: Representa el flujo que se activa cuando Mateo busca restaurantes cercanos utilizando el radar hexagonal desde la aplicación web en Vue.js.
 
   - Sustento Técnico: Al recibir las coordenadas geográficas, el Geo-Radar Engine Service utiliza los bindings nativos de la librería Uber H3 en Java para calcular la celda del usuario en milisegundos. Para satisfacer el driver de Performance, la consulta de los restaurantes activos no se hace en las bases de datos transaccionales en disco duro, sino que se recupera directamente de la memoria RAM en Redis (Radar DB). Esto permite que la web pinte el mapa con el radar en menos de 2 segundos.
 
@@ -1166,12 +1166,12 @@ Para soportar los atributos de calidad de alta disponibilidad y baja latencia ex
 erDiagram
   Users            ||--o{ Reviews         : "writes"
   Users            ||--o{ Favorites       : "bookmarks"
-  Huariques        ||--o{ Reviews         : "reviewed in"
-  Huariques        ||--o{ Favorites       : "bookmarked"
-  Categories       ||--o{ Huariques       : "classifies"
-  Huariques        ||--o{ Huarique_Photos : "has"
+  restaurantes        ||--o{ Reviews         : "reviewed in"
+  restaurantes        ||--o{ Favorites       : "bookmarked"
+  Categories       ||--o{ restaurantes       : "classifies"
+  restaurantes        ||--o{ restaurante_Photos : "has"
   Membership_Plans ||--o{ Subscriptions   : "offered to"
-  Huariques        ||--o{ Subscriptions   : "subscribes"
+  restaurantes        ||--o{ Subscriptions   : "subscribes"
   Users            ||--o{ Subscriptions   : "created by"
   Users            ||--o{ Audit_Logs      : "logs"
 
@@ -1184,8 +1184,8 @@ erDiagram
       timestamp updated_at
   }
 
-  Huariques {
-      uuid huarique_id PK
+  restaurantes {
+      uuid restaurante_id PK
       string name
       text description
       string address_line
@@ -1210,7 +1210,7 @@ erDiagram
 
   Reviews {
       uuid review_id PK
-      uuid huarique_id FK
+      uuid restaurante_id FK
       uuid user_id FK
       int rating "1..5"
       string comment
@@ -1221,7 +1221,7 @@ erDiagram
 
   Favorites {
       uuid user_id PK,FK
-      uuid huarique_id PK,FK
+      uuid restaurante_id PK,FK
       timestamp created_at
   }
 
@@ -1235,7 +1235,7 @@ erDiagram
 
   Subscriptions {
       uuid subscription_id PK
-      uuid huarique_id FK
+      uuid restaurante_id FK
       uuid plan_id FK
       uuid user_id FK "creator/owner"
       date start_date
@@ -1245,9 +1245,9 @@ erDiagram
       timestamp updated_at
   }
 
-  Huarique_Photos {
+  restaurante_Photos {
       uuid photo_id PK
-      uuid huarique_id FK
+      uuid restaurante_id FK
       string url "S3 Bucket URL"
       timestamp created_at
   }
@@ -1261,19 +1261,19 @@ erDiagram
       json details
       timestamp audit_date
   }
-  Huariques ||--o| Menu_Live : "has dynamic menu (Logical)"
+  restaurantes ||--o| Menu_Live : "has dynamic menu (Logical)"
 
   Menu_Live {
       uuid _id PK "MongoDB ObjectId"
-      uuid huarique_id "Logical FK"
+      uuid restaurante_id "Logical FK"
       json items "Array of {name, price, photo, available}"
       timestamp last_updated
   }
-  Huariques }o--o{ Radar_Cache : "cached in (Logical)"
+  restaurantes }o--o{ Radar_Cache : "cached in (Logical)"
 
   Radar_Cache {
       string h3_cell_index PK "Redis Key"
-      json active_huariques "Array of Huarique Data"
+      json active_restaurantes "Array of restaurante Data"
       string status "OPEN/CLOSED"
       int ttl "Time To Live"
   }
@@ -1283,13 +1283,13 @@ erDiagram
 **1. Base de Datos Relacional (PostgreSQL / MySQL)**
 Maneja la información transaccional y la integridad referencial estricta del sistema.
 * **Tabla `Usuarios`:** Almacena los datos de autenticación (ID, Nombre, Email, Contraseña, Rol: Explorador/Dueño).
-* **Tabla `Huariques`:** Contiene los datos maestros del negocio (ID, Dueño_ID, Nombre, Descripción, Latitud, Longitud, H3_Index_Celda).
-* **Tabla `Resenas`:** Registra el feedback verificado (ID, Huarique_ID, Usuario_ID, Calificación, Comentario, Fecha).
+* **Tabla `restaurantes`:** Contiene los datos maestros del negocio (ID, Dueño_ID, Nombre, Descripción, Latitud, Longitud, H3_Index_Celda).
+* **Tabla `Resenas`:** Registra el feedback verificado (ID, restaurante_ID, Usuario_ID, Calificación, Comentario, Fecha).
 
 **2. Base de Datos No Relacional (MongoDB & Redis)**
 Maneja datos dinámicos, documentos flexibles y garantiza respuestas de baja latencia para búsquedas.
-* **Colección `Menu_Diario` (MongoDB):** Utilizado para la carta dinámica. Almacena documentos con el Huarique_ID y un array de objetos de platos (Nombre, Precio, Foto_URL, Disponibilidad).
-* **Caché en Memoria (Redis):** Almacena el radar temporal. Guarda pares clave-valor que mapean el ID de la celda H3 con la lista de huariques activos, garantizando búsquedas geoespaciales en milisegundos.
+* **Colección `Menu_Diario` (MongoDB):** Utilizado para la carta dinámica. Almacena documentos con el restaurante_ID y un array de objetos de platos (Nombre, Precio, Foto_URL, Disponibilidad).
+* **Caché en Memoria (Redis):** Almacena el radar temporal. Guarda pares clave-valor que mapean el ID de la celda H3 con la lista de restaurantes activos, garantizando búsquedas geoespaciales en milisegundos.
 
 ##### 4.1.6 Design Patterns
 * **Factory Method:** Útil para la creación de entidades críticas como locales, registros de sensores o reseñas de usuarios.
@@ -1304,7 +1304,7 @@ Maneja datos dinámicos, documentos flexibles y garantiza respuestas de baja lat
     * Aumenta la tolerancia a fallos transitorios mediante reintentos con una estrategia de *backoff* exponencial.
     * Se implementa para asegurar que la comunicación entre microservicios sea robusta frente a inestabilidades temporales.
 
-* **Builder Configuration:** Se empleará para construir objetos complejos como el perfil del huarique, que contiene múltiples atributos opcionales.
+* **Builder Configuration:** Se empleará para construir objetos complejos como el perfil del restaurante, que contiene múltiples atributos opcionales.
     * Facilita la creación legible de perfiles que incluyen fotos (vía S3), menús, horarios y coordenadas.
 ##### 4.1.7 Tactics
 Estrategias específicas para asegurar que Foodly cumpla con sus Atributos de Calidad:
@@ -1338,14 +1338,14 @@ Las funcionalidades primarias de Foodly son aquellas que definen su propuesta de
   <tbody>
     <tr>
       <td><strong>US01 - Visualización de Radar H3</strong></td>
-      <td>Como explorador, quiero ver huariques en un mapa hexagonal para identificar zonas con comida cerca.</td>
+      <td>Como explorador, quiero ver restaurantes en un mapa hexagonal para identificar zonas con comida cerca.</td>
     </tr>
     <tr>
       <td><strong>US07 - Búsqueda por Antojo</strong></td>
       <td>Como explorador, quiero buscar por tipo de comida para encontrar un antojo específico.</td>
     </tr>
     <tr>
-      <td><strong>US02 - Registro de Huarique</strong></td>
+      <td><strong>US02 - Registro de restaurante</strong></td>
       <td>Como dueño, quiero registrar mi local con pin en el mapa para ser visible en el radar.</td>
     </tr>
     <tr>
@@ -1809,7 +1809,7 @@ https://trello.com/invite/b/69f501c05c2af93e4ff4893c/ATTIfcb179e7128dc5ba98dbc4b
 ### Conclusiones
 ### Conclusiones y recomendaciones
 * **AV1:**
-Foodly atiende una necesidad concreta en el entorno gastronómico y urbano, ofreciendo una solución que permite a los comensales descubrir comida auténtica y a buen precio mientras optimizan su tiempo de búsqueda en un entorno real. A la vez, brinda a los dueños de huariques tradicionales acceso a una clientela joven, cercana y activa, que puede consumir sus menús diarios sin los altos costos de publicidad de las aplicaciones convencionales o agencias de marketing. La propuesta de valor de Foodly va más allá de conectar usuarios con restaurantes, ya que incorpora funcionalidades clave como filtros precisos de distancia, visibilidad mediante fotos reales, exclusión de cadenas comerciales y un sistema sencillo para publicar el menú del día. Esto no solo aumenta la visibilidad de los pequeños negocios, sino que también democratiza la experiencia gastronómica digital desde etapas tempranas, promoviendo relaciones de consumo local más justas, eficientes y centradas en la comunidad.
+Foodly atiende una necesidad concreta en el entorno gastronómico y urbano, ofreciendo una solución que permite a los comensales descubrir comida auténtica y a buen precio mientras optimizan su tiempo de búsqueda en un entorno real. A la vez, brinda a los dueños de restaurantes tradicionales acceso a una clientela joven, cercana y activa, que puede consumir sus menús diarios sin los altos costos de publicidad de las aplicaciones convencionales o agencias de marketing. La propuesta de valor de Foodly va más allá de conectar usuarios con restaurantes, ya que incorpora funcionalidades clave como filtros precisos de distancia, visibilidad mediante fotos reales, exclusión de cadenas comerciales y un sistema sencillo para publicar el menú del día. Esto no solo aumenta la visibilidad de los pequeños negocios, sino que también democratiza la experiencia gastronómica digital desde etapas tempranas, promoviendo relaciones de consumo local más justas, eficientes y centradas en la comunidad.
 
 * **AV2:**
 El diseño arquitectónico de Foodly se ha desarrollado con un enfoque claro en la alta disponibilidad, el rendimiento y la modificabilidad, utilizando patrones y tácticas que garantizan una plataforma robusta y escalable. La adopción de una arquitectura de microservicios desacoplada, junto con la implementación de un sistema de caché en memoria para optimizar las consultas geoespaciales, asegura que los usuarios puedan acceder a la información de manera rápida y confiable incluso durante picos de tráfico. Además, el uso de una persistencia políglota permite que cada microservicio maneje su propia base de datos, facilitando futuras modificaciones sin afectar la estabilidad del sistema. En conjunto, estas decisiones arquitectónicas posicionan a Foodly como una solución tecnológica sólida para abordar los desafíos específicos del sector gastronómico local.
