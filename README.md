@@ -1608,14 +1608,43 @@ En esta sección se identifican y priorizan los drivers arquitectónicos que imp
 ###### 4.3.1.2 Establish Iteration Goal by Selecting Drivers
 La meta de esta iteración es diseñar la infraestructura lógica inicial de Foodly Platform para mitigar caídas del sistema y desacoplar componentes. Se seleccionaron los drivers QA-01 (Alta Disponibilidad) y QA-02 (Modificabilidad) con el fin de definir cómo se comunicarán los servicios y cómo se procesarán las peticiones de los usuarios mediante una topología de red distribuida que evite la pérdida de datos ante saturaciones del servidor.
 
+**Drivers seleccionados:**
+<table>
+<tr><th>Driver</th><th>Descripción</th><th>Impacto</th></tr>
+<tr><td>QA-01</td><td>Alta disponibilidad ante picos</td><td>Evita caídas del sistema</td></tr>
+<tr><td>QA-02</td><td>Desacoplamiento de servicios</td><td>Facilita cambios sin impacto global</td></tr>
+</table>
+
 ###### 4.3.1.3 Choose One or More Elements of the System to Refine
 Se selecciona para su refinamiento el sistema de software principal (Foodly Platform) en su capa de contenedores. Específicamente, se descomponen y refinan el punto único de entrada de solicitudes (API Gateway), el canal de eventos asíncronos (Message Broker) y los microservicios core de negocio desarrollados sobre Java nativo en el servidor de aplicaciones WildFly.
+
+**Elementos refinados:**
+- API Gateway → control de tráfico y seguridad  
+- Message Broker → asincronía  
+- Microservicios → lógica distribuida  
 
 ###### 4.3.1.4 Choose One or More Design Concepts That Satisfy the Selected Drivers
 Se adoptan los patrones arquitectónicos API Gateway y Event-Driven Architecture para canalizar de forma síncrona la autenticación de usuarios y gestionar de manera asíncrona mediante ActiveMQ las operaciones pesadas de negocio. Asimismo, se implementa el patrón Anti-Corruption Layer (ACL) mediante el Integration System para aislar por completo la comunicación con APIs de terceros (Cloudinary y Mapbox) de las reglas de negocio del core.
 
+**Conceptos aplicados:**
+<table>
+<tr><th>Patrón</th><th>Propósito</th></tr>
+<tr><td>API Gateway</td><td>Centralizar acceso y seguridad</td></tr>
+<tr><td>Event-Driven</td><td>Evitar bloqueos del sistema</td></tr>
+<tr><td>ACL</td><td>Aislar dependencias externas</td></tr>
+</table>
+
 ###### 4.3.1.5 Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
 Se instancian los componentes de software asignando responsabilidades específicas: la aplicación web en Vue.js gestiona la interfaz de usuario; el API Gateway en WildFly enruta el tráfico HTTPS y valida la seguridad; el Message Broker (ActiveMQ interno) encola y distribuye eventos; los microservicios core ejecutan la lógica del sistema; y el Integration System actúa como adaptador exclusivo de APIs externas. Las interfaces de comunicación combinan protocolos HTTP/REST para procesos síncronos y colas JMS para flujos asíncronos.
+
+<table>
+<tr><th>Elemento</th><th>Responsabilidad</th><th>Interfaz</th></tr>
+<tr><td>Frontend (Vue)</td><td>Interfaz de usuario</td><td>HTTP</td></tr>
+<tr><td>API Gateway</td><td>Entrada y seguridad</td><td>REST</td></tr>
+<tr><td>Message Broker</td><td>Eventos asincrónicos</td><td>JMS</td></tr>
+<tr><td>Microservicios</td><td>Lógica de negocio</td><td>REST + eventos</td></tr>
+<tr><td>Integration System</td><td>Conexión externa</td><td>HTTP APIs</td></tr>
+</table>
 
 ###### 4.3.1.6 Sketch Views (C4 & UML) and Record Design Decisions
 
@@ -1690,14 +1719,38 @@ Se registran los drivers pendientes para optimizar el tiempo de respuesta del si
 ###### 4.3.2.2 Establish Iteration Goal by Selecting Drivers
 La meta de esta iteración es diseñar el patrón de persistencia del sistema de manera que se maximice la velocidad de lectura de datos. El driver seleccionado es QA-03 (Performance), y la meta de diseño se enfoca en resolver los cuellos de botella que generaría la lectura constante del disco duro para consultas de proximidad geográfica en tiempo real.
 
+**Driver seleccionado:**
+<table>
+<tr><th>Driver</th><th>Descripción</th><th>Objetivo</th></tr>
+<tr><td>QA-03</td><td>Performance</td><td>Respuesta &lt; 2s</td></tr>
+</table>
+
 ###### 4.3.2.3 Choose One or More Elements of the System to Refine
 Se refina específicamente la capa de datos de los contenedores del backend, concentrando los esfuerzos en el Geo-Radar Engine Service y su interacción con el sistema de almacenamiento. Se analiza cómo este microservicio en Java/WildFly procesará la indexación de celdas mediante la librería Uber H3 sin sobrecargar las bases de datos transaccionales del sistema.
+
+**Elementos clave:**
+- Geo-Radar Engine Service  
+- Sistema de almacenamiento  
+- Indexación H3  
 
 ###### 4.3.2.4 Choose One or More Design Concepts That Satisfy the Selected Drivers
 Se selecciona la táctica de Caching a través del uso de una base de datos NoSQL en memoria RAM (Redis) y el patrón de persistencia políglota. Esto permite que el Geo-Radar Service recupere las coordenadas y las celdas H3 activas de manera inmediata desde la memoria del servidor, reduciendo sustancialmente el uso de CPU y eliminando las consultas lentas a las bases de datos tradicionales en disco.
 
+**Conceptos aplicados:**
+<table>
+<tr><th>Concepto</th><th>Beneficio</th></tr>
+<tr><td>Caching (Redis)</td><td>Acceso en milisegundos</td></tr>
+<tr><td>Persistencia Políglota</td><td>Optimización por tipo de dato</td></tr>
+</table>
+
 ###### 4.3.2.5 Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
 Se instancia el contenedor Radar DB utilizando Redis como caché en memoria RAM. El Geo-Radar Engine Service asume la responsabilidad de calcular las celdas H3 mediante la librería nativa de Uber y actualizar el índice en Redis; asimismo, se define una interfaz de conexión rápida TCP/IP nativa entre el microservicio y el contenedor de caché para recuperar datos en milisegundos.
+
+<table>
+<tr><th>Elemento</th><th>Responsabilidad</th><th>Interfaz</th></tr>
+<tr><td>Geo-Radar Service</td><td>Cálculo H3</td><td>REST</td></tr>
+<tr><td>Redis</td><td>Cache en memoria</td><td>TCP</td></tr>
+</table>
 
 ###### 4.3.2.6 Sketch Views (C4 & UML) and Record Design Decisions
 
@@ -1770,14 +1823,39 @@ Se revisan los drivers enfocados en el bajo acoplamiento físico del sistema. Se
 ###### 4.3.3.2 Establish Iteration Goal by Selecting Drivers
 La meta de esta iteración es diseñar la separación física absoluta de las bases de datos del sistema para eliminar dependencias cruzadas. El driver seleccionado es QA-04 (Modificabilidad), aplicando estrictamente el principio de diseño de aislamiento de datos requerido para microservicios empresariales independientes.
 
+**Driver seleccionado:**
+<table>
+<tr><th>Driver</th><th>Descripción</th><th>Objetivo</th></tr>
+<tr><td>QA-04</td><td>Modificabilidad</td><td>Bajo acoplamiento</td></tr>
+</table>
+
 ###### 4.3.3.3 Choose One or More Elements of the System to Refine
 Se refinan los microservicios Identity & Access Service, Business Management Service y Community Service junto con sus respectivas tecnologías de almacenamiento. El objetivo es desacoplar las conexiones compartidas a nivel de base de datos para garantizar la modificabilidad individual de cada componente.
+
+**Elementos refinados:**
+- Identity Service  
+- Business Service  
+- Community Service  
 
 ###### 4.3.3.4 Choose One or More Design Concepts That Satisfy the Selected Drivers
 Se selecciona el patrón arquitectónico Database-per-Service. Se asignan motores de bases de datos independientes según el dominio de negocio: MySQL para la gestión de usuarios y reseñas (datos relacionales estructurados), y MongoDB Atlas para los menús dinámicos de los restaurantes (documentos flexibles no relacionales), logrando persistencia políglota aislada.
 
+**Conceptos aplicados:**
+<table>
+<tr><th>Concepto</th><th>Beneficio</th></tr>
+<tr><td>Database-per-Service</td><td>Independencia total</td></tr>
+<tr><td>Persistencia Políglota</td><td>Flexibilidad de datos</td></tr>
+</table>
+
 ###### 4.3.3.5 Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
 Se instancian las bases de datos independientes: Identity DB (MySQL) exclusiva para credenciales de usuario; Business DB (MongoDB Atlas) para los locales y menús; y Community DB (MySQL) para las reseñas y favoritos. Ningún microservicio tiene acceso directo a la base de datos de otro, y cualquier intercambio de datos necesario entre módulos se realiza exclusivamente a través de mensajes asíncronos o peticiones HTTP internas mediante el API Gateway.
+
+<table>
+<tr><th>Base de Datos</th><th>Tipo</th><th>Uso</th></tr>
+<tr><td>Identity DB</td><td>SQL</td><td>Usuarios</td></tr>
+<tr><td>Business DB</td><td>MongoDB</td><td>Menús</td></tr>
+<tr><td>Community DB</td><td>SQL</td><td>Reseñas</td></tr>
+</table>
 
 ###### 4.3.3.6 Sketch Views (C4 & UML) and Record Design Decisions
 
