@@ -1,0 +1,21 @@
+@startuml
+|Vue.js (Frontend)|
+start
+:Mateo activa "Radar Foodly";
+:Envía Coordenadas GPS (Lat/Lng);
+|API Gateway|
+:Valida Token JWT;
+:Enruta a Geo-Radar Service;
+|Geo-Radar Service (WildFly)|
+:RadarController recibe datos;
+:RadarH3Service convierte \nLat/Lng a Celda H3 Index;
+:Consulta celdas vecinas;
+|Radar DB (Redis)|
+:Busca restaurantes activos\nen celdas calculadas;
+:Retorna lista desde Memoria RAM;
+|Geo-Radar Service (WildFly)|
+:Agrupa y formatea resultados;
+|Vue.js (Frontend)|
+:Dibuja hexágonos y \nrestaurantes en el mapa;
+stop
+@enduml

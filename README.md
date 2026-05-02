@@ -1158,6 +1158,93 @@ A continuación, se presenta el diagrama de contexto (Nivel 1 del modelo C4), el
   * **Cloud Storage System (ej. AWS S3):** Almacenamiento externo para guardar y servir optimizadamente la galería de imágenes de los huariques y platos.
 
 ##### 4.1.4 Approach driven ViewPoints Diagrams
+Para la representación y documentación de la arquitectura de Foodly Platform, se adopta el Modelo C4 como el enfoque principal de puntos de vista (Viewpoints). Este enfoque permite comunicar el diseño del software tanto a los stakeholders técnicos como a los no técnicos a través de múltiples niveles de abstracción. Asimismo se presenta los diagrama de actividades:
+
+* **Container Viewpoint**
+![Container Viewpoint Foodly](assets/images/chapter-4/container_diagram.png)
+
+**Descripción:** Este punto de vista detalla las responsabilidades de la aplicación web en Vue.js, el API Gateway y el Message Broker (ActiveMQ) en WildFly, los microservicios core desarrollados en Java nativo (Jakarta EE) y las bases de datos individuales e independientes (MySQL, MongoDB Atlas y Redis) bajo el patrón Database-per-Service. Es el punto de vista principal utilizado para guiar a los desarrolladores y arquitectos en las decisiones de despliegue, lenguajes de programación y protocolos de comunicación.
+
+* **Component Viewpoint**
+
+  a. Geo Radar Microservice
+
+  ![Component Geo Radar Foodly](assets/images/chapter-4/geo_radar_engine_service_component.png)
+
+  Este microservicio es responsable de la conversión de coordenadas geográficas en índices hexagonales mediante la librería Uber H3 y de calcular la proximidad de los restaurantes en tiempo real.
+
+  - Radar API Controller (JAX-RS): Actúa como el punto de entrada síncrono del microservicio. Expone los endpoints RESTful para recibir las coordenadas (latitud y longitud) del comensal Mateo desde el frontend en Vue.js.
+
+  - Radar H3 Service: Contiene el núcleo de la lógica matemática del radar. Utiliza los bindings nativos de la librería Uber H3 en Java para transformar las coordenadas en un índice hexadecimal y calcular el anillo de celdas vecinas.
+
+  - Radar Cache Repository: Gestiona la conexión directa con la base de datos en memoria Redis (Radar DB). Permite leer y escribir los datos geoespaciales a velocidad de memoria RAM.
+
+  - Location Event Listener: Es un componente asíncrono que escucha la cola del Message Broker (ActiveMQ). Se activa de forma automática cuando se registra o actualiza un nuevo restaurante, notificando al Radar H3 Service para que refresque la caché en Redis.
+
+
+  b. Identity & User Management Microservice
+
+  ![Component Identity User Management Foodly](assets/images/chapter-4/indentity_and_access_service_component.png)
+
+  Este microservicio centraliza la seguridad de la plataforma, el registro de usuarios y el control de accesos mediante la gestión de tokens de sesión locales almacenados en base de datos.
+
+  - Auth Controller: Expone los endpoints RESTful necesarios para los flujos de registro de usuarios, inicio de sesión (login) y cierre de sesión (logout).
+
+  - Auth Security Service: Implementa las reglas de seguridad del negocio. Valida las contraseñas enviadas por los usuarios y se encarga de generar los tokens de sesión únicos en formato UUID de Java nativo.
+
+  - User Repository: Gestiona el acceso a la base de datos Identity DB (MySQL). Ejecuta las consultas para verificar las credenciales del usuario y persiste los tokens de sesión locales junto con su fecha de expiración para su posterior validación.
+
+  c. Integration System
+
+  ![Component Integration System Foodly](assets/images/chapter-4/integration_system_service_component.png)
+
+  Este componente actúa como una Capa de Anti-Corrupción (ACL). Aísla por completo el núcleo del sistema de los cambios o fallas en los contratos de APIs externas de terceros.
+  
+  - Integration Event Listener: Escucha las solicitudes de salida enviadas por los microservicios core a través del Message Broker (ActiveMQ). Al recibir un mensaje, lo procesa de forma asíncrona sin bloquear la experiencia del usuario en la web.
+  
+  - Cloudinary Adapter: Es el adaptador exclusivo para la gestión de imágenes. Transforma las solicitudes internas de Foodly al formato requerido por la API de Cloudinary para subir las fotos de los platos de Doña Rosa.
+
+  - MapBox Adapter: Es el adaptador geoespacial exclusivo. Se comunica por HTTP con la API de Mapbox para solicitar las direcciones exactas, distancias y tiempos de llegada entre el comensal y el huarique.
+
+  d. Business Management Microservice
+
+  ![Component Business Management Foodly](assets/images/chapter-4/business_management_service_component.png)
+
+  Este microservicio administra la información comercial de los restaurantes, la geolocalización de los locales y la actualización de los platos del menú.
+
+  - Restaurant Controller: Expone los endpoints RESTful para que Doña Rosa pueda gestionar los datos de su restaurante y crear nuevos platos para el día.
+  
+  - Business Logic Service: Ejecuta las reglas de negocio transaccionales del restaurante, como validar horarios de atención, precios de platos y disponibilidad.
+
+  - Menu Repository: Es el componente de acceso a datos para Business DB (MongoDB Atlas). Almacena y recupera los menús del restaurante en formato de documentos JSON flexibles.
+
+  - Event Producer: Se encarga de publicar eventos en el Message Broker (ActiveMQ). Por ejemplo, cuando se crea un nuevo plato con foto, emite un mensaje asíncrono para que el Integration System procese la imagen en Cloudinary sin retrasar la respuesta del frontend.
+
+* **Activities Viewpoint**
+  a. Flujo de Autenticación (Síncrono - Driver de Performance Inicial)
+
+  <img src="assets/images/chapter-4/identity_activity_diagram.png" alt="Authentication Flow Activity Diagram" width="600">
+
+  - Descripción: Este diagrama de actividad modela el proceso por el cual el comensal Mateo o la dueña Doña Rosa acceden a la plataforma de forma segura. El flujo es estrictamente síncrono para garantizar una respuesta inmediata al usuario.
+
+  - Sustento Técnico: La petición HTTPS es canalizada por el API Gateway hacia el microservicio de identidad. Al validar las credenciales contra la base de datos MySQL (Identity DB), el sistema genera un Token de Sesión Local (UUID) que se persiste temporalmente con una fecha de caducidad. Este enfoque elimina la necesidad de procesar firmas complejas o depender de proveedores externos, optimizando la velocidad del inicio de sesión.
+
+  b. Flujo de Búsqueda por Radar (Caché - Driver de Performance)
+
+  <img src="assets/images/chapter-4/geo_radar_actitvity_diagram.png" alt="Radar Search Flow Activity Diagram" width="600">
+
+  - Descripción: Representa el flujo que se activa cuando Mateo busca huariques cercanos utilizando el radar hexagonal desde la aplicación web en Vue.js.
+
+  - Sustento Técnico: Al recibir las coordenadas geográficas, el Geo-Radar Engine Service utiliza los bindings nativos de la librería Uber H3 en Java para calcular la celda del usuario en milisegundos. Para satisfacer el driver de Performance, la consulta de los restaurantes activos no se hace en las bases de datos transaccionales en disco duro, sino que se recupera directamente de la memoria RAM en Redis (Radar DB). Esto permite que la web pinte el mapa con el radar en menos de 2 segundos.
+
+  c. Flujo de Creación de Menú y Subida de Imagen (Asíncrono - Alta Disponibilidad)
+
+  <img src="assets/images/chapter-4/integration_and_business_actitvity_diagram.png" alt="Integration and Business Activity Diagram" width="600">
+
+    - Descripción: Detalla el proceso que ocurre cuando Doña Rosa registra un nuevo plato en su carta y sube una fotografía desde el portal web.
+  
+    - Sustento Técnico: Para no congelar la pantalla de Doña Rosa mientras se procesa la imagen, el flujo se divide mediante una táctica asíncrona. Los datos en texto del plato se guardan de inmediato en MongoDB Atlas, mientras que la tarea pesada de la foto se publica en el Message Broker (ActiveMQ). El Integration System lee el mensaje en segundo plano, sube el archivo a la API de Cloudinary y actualiza el registro con la URL final. Esto garantiza que el sistema no colapse ante picos de tráfico en horas punta de gestión.
+
 
 ##### 4.1.5 Relational/Non Relational Database Diagram
 
@@ -1510,6 +1597,7 @@ Para proteger los microservicios core, el API Gateway envía las peticiones de a
 Por otro lado, para evitar que el sistema falle si las APIs de Mapbox o Cloudinary experimentan lentitud o caídas, se introduce el contenedor Integration System en Java/WildFly. Este adaptador es el único componente que habla con el exterior. Si Mapbox cambia su contrato o sufre una interrupción, el núcleo de Foodly sigue funcionando con total normalidad.
 
 **3. Diagrama C4 de Contenedores**
+
 <img src="assets/images/chapter-4/container_high_availability.png" alt="C4 Containers Diagram" width="600"/>
 
 ###### 4.3.1.7 Analysis of Current Design and Review Iteration Goal (Kanban Board)
@@ -1544,6 +1632,7 @@ Para evitar la latencia que produce la consulta constante al disco duro de la ba
 Cuando el Geo-Radar Engine Service calcula las celdas H3 mediante la librería nativa de Uber, no consulta la base de datos principal; en su lugar, recupera los datos directamente de la memoria RAM en Radar DB (Redis). Esto reduce el tráfico de red, disminuye el uso de CPU y garantiza una respuesta inmediata en el frontend desarrollado en Vue.js.
 
 **3. Diagrama C4 de Contenedores**
+
 <img src="assets/images/chapter-4/container_performance.png" alt="C4 Containers Diagram" width="600"/>
 
 ###### 4.3.2.7 Analysis of Current Design and Review Iteration Goal (Kanban Board)
@@ -1584,6 +1673,7 @@ Esta táctica elimina por completo el acoplamiento en la capa de datos. Si el
 esquema de platos del restaurante cambia, el microservicio de comunidad o el de identidad no sufrirán ningún impacto ni tiempo de inactividad.
 
 **3. Diagrama C4 de Contenedores**
+
 <img src="assets/images/chapter-4/container_modifiability.png" alt="C4 Containers Diagram" width="600"/>
 
 ###### 4.3.3.7 Analysis of Current Design and Review Iteration Goal (Kanban Board)

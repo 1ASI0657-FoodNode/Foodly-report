@@ -1,0 +1,27 @@
+@startuml
+|Vue.js (Frontend)|
+start
+:Mateo ingresa credenciales;
+:Solicita Login (POST);
+|API Gateway|
+:Recibe petición HTTPS;
+:Enruta al Identity Service;
+|Identity Service (WildFly)|
+:AuthController recibe petición;
+:AuthService valida credenciales;
+:UserRepository consulta en BD;
+|Identity DB (MySQL)|
+:Verifica usuario y contraseña;
+|Identity Service (WildFly)|
+if (¿Credenciales válidas?) then (Sí)
+  :Genera Token de Sesión Local (UUID);
+  :Guarda Token en Identity DB con expiración;
+  :Retorna 200 OK + Token de Sesión;
+else (No)
+  :Retorna 401 Unauthorized;
+endif
+|Vue.js (Frontend)|
+:Guarda Token en LocalStorage;
+:Muestra dashboard principal;
+stop
+@enduml

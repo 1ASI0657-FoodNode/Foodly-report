@@ -1,0 +1,29 @@
+@startuml
+|Vue.js (Frontend)|
+start
+:Doña Rosa crea "Lomo Saltado";
+:Adjunta foto del plato y guarda;
+|API Gateway|
+:Enruta a Business Service;
+|Business Service (WildFly)|
+:BusinessLogicService guarda\ndatos en texto del menú;
+|Business DB (MongoDB)|
+:Confirma guardado del menú;
+|Business Service (WildFly)|
+:EventProducer publica mensaje:\n"Subir Imagen de Plato";
+|Message Broker (ActiveMQ)|
+:Encola mensaje asíncrono;
+|Vue.js (Frontend)|
+:Muestra "Menú guardado.\nProcesando imagen...";
+|Integration System (WildFly)|
+:IntegrationEventListener\nlee mensaje de la cola;
+:CloudinaryAdapter procesa archivo;
+|Cloudinary (External)|
+:Almacena imagen;
+:Retorna URL segura;
+|Integration System (WildFly)|
+:Envía URL de vuelta al Broker;
+|Business Service (WildFly)|
+:Actualiza documento en MongoDB\ncon la URL de la foto;
+stop
+@enduml

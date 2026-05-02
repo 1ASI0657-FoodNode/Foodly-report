@@ -1,76 +1,114 @@
-workspace "Foodly" "Diagrama de Foodly" {
+workspace "Foodly" "Diagramas C4 de Foodly - Contenedores y Componentes" {
 
     model {
-        mateo = person "Mateo (Comensal Explorador)" "Joven profesional que busca comida casera desde la web."
-        rosa = person "Doña Rosa (Dueña de Restaurantes)" "Emprendedora que gestiona su local y menú desde la web."
+        mateo = person "Mateo (Comensal Explorador)" "Busca comida casera desde la web."
+        rosa = person "Doña Rosa (Dueña de Restaurantes)" "Gestiona su local y menú desde la web."
         
-        foodlySystem = softwareSystem "Foodly Platform" "Permite el descubrimiento de restaurantes mediante radar hexagonal y la gestión de menús dinámicos." {
+        foodlySystem = softwareSystem "Foodly Platform" {
             
-            # Aplicación Web Unificada
-            webApp = container "Foodly Web Application" "Portal web para consumidores y dueños de restaurantes." "Vue.js"
+            webApp = container "Foodly Web Application" "Portal web." "Vue.js"
+            apiGateway = container "API Gateway" "Punto de entrada." "Java / WildFly"
+            messageBroker = container "Message Broker" "Gestor de eventos." "ActiveMQ" "Broker"
             
-            # Entrada y Comunicaciones
-            apiGateway = container "API Gateway" "Punto único de entrada y enrutamiento." "Java (Jakarta EE) / WildFly"
-            messageBroker = container "Message Broker" "Gestor de colas y eventos para desacoplar los microservicios." "ActiveMQ" "Broker"
+            # 1. Componentes del Identity Service
+            identityService = container "Identity & Access Service" "Maneja seguridad y sesiones locales." "Java (Jakarta EE) / WildFly" {
+                authController = component "Auth Controller" "Expone endpoints RESTful para login y registro." "JAX-RS"
+                authService = component "Auth Security Service" "Lógica de validación de credenciales y gestión de tokens de sesión locales." "CDI Bean"
+                userRepository = component "User Repository" "Interfaz de acceso a datos de usuarios y sesiones." "JPA / Hibernate"
+                
+                authController -> authService "Usa"
+                authService -> userRepository "Usa"
+            }
             
-            # Microservicios (Backend Core)
-            identityService = container "Identity & Access Service" "Maneja el registro, autenticación y seguridad." "Java (Jakarta EE) / WildFly"
-            businessService = container "Business Management Service" "Gestiona la información del restaurante y platos." "Java (Jakarta EE) / WildFly"
-            geoRadarService = container "Geo-Radar Engine Service" "Realiza la indexación H3 y búsquedas de proximidad." "Java (Jakarta EE) / WildFly"
-            communityService = container "Community Service" "Maneja favoritos, calificaciones y reseñas." "Java (Jakarta EE) / WildFly"
+            # 2. Componentes del Business Service
+            businessService = container "Business Management Service" "Gestiona locales." "Java (Jakarta EE) / WildFly" {
+                restaurantController = component "Restaurant Controller" "Endpoints para gestionar menús y locales." "JAX-RS"
+                businessLogicService = component "Business Logic Service" "Reglas de negocio de restaurantes." "CDI Bean"
+                menuRepository = component "Menu Repository" "Acceso a documentos de MongoDB." "Mongo Client"
+                eventProducer = component "Event Producer" "Envía eventos de actualización al Broker." "JMS Producer"
+                
+                restaurantController -> businessLogicService "Usa"
+                businessLogicService -> menuRepository "Guarda datos en"
+                businessLogicService -> eventProducer "Emite eventos mediante"
+            }
+            
+            # 3. Componentes del Geo-Radar Service
+            geoRadarService = container "Geo-Radar Engine Service" "Búsquedas H3." "Java (Jakarta EE) / WildFly" {
+                radarController = component "Radar API Controller" "Recibe peticiones de búsqueda." "JAX-RS"
+                radarLogicService = component "Radar H3 Service" "Ejecuta librería Uber H3 y calcula proximidad." "CDI Bean"
+                radarCacheRepo = component "Radar Cache Repository" "Gestión de memoria." "Jedis / Redis Client"
+                brokerListener = component "Location Event Listener" "Escucha actualizaciones de locales." "MDB (Message Driven Bean)"
+                
+                radarController -> radarLogicService "Solicita cálculos a"
+                brokerListener -> radarLogicService "Notifica cambios a"
+                radarLogicService -> radarCacheRepo "Lee y escribe en"
+            }
+            
+            # 4. Componentes del Integration System
+            integrationSystem = container "Integration System" "Adaptador externo." "Java (Jakarta EE) / WildFly" {
+                externalEventListener = component "Integration Event Listener" "Escucha peticiones de salida en el Broker." "MDB"
+                cloudinaryAdapter = component "Cloudinary Adapter" "Cliente API para imágenes." "Java HTTP Client"
+                mapBoxAdapter = component "MapBox Adapter" "Cliente API para mapas." "Java HTTP Client"
+                
+                externalEventListener -> cloudinaryAdapter "Enruta a"
+                externalEventListener -> mapBoxAdapter "Enruta a"
+            }
 
-            # Microservicio Adaptador
-            integrationSystem = container "Integration System" "Adaptador exclusivo para conectar con APIs externas." "Java (Jakarta EE) / WildFly"
-            
-            # Bases de Datos Independientes 
-            identityDB = container "Identity DB" "Almacena credenciales de usuarios." "MySQL" "Database"
-            businessDB = container "Business DB" "Almacena datos de locales y menús." "MongoDB Atlas" "Database"
-            radarDB = container "Radar DB" "Almacena en memoria las celdas H3." "Redis" "Cache"
-            communityDB = container "Community DB" "Almacena favoritos y reseñas." "MySQL" "Database"
+            # Bases de Datos
+            identityDB = container "Identity DB" "Credenciales." "MySQL" "Database"
+            businessDB = container "Business DB" "Datos de locales." "MongoDB Atlas" "Database"
+            radarDB = container "Radar DB" "Celdas H3." "Redis" "Cache"
         }
         
-        # Sistemas Externos Reales (Fuera del FoodlySystem)
-        Cloudinary = softwareSystem "Cloudinary" "Almacenamiento para imágenes de platos." "External"
-        MapBox = softwareSystem "MapBox" "Trazado de rutas y mapas." "External"
+        # Sistemas Externos
+        Cloudinary = softwareSystem "Cloudinary" "Imágenes." "External"
+        MapBox = softwareSystem "MapBox" "Mapas." "External"
 
-        # Relaciones de personas con el frontend web
+        # Relaciones principales
         mateo -> webApp "Busca restaurantes"
         rosa -> webApp "Gestiona su local"
+        webApp -> apiGateway "Peticiones HTTPS"
         
-        # Frontend hacia API Gateway (Única salida de la Web)
-        webApp -> apiGateway "Realiza peticiones HTTPS"
+        # Conexiones hacia los componentes
+        apiGateway -> authController "Enruta a"
+        apiGateway -> restaurantController "Enruta a"
+        apiGateway -> radarController "Enruta a"
         
-        # API Gateway hacia el Broker y servicios
-        apiGateway -> messageBroker "Publica solicitudes de tráfico pesado"
-        apiGateway -> identityService "Enruta login/registro directamente"
+        # Conexiones desde componentes hacia BD y Broker
+        userRepository -> identityDB "Lee y escribe"
+        menuRepository -> businessDB "Lee y escribe"
+        radarCacheRepo -> radarDB "Consulta en memoria"
         
-        # Microservicios se comunican mediante el Broker
-        messageBroker -> businessService "Despacha eventos de gestión"
-        messageBroker -> geoRadarService "Despacha eventos de búsqueda"
-        messageBroker -> communityService "Despacha eventos de reseñas"
+        eventProducer -> messageBroker "Publica mensajes en"
+        messageBroker -> brokerListener "Despacha mensajes a"
+        messageBroker -> externalEventListener "Despacha peticiones a"
         
-        # Microservicios hacia sus propias Bases de Datos
-        identityService -> identityDB "Lee y escribe"
-        businessService -> businessDB "Lee y escribe"
-        geoRadarService -> radarDB "Consulta y actualiza"
-        communityService -> communityDB "Lee y escribe"
-        
-        # Flujo hacia el Integration System para salidas externas
-        businessService -> integrationSystem "Solicita guardar imágenes"
-        geoRadarService -> integrationSystem "Solicita mapas y direcciones"
-        
-        # El Integration System es el único autorizado a hablar con el exterior
-        integrationSystem -> Cloudinary "Envía fotos de platos"
-        integrationSystem -> MapBox "Consulta rutas y coordenadas"
+        # Adaptadores hacia el exterior
+        cloudinaryAdapter -> Cloudinary "Sube fotos por API"
+        mapBoxAdapter -> MapBox "Pide rutas por API"
     }
-
+    
     views {
-        systemContext foodlySystem "SystemContext" {
+        # Vista de Componentes: Identity
+        component identityService "Identity_Components" {
             include *
             autoLayout lr
         }
-
-        container foodlySystem "Contenedores" {
+        
+        # Vista de Componentes: Business
+        component businessService "Business_Components" {
+            include *
+            autoLayout lr
+        }
+        
+        # Vista de Componentes: Geo-Radar
+        component geoRadarService "GeoRadar_Components" {
+            include *
+            autoLayout lr
+        }
+        
+        # Vista de Componentes: Integration
+        component integrationSystem "Integration_Components" {
             include *
             autoLayout lr
         }
@@ -95,7 +133,10 @@ workspace "Foodly" "Diagrama de Foodly" {
                 background #999999
                 color #ffffff
             }
+            element "Component" {
+                background #85bbf0
+                color #000000
+            }
         }
-        theme default
     }
 }
