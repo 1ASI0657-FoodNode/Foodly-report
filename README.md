@@ -1718,7 +1718,7 @@ Cuando el Geo-Radar Engine Service calcula las celdas H3 mediante la librería n
 ###### 4.3.2.7 Analysis of Current Design and Review Iteration Goal (Kanban Board)
 Se valida el diseño de la Iteración 2 y se confirma el cumplimiento del driver de Performance. El tablero refleja el avance, pasando a estado "Done" la restricción de tiempo de respuesta (AC-02) y la integración de Redis en memoria. La inclusión de esta caché garantiza que las consultas del radar no dependan del disco duro transaccional, alcanzando tiempos de respuesta inferiores a los 2 segundos. La tarea de diseño de almacenamiento para alta velocidad finaliza, habilitando la fase orientada a la modificabilidad.
 
-<img src="assets/images/chapter-4/Modificabilidad.png" alt="Modificabilidadd Kanban Board" width="600"/>
+<img src="assets/images/chapter-4/Performance.jpg" alt="Performance Kanban Board" width="600"/>
 
 **Leyenda:**
 
@@ -1804,7 +1804,7 @@ esquema de platos del restaurante cambia, el microservicio de comunidad o el de 
 ###### 4.3.3.7 Analysis of Current Design and Review Iteration Goal (Kanban Board)
 Se concluye la última iteración confirmando que la meta de Modificabilidad se ha alcanzado con éxito. El tablero Kanban muestra todas las decisiones arquitectónicas en estado "Done", incluyendo la separación de la persistencia políglota con Azure SQL y MongoDB Atlas (AC-03). Se ha eliminado por completo el riesgo de un monolito de datos al aislar físicamente los almacenes. El diseño arquitectónico completo de Foodly Platform es ahora altamente disponible, veloz y fácil de modificar, quedando listo para la fase de construcción.
 
-<img src="assets/images/chapter-4/Performance.jpg" alt="Performance Kanban Board" width="600"/>
+<img src="assets/images/chapter-4/Modificabilidad.png" alt="Modificabilidad Kanban Board" width="600"/>
 
 **Leyenda:**
 
