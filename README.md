@@ -1635,7 +1635,19 @@ Por otro lado, para evitar que el sistema falle si las APIs de Mapbox o Cloudina
 <img src="assets/images/chapter-4/container_high_availability.png" alt="C4 Containers Diagram" width="600"/>
 
 ###### 4.3.1.7 Analysis of Current Design and Review Iteration Goal (Kanban Board)
-Se evalúa el diseño obtenido y se concluye que la meta de la Iteración 1 ha sido satisfecha exitosamente. El uso de un Message Broker para la comunicación asíncrona y la inclusión del Integration System garantizan la resiliencia y el aislamiento de fallos ante la caída de servicios externos. La tarea de diseño lógico para la Alta Disponibilidad pasa al estado "Done", dejando lista la arquitectura para abordar el almacenamiento de datos en la siguiente iteración.
+Se evalúa el diseño obtenido y se concluye que la meta de la Iteración 1 ha sido satisfecha exitosamente. Como se observa en el tablero, las tareas de diseño para los microservicios, el API Gateway y el soporte de alta concurrencia (AC-01) han pasado a la columna "Done". El uso de un Message Broker para la comunicación asíncrona y la inclusión del Integration System garantizan la resiliencia ante la caída de servicios externos. La arquitectura queda lista para abordar el almacenamiento de datos de alto rendimiento en la siguiente iteración.
+
+<img src="assets/images/chapter-4/Alta_Disponibilidad.jpg" alt="Alta Disponibilidad Kanban Board" width="600"/>
+
+**Leyenda:**
+
+- 🟢 User Stories  
+- 🟠 Atributos de Calidad  
+- 🔵 Decisiones Arquitectónicas  
+- 🟣 Restricciones
+
+**Link del tablero:**
+https://trello.com/invite/b/69f501c05c2af93e4ff4893c/ATTIfcb179e7128dc5ba98dbc4b53ed07c7e7F9CD517/kanban-board
 
 ##### 4.3.2 Iteration 2: Performance
 ###### 4.3.2.1 Architectural Design Backlog N° 2
@@ -1704,7 +1716,19 @@ Cuando el Geo-Radar Engine Service calcula las celdas H3 mediante la librería n
 <img src="assets/images/chapter-4/container_performance.png" alt="C4 Containers Diagram" width="600"/>
 
 ###### 4.3.2.7 Analysis of Current Design and Review Iteration Goal (Kanban Board)
-Se valida el diseño de la Iteración 2 y se confirma el cumplimiento del driver de Performance. La inclusión de Redis garantiza que las consultas del radar no dependan del disco duro, alcanzando tiempos de respuesta inferiores a los 2 segundos en la web. La tarea de diseño de almacenamiento para alta velocidad pasa al estado "Done", habilitando la última fase de diseño orientada a la modificabilidad y bajo acoplamiento de la base de datos.
+Se valida el diseño de la Iteración 2 y se confirma el cumplimiento del driver de Performance. El tablero refleja el avance, pasando a estado "Done" la restricción de tiempo de respuesta (AC-02) y la integración de Redis en memoria. La inclusión de esta caché garantiza que las consultas del radar no dependan del disco duro transaccional, alcanzando tiempos de respuesta inferiores a los 2 segundos. La tarea de diseño de almacenamiento para alta velocidad finaliza, habilitando la fase orientada a la modificabilidad.
+
+<img src="assets/images/chapter-4/Modificabilidad.png" alt="Modificabilidadd Kanban Board" width="600"/>
+
+**Leyenda:**
+
+- 🟢 User Stories  
+- 🟠 Atributos de Calidad  
+- 🔵 Decisiones Arquitectónicas  
+- 🟣 Restricciones
+
+**Link del tablero:**
+https://trello.com/invite/b/69f501c05c2af93e4ff4893c/ATTIfcb179e7128dc5ba98dbc4b53ed07c7e7F9CD517/kanban-board
 
 ##### 4.3.3 Iteration 3: Modificabilidad
 ###### 4.3.3.1 Architectural Design Backlog N° 3
@@ -1778,7 +1802,19 @@ esquema de platos del restaurante cambia, el microservicio de comunidad o el de 
 <img src="assets/images/chapter-4/container_modifiability.png" alt="C4 Containers Diagram" width="600"/>
 
 ###### 4.3.3.7 Analysis of Current Design and Review Iteration Goal (Kanban Board)
-Se concluye la última iteración confirmando que la meta de Modificabilidad se ha alcanzado con éxito. Se ha eliminado por completo el riesgo de un "monolito distribuido" al aislar físicamente los almacenes de datos. El diseño arquitectónico completo de Foodly Platform es ahora altamente disponible, de alto rendimiento y fácil de modificar, quedando la tarea final en el estado "Done" y la arquitectura lista para la fase de construcción.
+Se concluye la última iteración confirmando que la meta de Modificabilidad se ha alcanzado con éxito. El tablero Kanban muestra todas las decisiones arquitectónicas en estado "Done", incluyendo la separación de la persistencia políglota con Azure SQL y MongoDB Atlas (AC-03). Se ha eliminado por completo el riesgo de un monolito de datos al aislar físicamente los almacenes. El diseño arquitectónico completo de Foodly Platform es ahora altamente disponible, veloz y fácil de modificar, quedando listo para la fase de construcción.
+
+<img src="assets/images/chapter-4/Performance.jpg" alt="Performance Kanban Board" width="600"/>
+
+**Leyenda:**
+
+- 🟢 User Stories  
+- 🟠 Atributos de Calidad  
+- 🔵 Decisiones Arquitectónicas  
+- 🟣 Restricciones
+
+**Link del tablero:**
+https://trello.com/invite/b/69f501c05c2af93e4ff4893c/ATTIfcb179e7128dc5ba98dbc4b53ed07c7e7F9CD517/kanban-board
 
 ### Conclusiones
 ### Conclusiones y recomendaciones
