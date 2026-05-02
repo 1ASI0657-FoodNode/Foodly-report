@@ -1116,7 +1116,7 @@ Se han definido pautas generales basadas en la visión de negocio de **FoodNode*
 
 A continuación, se presenta el diagrama de contexto (Nivel 1 del modelo C4), el cual proporciona una vista macro de Foodly, mostrando al sistema central y sus interacciones directas con los usuarios finales y los sistemas de software externos.
 
-![Context Diagram Foodly](assets/images/chapter-3/context_diagram.png)
+![Context Diagram Foodly](assets/images/chapter-4/context_diagram.png)
 
 **Descripción de los elementos del diagrama:**
 
@@ -1450,30 +1450,116 @@ En este proyecto, ADD se aplicó de manera iterativa para garantizar el cumplimi
 
 Cada iteración se centró en refinar componentes críticos del sistema, integrando servicios externos como H3, Mapbox/OpenRouteService/GraphHopper, Cloudinary y bases de datos en Azure SQL y MongoDB Atlas.
 
+<img src="assets/images/chapter-4/container_diagram.png" alt="ADD Iterations Diagram" width="600"/>
+
 ##### 4.3.1 Iteration 1: Alta Disponibilidad
 ###### 4.3.1.1 Architectural Design Backlog N° 1
+En esta sección se identifican y priorizan los drivers arquitectónicos que impulsan la primera iteración de diseño. Se destacan los atributos de calidad de Alta Disponibilidad (QA-01) y Modificabilidad (QA-02), junto con el caso de uso crítico de búsqueda por radar (UC-01), estableciendo las bases técnicas para soportar picos de tráfico en horas punta y permitir el despliegue independiente de los módulos sin generar puntos únicos de fallo.
+
 ###### 4.3.1.2 Establish Iteration Goal by Selecting Drivers
+La meta de esta iteración es diseñar la infraestructura lógica inicial de Foodly Platform para mitigar caídas del sistema y desacoplar componentes. Se seleccionaron los drivers QA-01 (Alta Disponibilidad) y QA-02 (Modificabilidad) con el fin de definir cómo se comunicarán los servicios y cómo se procesarán las peticiones de los usuarios mediante una topología de red distribuida que evite la pérdida de datos ante saturaciones del servidor.
+
 ###### 4.3.1.3 Choose One or More Elements of the System to Refine
+Se selecciona para su refinamiento el sistema de software principal (Foodly Platform) en su capa de contenedores. Específicamente, se descomponen y refinan el punto único de entrada de solicitudes (API Gateway), el canal de eventos asíncronos (Message Broker) y los microservicios core de negocio desarrollados sobre Java nativo en el servidor de aplicaciones WildFly.
+
 ###### 4.3.1.4 Choose One or More Design Concepts That Satisfy the Selected Drivers
+Se adoptan los patrones arquitectónicos API Gateway y Event-Driven Architecture para canalizar de forma síncrona la autenticación de usuarios y gestionar de manera asíncrona mediante ActiveMQ las operaciones pesadas de negocio. Asimismo, se implementa el patrón Anti-Corruption Layer (ACL) mediante el Integration System para aislar por completo la comunicación con APIs de terceros (Cloudinary y Mapbox) de las reglas de negocio del core.
+
 ###### 4.3.1.5 Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
+Se instancian los componentes de software asignando responsabilidades específicas: la aplicación web en Vue.js gestiona la interfaz de usuario; el API Gateway en WildFly enruta el tráfico HTTPS y valida la seguridad; el Message Broker (ActiveMQ interno) encola y distribuye eventos; los microservicios core ejecutan la lógica del sistema; y el Integration System actúa como adaptador exclusivo de APIs externas. Las interfaces de comunicación combinan protocolos HTTP/REST para procesos síncronos y colas JMS para flujos asíncronos.
+
 ###### 4.3.1.6 Sketch Views (C4 & UML) and Record Design Decisions
+
+**1. Objetivo y Tácticas Arquitectónicas** <br>
+El objetivo es asegurar que la plataforma de Foodly siga operativa ante picos masivos de tráfico (por ejemplo, en horas punta de almuerzo) y evitar caídas si un servicio externo falla.
+
+    - **Táctica principal:** Asincronía mediante Message Broker y Anti-Corruption Layer (ACL).
+    - **Componentes clave:** Message Broker (ActiveMQ integrado en WildFly) e Integration System.
+
+**2. Descripción del Flujo y Sustento Técnico** <br>
+Para proteger los microservicios core, el API Gateway envía las peticiones de alto consumo o de segundo plano hacia el Message Broker. ActiveMQ encola estos eventos y los despacha a los microservicios de manera controlada para evitar que colapsen.
+
+Por otro lado, para evitar que el sistema falle si las APIs de Mapbox o Cloudinary experimentan lentitud o caídas, se introduce el contenedor Integration System en Java/WildFly. Este adaptador es el único componente que habla con el exterior. Si Mapbox cambia su contrato o sufre una interrupción, el núcleo de Foodly sigue funcionando con total normalidad.
+
+**3. Diagrama C4 de Contenedores**
+<img src="assets/images/chapter-4/container_high_availability.png" alt="C4 Containers Diagram" width="600"/>
+
 ###### 4.3.1.7 Analysis of Current Design and Review Iteration Goal (Kanban Board)
+Se evalúa el diseño obtenido y se concluye que la meta de la Iteración 1 ha sido satisfecha exitosamente. El uso de un Message Broker para la comunicación asíncrona y la inclusión del Integration System garantizan la resiliencia y el aislamiento de fallos ante la caída de servicios externos. La tarea de diseño lógico para la Alta Disponibilidad pasa al estado "Done", dejando lista la arquitectura para abordar el almacenamiento de datos en la siguiente iteración.
+
 ##### 4.3.2 Iteration 2: Performance
 ###### 4.3.2.1 Architectural Design Backlog N° 2
+Se registran los drivers pendientes para optimizar el tiempo de respuesta del sistema. Se prioriza el atributo de calidad de Performance (QA-03), centrándose en el caso de uso crítico de la búsqueda geoespacial por celdas H3 (UC-01), donde se requiere que la visualización del radar de restaurantes cercanos cargue en la plataforma web en menos de 2 segundos.
+
 ###### 4.3.2.2 Establish Iteration Goal by Selecting Drivers
+La meta de esta iteración es diseñar el patrón de persistencia del sistema de manera que se maximice la velocidad de lectura de datos. El driver seleccionado es QA-03 (Performance), y la meta de diseño se enfoca en resolver los cuellos de botella que generaría la lectura constante del disco duro para consultas de proximidad geográfica en tiempo real.
+
 ###### 4.3.2.3 Choose One or More Elements of the System to Refine
+Se refina específicamente la capa de datos de los contenedores del backend, concentrando los esfuerzos en el Geo-Radar Engine Service y su interacción con el sistema de almacenamiento. Se analiza cómo este microservicio en Java/WildFly procesará la indexación de celdas mediante la librería Uber H3 sin sobrecargar las bases de datos transaccionales del sistema.
+
 ###### 4.3.2.4 Choose One or More Design Concepts That Satisfy the Selected Drivers
+Se selecciona la táctica de Caching a través del uso de una base de datos NoSQL en memoria RAM (Redis) y el patrón de persistencia políglota. Esto permite que el Geo-Radar Service recupere las coordenadas y las celdas H3 activas de manera inmediata desde la memoria del servidor, reduciendo sustancialmente el uso de CPU y eliminando las consultas lentas a las bases de datos tradicionales en disco.
+
 ###### 4.3.2.5 Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
+Se instancia el contenedor Radar DB utilizando Redis como caché en memoria RAM. El Geo-Radar Engine Service asume la responsabilidad de calcular las celdas H3 mediante la librería nativa de Uber y actualizar el índice en Redis; asimismo, se define una interfaz de conexión rápida TCP/IP nativa entre el microservicio y el contenedor de caché para recuperar datos en milisegundos.
+
 ###### 4.3.2.6 Sketch Views (C4 & UML) and Record Design Decisions
+
+**1. Objetivo y Tácticas Arquitectónicas** <br>
+El objetivo es garantizar que cuando el comensal active el radar hexagonal, los tiempos de respuesta sean menores a 2 segundos para descubrir restaurantes cercanos.
+    - **Táctica principal:** Caching mediante almacenamiento en memoria RAM.
+    - **Persistencia:** Radar DB (Redis).
+
+**2. Descripción del Flujo y Sustento Técnico** <br>
+Para evitar la latencia que produce la consulta constante al disco duro de la base de datos de los restaurantes, el sistema utiliza Redis como una base de datos en memoria intermedia.
+
+Cuando el Geo-Radar Engine Service calcula las celdas H3 mediante la librería nativa de Uber, no consulta la base de datos principal; en su lugar, recupera los datos directamente de la memoria RAM en Radar DB (Redis). Esto reduce el tráfico de red, disminuye el uso de CPU y garantiza una respuesta inmediata en el frontend desarrollado en Vue.js.
+
+**3. Diagrama C4 de Contenedores**
+<img src="assets/images/chapter-4/container_performance.png" alt="C4 Containers Diagram" width="600"/>
+
 ###### 4.3.2.7 Analysis of Current Design and Review Iteration Goal (Kanban Board)
+Se valida el diseño de la Iteración 2 y se confirma el cumplimiento del driver de Performance. La inclusión de Redis garantiza que las consultas del radar no dependan del disco duro, alcanzando tiempos de respuesta inferiores a los 2 segundos en la web. La tarea de diseño de almacenamiento para alta velocidad pasa al estado "Done", habilitando la última fase de diseño orientada a la modificabilidad y bajo acoplamiento de la base de datos.
+
 ##### 4.3.3 Iteration 3: Modificabilidad
 ###### 4.3.3.1 Architectural Design Backlog N° 3
+Se revisan los drivers enfocados en el bajo acoplamiento físico del sistema. Se prioriza el driver de Modificabilidad (QA-04), el cual exige que cada microservicio mantenga su autonomía funcional en la capa de datos, evitando que cambios en la estructura de un módulo rompan o alteren las operaciones de otros servicios independientes.
+
 ###### 4.3.3.2 Establish Iteration Goal by Selecting Drivers
+La meta de esta iteración es diseñar la separación física absoluta de las bases de datos del sistema para eliminar dependencias cruzadas. El driver seleccionado es QA-04 (Modificabilidad), aplicando estrictamente el principio de diseño de aislamiento de datos requerido para microservicios empresariales independientes.
+
 ###### 4.3.3.3 Choose One or More Elements of the System to Refine
+Se refinan los microservicios Identity & Access Service, Business Management Service y Community Service junto con sus respectivas tecnologías de almacenamiento. El objetivo es desacoplar las conexiones compartidas a nivel de base de datos para garantizar la modificabilidad individual de cada componente.
+
 ###### 4.3.3.4 Choose One or More Design Concepts That Satisfy the Selected Drivers
+Se selecciona el patrón arquitectónico Database-per-Service. Se asignan motores de bases de datos independientes según el dominio de negocio: MySQL para la gestión de usuarios y reseñas (datos relacionales estructurados), y MongoDB Atlas para los menús dinámicos de los restaurantes (documentos flexibles no relacionales), logrando persistencia políglota aislada.
+
 ###### 4.3.3.5 Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
+Se instancian las bases de datos independientes: Identity DB (MySQL) exclusiva para credenciales de usuario; Business DB (MongoDB Atlas) para los locales y menús; y Community DB (MySQL) para las reseñas y favoritos. Ningún microservicio tiene acceso directo a la base de datos de otro, y cualquier intercambio de datos necesario entre módulos se realiza exclusivamente a través de mensajes asíncronos o peticiones HTTP internas mediante el API Gateway.
+
 ###### 4.3.3.6 Sketch Views (C4 & UML) and Record Design Decisions
+
+**1. Objetivo y Tácticas Arquitectónicas** <br>
+El objetivo de esta iteración es garantizar que el sistema sea altamente mantenible y que los cambios en las reglas de negocio de un módulo no afecten la estabilidad de los demás. Se aplica la regla obligatoria de diseño del curso.
+
+    - **Táctica principal:** Database-per-Service (Aislamiento físico y lógico de datos).
+    - **Persistencia:** Uso de MySQL para datos relacionales y estructurados, y MongoDB Atlas para documentos dinámicos.
+
+**2. Descripción del Flujo y Sustento Técnico** <br>
+Para cumplir con este driver, cada microservicio core maneja de forma exclusiva su propia base de datos:
+
+    - **El Identity & Access Service** se conecta únicamente a Identity DB (MySQL).
+    - **El Business Management Service** gestiona Business DB (MongoDB Atlas), permitiendo que los menús de los restaurantes sean dinámicos sin alterar esquemas fijos de usuarios.
+    - **El Community Service** tiene su propia instancia aislada en Community DB (MySQL) para guardar las reseñas y favoritos de los comensales.
+
+Esta táctica elimina por completo el acoplamiento en la capa de datos. Si el 
+esquema de platos del restaurante cambia, el microservicio de comunidad o el de identidad no sufrirán ningún impacto ni tiempo de inactividad.
+
+**3. Diagrama C4 de Contenedores**
+<img src="assets/images/chapter-4/container_modifiability.png" alt="C4 Containers Diagram" width="600"/>
+
 ###### 4.3.3.7 Analysis of Current Design and Review Iteration Goal (Kanban Board)
+Se concluye la última iteración confirmando que la meta de Modificabilidad se ha alcanzado con éxito. Se ha eliminado por completo el riesgo de un "monolito distribuido" al aislar físicamente los almacenes de datos. El diseño arquitectónico completo de Foodly Platform es ahora altamente disponible, de alto rendimiento y fácil de modificar, quedando la tarea final en el estado "Done" y la arquitectura lista para la fase de construcción.
 
 ##### 4.2.1 Iteration 1: Core Routing & Availability Design
 ###### 4.2.1.1 Architectural Design Backlog 1
@@ -1681,7 +1767,7 @@ La asignación de responsabilidades permite una clara separación de preocupacio
 
 ###### Kanban Board - ADD Iteration 1
 
-![Kanban Board - ADD Iteration](assets/images/chapter-3/kanban_board.png)
+![Kanban Board - ADD Iteration](assets/images/chapter-4/kanban_board.png)
 
 **Link del tablero Kanban (Miro/Trello):**  
 https://trello.com/invite/b/69f501c05c2af93e4ff4893c/ATTIfcb179e7128dc5ba98dbc4b53ed07c7e7F9CD517/kanban-board
