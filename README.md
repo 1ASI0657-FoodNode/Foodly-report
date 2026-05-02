@@ -1571,6 +1571,40 @@ Cada iteración se centró en refinar componentes críticos del sistema, integra
 ###### 4.3.1.1 Architectural Design Backlog N° 1
 En esta sección se identifican y priorizan los drivers arquitectónicos que impulsan la primera iteración de diseño. Se destacan los atributos de calidad de Alta Disponibilidad (QA-01) y Modificabilidad (QA-02), junto con el caso de uso crítico de búsqueda por radar (UC-01), estableciendo las bases técnicas para soportar picos de tráfico en horas punta y permitir el despliegue independiente de los módulos sin generar puntos únicos de fallo.
 
+<table>
+<tr>
+<th>ID</th>
+<th>Descripción</th>
+<th>Driver</th>
+<th>Prioridad</th>
+</tr>
+<tr>
+<td>AD1-01</td>
+<td>Implementar API Gateway como punto único de entrada</td>
+<td>Alta Disponibilidad</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td>AD1-02</td>
+<td>Incorporar Message Broker para comunicación asíncrona</td>
+<td>Alta Disponibilidad</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td>AD1-03</td>
+<td>Desacoplar servicios mediante arquitectura event-driven</td>
+<td>Modificabilidad</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td>AD1-04</td>
+<td>Implementar Integration System (ACL)</td>
+<td>Disponibilidad</td>
+<td>Media</td>
+</tr>
+</table>
+
+
 ###### 4.3.1.2 Establish Iteration Goal by Selecting Drivers
 La meta de esta iteración es diseñar la infraestructura lógica inicial de Foodly Platform para mitigar caídas del sistema y desacoplar componentes. Se seleccionaron los drivers QA-01 (Alta Disponibilidad) y QA-02 (Modificabilidad) con el fin de definir cómo se comunicarán los servicios y cómo se procesarán las peticiones de los usuarios mediante una topología de red distribuida que evite la pérdida de datos ante saturaciones del servidor.
 
@@ -1607,6 +1641,40 @@ Se evalúa el diseño obtenido y se concluye que la meta de la Iteración 1 ha s
 ###### 4.3.2.1 Architectural Design Backlog N° 2
 Se registran los drivers pendientes para optimizar el tiempo de respuesta del sistema. Se prioriza el atributo de calidad de Performance (QA-03), centrándose en el caso de uso crítico de la búsqueda geoespacial por celdas H3 (UC-01), donde se requiere que la visualización del radar de restaurantes cercanos cargue en la plataforma web en menos de 2 segundos.
 
+<table>
+<tr>
+<th>ID</th>
+<th>Descripción</th>
+<th>Driver</th>
+<th>Prioridad</th>
+</tr>
+<tr>
+<td>AD2-01</td>
+<td>Implementar Redis como cache en memoria</td>
+<td>Performance</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td>AD2-02</td>
+<td>Optimizar consultas geoespaciales con H3</td>
+<td>Performance</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td>AD2-03</td>
+<td>Reducir acceso a base de datos principal</td>
+<td>Performance</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td>AD2-04</td>
+<td>Mejorar tiempo de respuesta del radar &lt; 2s</td>
+<td>Performance</td>
+<td>Alta</td>
+</tr>
+</table>
+
+
 ###### 4.3.2.2 Establish Iteration Goal by Selecting Drivers
 La meta de esta iteración es diseñar el patrón de persistencia del sistema de manera que se maximice la velocidad de lectura de datos. El driver seleccionado es QA-03 (Performance), y la meta de diseño se enfoca en resolver los cuellos de botella que generaría la lectura constante del disco duro para consultas de proximidad geográfica en tiempo real.
 
@@ -1641,6 +1709,39 @@ Se valida el diseño de la Iteración 2 y se confirma el cumplimiento del driver
 ##### 4.3.3 Iteration 3: Modificabilidad
 ###### 4.3.3.1 Architectural Design Backlog N° 3
 Se revisan los drivers enfocados en el bajo acoplamiento físico del sistema. Se prioriza el driver de Modificabilidad (QA-04), el cual exige que cada microservicio mantenga su autonomía funcional en la capa de datos, evitando que cambios en la estructura de un módulo rompan o alteren las operaciones de otros servicios independientes.
+
+<table>
+<tr>
+<th>ID</th>
+<th>Descripción</th>
+<th>Driver</th>
+<th>Prioridad</th>
+</tr>
+<tr>
+<td>AD3-01</td>
+<td>Implementar Database-per-Service</td>
+<td>Modificabilidad</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td>AD3-02</td>
+<td>Separar bases de datos por microservicio</td>
+<td>Modificabilidad</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td>AD3-03</td>
+<td>Evitar acceso cruzado entre servicios</td>
+<td>Modificabilidad</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td>AD3-04</td>
+<td>Aplicar persistencia poliglota</td>
+<td>Modificabilidad</td>
+<td>Media</td>
+</tr>
+</table>
 
 ###### 4.3.3.2 Establish Iteration Goal by Selecting Drivers
 La meta de esta iteración es diseñar la separación física absoluta de las bases de datos del sistema para eliminar dependencias cruzadas. El driver seleccionado es QA-04 (Modificabilidad), aplicando estrictamente el principio de diseño de aislamiento de datos requerido para microservicios empresariales independientes.
